@@ -3,26 +3,20 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ACTIVEMASTERNODE_H
-#define ACTIVEMASTERNODE_H
+#ifndef BITCOIN_MASTERNODE_ACTIVEMASTERNODE_H
+#define BITCOIN_MASTERNODE_ACTIVEMASTERNODE_H
 
-#include "chainparams.h"
-#include "key.h"
-#include "net.h"
-#include "primitives/transaction.h"
-#include "validationinterface.h"
+#include <chainparams.h>
+#include <key.h>
+#include <net.h>
+#include <primitives/transaction.h>
+#include <validationinterface.h>
 
-#include "evo/deterministicmns.h"
-#include "evo/providertx.h"
+#include <evo/deterministicmns.h>
+#include <evo/providertx.h>
 
 struct CActiveMasternodeInfo;
 class CActiveMasternodeManager;
-
-static const int ACTIVE_MASTERNODE_INITIAL          = 0; // initial state
-static const int ACTIVE_MASTERNODE_SYNC_IN_PROCESS  = 1;
-static const int ACTIVE_MASTERNODE_INPUT_TOO_NEW    = 2;
-static const int ACTIVE_MASTERNODE_NOT_CAPABLE      = 3;
-static const int ACTIVE_MASTERNODE_STARTED          = 4;
 
 extern CActiveMasternodeInfo activeMasternodeInfo;
 extern CActiveMasternodeManager* activeMasternodeManager;
@@ -47,6 +41,7 @@ public:
         MASTERNODE_POSE_BANNED,
         MASTERNODE_REMOVED,
         MASTERNODE_OPERATOR_KEY_CHANGED,
+        MASTERNODE_PROTX_IP_CHANGED,
         MASTERNODE_READY,
         MASTERNODE_ERROR,
     };
@@ -72,4 +67,4 @@ private:
     bool GetLocalAddress(CService& addrRet);
 };
 
-#endif
+#endif // BITCOIN_MASTERNODE_ACTIVEMASTERNODE_H
