@@ -1,17 +1,17 @@
-// Copyright (c) 2014-2018 The Dash Core developers
+// Copyright (c) 2014-2021 The Dash Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GOVERNANCE_VOTEDB_H
-#define GOVERNANCE_VOTEDB_H
+#ifndef BITCOIN_GOVERNANCE_GOVERNANCE_VOTEDB_H
+#define BITCOIN_GOVERNANCE_GOVERNANCE_VOTEDB_H
 
 #include <list>
 #include <map>
 
-#include "governance-vote.h"
-#include "serialize.h"
-#include "streams.h"
-#include "uint256.h"
+#include <governance/governance-vote.h>
+#include <serialize.h>
+#include <streams.h>
+#include <uint256.h>
 
 /**
  * Represents the collection of votes associated with a given CGovernanceObject
@@ -26,19 +26,9 @@ class CGovernanceObjectVoteFile
 public: // Types
     typedef std::list<CGovernanceVote> vote_l_t;
 
-    typedef vote_l_t::iterator vote_l_it;
-
-    typedef vote_l_t::const_iterator vote_l_cit;
-
-    typedef std::map<uint256, vote_l_it> vote_m_t;
-
-    typedef vote_m_t::iterator vote_m_it;
-
-    typedef vote_m_t::const_iterator vote_m_cit;
+    typedef std::map<uint256, vote_l_t::iterator> vote_m_t;
 
 private:
-    static const int MAX_MEMORY_VOTES = -1;
-
     int nMemoryVotes;
 
     vote_l_t listVotes;
@@ -65,7 +55,7 @@ public:
      */
     bool SerializeVoteToStream(const uint256& nHash, CDataStream& ss) const;
 
-    int GetVoteCount()
+    int GetVoteCount() const
     {
         return nMemoryVotes;
     }
@@ -94,4 +84,4 @@ private:
     void RebuildIndex();
 };
 
-#endif
+#endif // BITCOIN_GOVERNANCE_GOVERNANCE_VOTEDB_H
