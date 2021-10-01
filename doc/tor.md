@@ -1,7 +1,6 @@
-TOR SUPPORT IN HNC CORE
-=======================
+# TOR SUPPORT IN DASH CORE
 
-It is possible to run HellenicCoin Core as a Tor hidden service, and connect to such services.
+It is possible to run Dash Core as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +9,9 @@ See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#T
 for how to properly configure Tor.
 
 
-1. Run HellenicCoin Core behind a Tor proxy
-----------------------------------
+## 1. Run Dash Core behind a Tor proxy
 
-The first step is running HellenicCoin Core behind a Tor proxy. This will already make all
+The first step is running Dash Core behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -37,31 +35,31 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 
-	./helleniccoind -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=ssapp53tmftyjmjb.onion
+	./dashd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=ssapp53tmftyjmjb.onion
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./helleniccoind -proxy=127.0.0.1:9050
+	./dashd -proxy=127.0.0.1:9050
 
 
-2. Run a HellenicCoin Core hidden server
--------------------------------
+## 2. Run a Dash Core hidden server
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
-config file):
+config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. For newer
+versions of Tor see [Section 4](#4-automatically-listen-on-tor).*
 
-	HiddenServiceDir /var/lib/tor/helleniccoincore-service/
-	HiddenServicePort 31052 127.0.0.1:31052
-	HiddenServicePort 41052 127.0.0.1:41052
+	HiddenServiceDir /var/lib/tor/dashcore-service/
+	HiddenServicePort 9999 127.0.0.1:9999
+	HiddenServicePort 19999 127.0.0.1:19999
 
 The directory can be different of course, but (both) port numbers should be equal to
-your helleniccoind's P2P listen port (31052 by default).
+your dashd's P2P listen port (9999 by default).
 
-	-externalip=X   You can tell HellenicCoin Core about its publicly reachable address using
+	-externalip=X   You can tell Dash Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/helleniccoincore-service/hostname. Onion addresses are given
+	                /var/lib/tor/dashcore-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -78,74 +76,72 @@ your helleniccoind's P2P listen port (31052 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./helleniccoind -proxy=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -listen
+	./dashd -proxy=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -listen
 
 (obviously, replace the Onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-	./helleniccoind ... -bind=127.0.0.1
+	./dashd ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-	./helleniccoind ... -discover
+	./dashd ... -discover
 
-and open port 31052 on your firewall (or use -upnp).
+and open port 9999 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./helleniccoind -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
+	./dashd -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
 
 
-3. List of known HellenicCoin Core Tor relays
-------------------------------------
+## 3. List of known Dash Core Tor relays
 
-* [darkcoinie7ghp67.onion](http://darkcoinie7ghp67.onion/)
-* [drktalkwaybgxnoq.onion](http://drktalkwaybgxnoq.onion/)
-* [drkcoinooditvool.onion](http://drkcoinooditvool.onion/)
-* [darkcoxbtzggpmcc.onion](http://darkcoxbtzggpmcc.onion/)
-* [ssapp53tmftyjmjb.onion](http://ssapp53tmftyjmjb.onion/)
-* [j2dfl3cwxyxpbc7s.onion](http://j2dfl3cwxyxpbc7s.onion/)
-* [vf6d2mxpuhh2cbxt.onion](http://vf6d2mxpuhh2cbxt.onion/)
-* [rj24sicr6i4vsnkv.onion](http://rj24sicr6i4vsnkv.onion/)
-* [wrwx2dy7jyh32o53.onion](http://wrwx2dy7jyh32o53.onion/)
-* [f5ekot4ajkbe23gt.onion](http://f5ekot4ajkbe23gt.onion/)
-* [dshtord4mqvgzqev.onion](http://dshtord4mqvgzqev.onion/)
+Note: All these nodes are hosted by masternodehosting.com
+
+* l7oq3v7ujau5tfrw.onion
+* vsmegqxisccimsir.onion
+* 4rbha5nrjso54l75.onion
+* 3473226fvgoenztx.onion
+* onn5v3aby2dioicx.onion
+* w5n7s2p3mdq5yf2d.onion
+* ec4qdvujskzasvrb.onion
+* g5e4hvsecwri3inf.onion
+* ys5upbdeotplam3y.onion
+* fijy6aikzxfea54i.onion
 
 
-4. Automatically listen on Tor
---------------------------------
+## 4. Automatically listen on Tor
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-HellenicCoin Core has been updated to make use of this.
+Dash Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-HellenicCoin Core automatically creates a hidden service to listen on. This will positively 
+Dash Core automatically creates a hidden service to listen on. This will positively 
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if HellenicCoin Core is listening (`-listen`), and
+This new feature is enabled by default if Dash Core is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.
 
 Connecting to Tor's control socket API requires one of two authentication methods to be 
-configured. For cookie authentication the user running helleniccoind must have write access 
+configured. For cookie authentication the user running dashd must have write access 
 to the `CookieAuthFile` specified in Tor configuration. In some cases this is 
 preconfigured and the creation of a hidden service is automatic. If permission problems 
 are seen with `-debug=tor` they can be resolved by adding both the user running tor and 
-the user running helleniccoind to the same group and setting permissions appropriately. On 
-Debian-based systems the user running helleniccoind can be added to the debian-tor group, 
+the user running dashd to the same group and setting permissions appropriately. On 
+Debian-based systems the user running dashd can be added to the debian-tor group, 
 which has the appropriate permissions. An alternative authentication method is the use 
 of the `-torpassword` flag and a `hash-password` which can be enabled and specified in 
 Tor configuration.
 
-4. Privacy recommendations
----------------------------
+## 5. Privacy recommendations
 
-- Do not add anything but bitcoin ports to the hidden service created in section 2.
+- Do not add anything but Dash Core ports to the hidden service created in section 2.
   If you run a web service too, create a new hidden service for that.
   Otherwise it is trivial to link them, which may reduce privacy. Hidden
   services created automatically (as in section 3) always have only one port
