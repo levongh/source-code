@@ -1,13 +1,16 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
+export LC_ALL=C
 TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
-SRCDIR=${SRCDIR:-$TOPDIR/src}
+BUILDDIR=${BUILDDIR:-$TOPDIR}
+
+BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$SRCDIR/helleniccoind}
-BITCOINCLI=${BITCOINCLI:-$SRCDIR/helleniccoin-cli}
-BITCOINTX=${BITCOINTX:-$SRCDIR/helleniccoin-tx}
-BITCOINQT=${BITCOINQT:-$SRCDIR/qt/helleniccoin-qt}
+BITCOIND=${BITCOIND:-$BINDIR/helleniccoind}
+BITCOINCLI=${BITCOINCLI:-$BINDIR/helleniccoin-cli}
+BITCOINTX=${BITCOINTX:-$BINDIR/helleniccoin-tx}
+BITCOINQT=${BITCOINQT:-$BINDIR/qt/helleniccoin-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 
@@ -15,8 +18,8 @@ BITCOINQT=${BITCOINQT:-$SRCDIR/qt/helleniccoin-qt}
 BTCVER=($($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
-# This gets autodetected fine for bitcoind if --version-string is not set,
-# but has different outcomes for bitcoin-qt and bitcoin-cli.
+# This gets autodetected fine for helleniccoind if --version-string is not set,
+# but has different outcomes for helleniccoin-qt and helleniccoin-cli.
 echo "[COPYRIGHT]" > footer.h2m
 $BITCOIND --version | sed -n '1!p' >> footer.h2m
 
