@@ -21,6 +21,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+#ifndef BITCOIN_BIP39_ENGLISH_H
+#define BITCOIN_BIP39_ENGLISH_H
+
 const char * const wordlist[] = {
 "abandon",
 "ability",
@@ -467,7 +470,7 @@ const char * const wordlist[] = {
 "dance",
 "danger",
 "daring",
-"helleniccoin",
+"dash",
 "daughter",
 "dawn",
 "day",
@@ -2072,3 +2075,5 @@ const char * const wordlist[] = {
 "zoo",
 0,
 };
+
+#endif // BITCOIN_BIP39_ENGLISH_H
