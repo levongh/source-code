@@ -1,10 +1,10 @@
-// Copyright (c) 2014-2018 The Dash Core developers
+// Copyright (c) 2014-2020 The Dash Core developers
 // Distributed under the MIT software license, see the accompanying
-#ifndef HNC_HDCHAIN_H
-#define HNC_HDCHAIN_H
+#ifndef BITCOIN_HDCHAIN_H
+#define BITCOIN_HDCHAIN_H
 
-#include "key.h"
-#include "sync.h"
+#include <key.h>
+#include <sync.h>
 
 /* hd account data model */
 class CHDAccount
@@ -147,4 +147,4 @@ public:
     std::string GetKeyPath() const;
 };
 
-#endif // HNC_HDCHAIN_H
+#endif // BITCOIN_HDCHAIN_H

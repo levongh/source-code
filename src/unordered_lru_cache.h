@@ -19,7 +19,7 @@ private:
     int64_t accessCounter{0};
 
 public:
-    unordered_lru_cache(size_t _maxSize = MaxSize, size_t _truncateThreshold = TruncateThreshold) :
+    explicit unordered_lru_cache(size_t _maxSize = MaxSize, size_t _truncateThreshold = TruncateThreshold) :
         maxSize(_maxSize),
         truncateThreshold(_truncateThreshold == 0 ? _maxSize * 2 : _truncateThreshold)
     {
@@ -27,6 +27,7 @@ public:
         assert(_maxSize != 0);
     }
 
+    size_t max_size() const { return maxSize; }
 
     template<typename Value2>
     void _emplace(const Key& key, Value2&& v)
