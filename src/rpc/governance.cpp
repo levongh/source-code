@@ -484,7 +484,7 @@ UniValue gobject_vote_conf(const JSONRPCRequest& request)
         statusObj.pushKV("errorMessage", exception.GetMessage());
     }
 
-    resultsObj.pushKV(Pair("helleniccoin.conf", statusObj));
+    resultsObj.pushKV("helleniccoin.conf", statusObj);
 
     returnObj.pushKV("overall", strprintf("Voted successfully %d time(s) and failed %d time(s).", nSuccessful, nFailed));
     returnObj.pushKV("detail", resultsObj);
