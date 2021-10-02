@@ -36,7 +36,7 @@ bench_bench_helleniccoin_SOURCES = \
   bench/prevector.cpp \
   bench/string_cast.cpp
 
-nodist_bench_bench_helleniccoin_SOURCES = $(GENERATED_TEST_FILES)
+nodist_bench_bench_helleniccoin_SOURCES = $(GENERATED_BENCH_FILES)
 
 bench_bench_helleniccoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
 bench_bench_helleniccoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -59,7 +59,6 @@ endif
 
 if ENABLE_WALLET
 bench_bench_helleniccoin_SOURCES += bench/coin_selection.cpp
-bench_bench_helleniccoin_LDADD += $(LIBBITCOIN_WALLET) $(LIBBITCOIN_CRYPTO)
 endif
 
 bench_bench_helleniccoin_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(BLS_LIBS)
