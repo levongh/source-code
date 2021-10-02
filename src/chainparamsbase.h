@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include <memory>
 
 /**
  * CBaseChainParams defines the base parameters (shared between helleniccoin-cli and helleniccoind)

@@ -2519,7 +2519,7 @@ bool static FlushStateToDisk(const CChainParams& chainparams, CValidationState &
                 }
             }
         }
- h       nNow = GetTimeMicros();
+        nNow = GetTimeMicros();
         // Avoid writing/flushing immediately after startup.
         if (nLastWrite == 0) {
             nLastWrite = nNow;

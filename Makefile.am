@@ -44,6 +44,9 @@ DIST_CONTRIB = $(top_srcdir)/contrib/helleniccoin-cli.bash-completion \
 	       $(top_srcdir)/contrib/helleniccoin-tx.bash-completion \
 	       $(top_srcdir)/contrib/helleniccoind.bash-completion \
 	       $(top_srcdir)/contrib/init
+DIST_SHARE = \
+  $(top_srcdir)/share/genbuild.sh \
+  $(top_srcdir)/share/rpcauth
 
 BIN_CHECKS=$(top_srcdir)/contrib/devtools/symbol-check.py \
            $(top_srcdir)/contrib/devtools/security-check.py
@@ -59,10 +62,10 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-apply.sh \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
-COVERAGE_INFO = baseline_filtered_combined.info baseline.info \
-  leveldb_baseline.info test_helleniccoin_filtered.info total_coverage.info \
-  baseline_filtered.info rpc_test.info rpc_test_filtered.info \
-  leveldb_baseline_filtered.info test_helleniccoin_coverage.info test_helleniccoin.info
+COVERAGE_INFO = baseline.info \
+  test_helleniccoin_filtered.info total_coverage.info \
+  baseline_filtered.info functional_test.info functional_test_filtered.info \
+  test_helleniccoin_coverage.info test_helleniccoin.info
 
 dist-hook:
 	-$(GIT) archive --format=tar HEAD -- src/clientversion.cpp | $(AMTAR) -C $(top_distdir) -xf -
@@ -92,9 +95,9 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/HellenicCoin-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/HellenicCoin-Qt: all-recursive
 	$(MKDIR_P) $(@D)
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $(BITCOIN_QT_BIN) $@
 
 $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 	$(MKDIR_P) $(@D)
@@ -166,52 +169,45 @@ $(BITCOIN_CLI_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
 if USE_LCOV
+LCOV_FILTER_PATTERN=-p "/usr/include/" -p "src/leveldb/" -p "src/bench/" -p "src/univalue" -p "src/crypto/ctaes" -p "src/secp256k1"
 
 baseline.info:
 	$(LCOV) -c -i -d $(abs_builddir)/src -o $@
 
 baseline_filtered.info: baseline.info
-	$(LCOV) -r $< "/usr/include/*" -o $@
+	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
+	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-leveldb_baseline.info: baseline_filtered.info
-	$(LCOV) -c -i -d $(abs_builddir)/src/leveldb -b $(abs_builddir)/src/leveldb -o $@
-
-leveldb_baseline_filtered.info: leveldb_baseline.info
-	$(LCOV) -r $< "/usr/include/*" -o $@
-
-baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
-	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
-
-test_helleniccoin.info: baseline_filtered_combined.info
+test_helleniccoin.info: baseline_filtered.info
 	$(MAKE) -C src/ check
-	$(LCOV) -c -d $(abs_builddir)/src -t test_helleniccoin -o $@
-	$(LCOV) -z -d $(abs_builddir)/src
-	$(LCOV) -z -d $(abs_builddir)/src/leveldb
+	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_helleniccoin -o $@
+	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
 
 test_helleniccoin_filtered.info: test_helleniccoin.info
-	$(LCOV) -r $< "/usr/include/*" -o $@
+	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
+	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-rpc_test.info: test_helleniccoin_filtered.info
-	-@TIMEOUT=15 python qa/pull-tester/rpc-tests.py $(EXTENDED_RPC_TESTS)
-	$(LCOV) -c -d $(abs_builddir)/src --t rpc-tests -o $@
-	$(LCOV) -z -d $(abs_builddir)/src
-	$(LCOV) -z -d $(abs_builddir)/src/leveldb
+functional_test.info: test_helleniccoin_filtered.info
+	-@TIMEOUT=15 test/functional/test_runner.py $(EXTENDED_FUNCTIONAL_TESTS)
+	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src --t functional-tests -o $@
+	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
 
-rpc_test_filtered.info: rpc_test.info
-	$(LCOV) -r $< "/usr/include/*" -o $@
+functional_test_filtered.info: functional_test.info
+	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
+	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-test_helleniccoin_coverage.info: baseline_filtered_combined.info test_helleniccoin_filtered.info
-	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_helleniccoin_filtered.info -o $@
+test_helleniccoin_coverage.info: baseline_filtered.info test_helleniccoin_filtered.info
+	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_helleniccoin_filtered.info -o $@
 
-total_coverage.info: baseline_filtered_combined.info test_helleniccoin_filtered.info rpc_test_filtered.info
-	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_helleniccoin_filtered.info -a rpc_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+total_coverage.info: test_helleniccoin_filtered.info functional_test_filtered.info
+	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_helleniccoin_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
 test_helleniccoin.coverage/.dirstamp:  test_helleniccoin_coverage.info
-	$(GENHTML) -s $< -o $(@D)
+	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 	@touch $@
 
 total.coverage/.dirstamp: total_coverage.info
-	$(GENHTML) -s $< -o $(@D)
+	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 	@touch $@
 
 cov: test_helleniccoin.coverage/.dirstamp total.coverage/.dirstamp
@@ -220,7 +216,48 @@ endif
 
 dist_noinst_SCRIPTS = autogen.sh
 
-EXTRA_DIST = $(top_srcdir)/share/genbuild.sh qa/pull-tester/rpc-tests.py qa/rpc-tests $(DIST_CONTRIB) $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING) $(BIN_CHECKS)
+EXTRA_DIST = $(DIST_SHARE) test/functional/test_runner.py test/functional $(DIST_CONTRIB) $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING) $(BIN_CHECKS)
+
+EXTRA_DIST += \
+    test/util/bitcoin-util-test.py \
+    test/util/data/bitcoin-util-test.json \
+    test/util/data/blanktxv1.hex \
+    test/util/data/blanktxv1.json \
+    test/util/data/blanktxv2.hex \
+    test/util/data/blanktxv2.json \
+    test/util/data/tt-delin1-out.hex \
+    test/util/data/tt-delin1-out.json \
+    test/util/data/tt-delout1-out.hex \
+    test/util/data/tt-delout1-out.json \
+    test/util/data/tt-locktime317000-out.hex \
+    test/util/data/tt-locktime317000-out.json \
+    test/util/data/tx394b54bb.hex \
+    test/util/data/txcreate1.hex \
+    test/util/data/txcreate1.json \
+    test/util/data/txcreate2.hex \
+    test/util/data/txcreate2.json \
+    test/util/data/txcreatedata1.hex \
+    test/util/data/txcreatedata1.json \
+    test/util/data/txcreatedata2.hex \
+    test/util/data/txcreatedata2.json \
+    test/util/data/txcreatedata_seq0.hex \
+    test/util/data/txcreatedata_seq0.json \
+    test/util/data/txcreatedata_seq1.hex \
+    test/util/data/txcreatedata_seq1.json \
+    test/util/data/txcreatemultisig1.hex \
+    test/util/data/txcreatemultisig1.json \
+    test/util/data/txcreatemultisig2.hex \
+    test/util/data/txcreatemultisig2.json \
+    test/util/data/txcreateoutpubkey1.hex \
+    test/util/data/txcreateoutpubkey1.json \
+    test/util/data/txcreatescript1.hex \
+    test/util/data/txcreatescript1.json \
+    test/util/data/txcreatescript2.hex \
+    test/util/data/txcreatescript2.json \
+    test/util/data/txcreatesignv1.hex \
+    test/util/data/txcreatesignv1.json \
+    test/util/data/txcreatesignv2.hex \
+    test/util/rpcauth-test.py
 
 CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
 
@@ -228,6 +265,21 @@ CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-man
 
-clean-local:
-	rm -rf coverage_percent.txt test_helleniccoin.coverage/ total.coverage/ qa/tmp/ cache/ $(OSX_APP)
-	rm -rf qa/pull-tester/__pycache__
+doc/doxygen/.stamp: doc/Doxyfile FORCE
+	$(MKDIR_P) $(@D)
+	$(DOXYGEN) $^
+	$(AM_V_at) touch $@
+
+if HAVE_DOXYGEN
+docs: doc/doxygen/.stamp
+else
+docs:
+	@echo "error: doxygen not found"
+endif
+
+clean-docs:
+	rm -rf doc/doxygen
+
+clean-local: clean-docs
+	rm -rf coverage_percent.txt test_helleniccoin.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP) src/qt/moc_*
+	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache

@@ -175,12 +175,12 @@ static CBlock FindDevNetGenesisBlock(const CBlock &prevBlock, const CAmount& rew
 }
 
 // this one is for testing only
-static Consensus::LLMQParams llmq5_60 = {
-        .type = Consensus::LLMQ_5_60,
-        .name = "llmq_5_60",
-        .size = 5,
-        .minSize = 3,
-        .threshold = 3,
+static Consensus::LLMQParams llmq_test = {
+        .type = Consensus::LLMQ_TEST,
+        .name = "llmq_test",
+        .size = 3,
+        .minSize = 2,
+        .threshold = 2,
 
         .dkgInterval = 24, // one DKG per hour
         .dkgPhaseBlocks = 2,
@@ -191,6 +191,47 @@ static Consensus::LLMQParams llmq5_60 = {
         .signingActiveQuorumCount = 2, // just a few ones to allow easier testing
 
         .keepOldConnections = 3,
+        .recoveryMembers = 3,
+};
+
+// this one is for testing only
+static Consensus::LLMQParams llmq_test_v17 = {
+        .type = Consensus::LLMQ_TEST_V17,
+        .name = "llmq_test_v17",
+        .size = 3,
+        .minSize = 2,
+        .threshold = 2,
+
+        .dkgInterval = 24, // one DKG per hour
+        .dkgPhaseBlocks = 2,
+        .dkgMiningWindowStart = 10, // dkgPhaseBlocks * 5 = after finalization
+        .dkgMiningWindowEnd = 18,
+        .dkgBadVotesThreshold = 2,
+
+        .signingActiveQuorumCount = 2, // just a few ones to allow easier testing
+
+        .keepOldConnections = 3,
+        .recoveryMembers = 3,
+};
+
+// this one is for devnets only
+static Consensus::LLMQParams llmq_devnet = {
+        .type = Consensus::LLMQ_DEVNET,
+        .name = "llmq_devnet",
+        .size = 10,
+        .minSize = 7,
+        .threshold = 6,
+
+        .dkgInterval = 24, // one DKG per hour
+        .dkgPhaseBlocks = 2,
+        .dkgMiningWindowStart = 10, // dkgPhaseBlocks * 5 = after finalization
+        .dkgMiningWindowEnd = 18,
+        .dkgBadVotesThreshold = 7,
+
+        .signingActiveQuorumCount = 3, // just a few ones to allow easier testing
+
+        .keepOldConnections = 4,
+        .recoveryMembers = 6,
 };
 
 static Consensus::LLMQParams llmq50_60 = {
@@ -336,28 +377,28 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 999999999999ULL; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 24; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThresholdStart = 24; 
 
         // Deployment of BIP147
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].bit = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nTimeout = 999999999999ULL; 
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThreshold = 24; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThresholdStart = 24; 
 
         // Deployment of DIP0003
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].bit = 3;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nTimeout = 999999999999ULL; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThreshold = 24; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThresholdStart = 24; 
 
         // Deployment of DIP0008
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].bit = 4;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nTimeout = 999999999999ULL; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThreshold = 24; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThresholdStart = 24; 
         //TODO L CHECK
         // Deployment of Block Reward Reallocation
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].bit = 5;
@@ -392,7 +433,7 @@ public:
         pchMessageStart[1] = 0x42;
         pchMessageStart[2] = 0x96;
         pchMessageStart[3] = 0xf5;
-        vAlertPubKey = ParseHex("0421909d507ea24cc928d1e5637629190a885fb63482049d4949bbabc6b79a3a710f24aa985f98dc076277e90f118bc94ba9e3128fe303a8c65cf559092274c0c1");
+        //vAlertPubKey = ParseHex("0421909d507ea24cc928d1e5637629190a885fb63482049d4949bbabc6b79a3a710f24aa985f98dc076277e90f118bc94ba9e3128fe303a8c65cf559092274c0c1");
         nDefaultPort = 31052;
         nPruneAfterHeight = 100000;
 
@@ -406,8 +447,8 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("node1.helleniccoin.com"));
-        vSeeds.emplace_back("node2.helleniccoin.com"));
+        vSeeds.emplace_back("node1.helleniccoin.com");
+        vSeeds.emplace_back("node2.helleniccoin.com");
 
         // Dash addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,40);
@@ -449,9 +490,10 @@ public:
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
-        checkpointData = (CCheckpointData) {
-            boost::assign::map_list_of
-            (  0, uint256S("0x00000e0c09c1e8168627358b3170fb343a5443e12d9443130234c45558d50383"))
+        checkpointData = {
+            {
+                {0, uint256S("0x00000e0c09c1e8168627358b3170fb343a5443e12d9443130234c45558d50383")}
+            }
         };
 
         chainTxData = ChainTxData{
@@ -476,8 +518,6 @@ public:
         consensus.nMasternodePaymentsIncreasePeriod = 10;
         consensus.nInstantSendConfirmationsRequired = 2;
         consensus.nInstantSendKeepLock = 6;
-        consensus.nInstantSendSigsRequired = 6;
-        consensus.nInstantSendSigsTotal = 10;
         consensus.nBudgetPaymentsStartBlock = 4100;
         consensus.nBudgetPaymentsCycleBlocks = 50;
         consensus.nBudgetPaymentsWindowBlocks = 10;
@@ -519,28 +559,28 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 999999999999ULL;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 15; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThresholdStart = 15; 
 
         // Deployment of BIP147
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].bit = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nTimeout = 999999999999ULL;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThreshold = 15; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThresholdStart = 15; 
 
         // Deployment of DIP0003
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].bit = 3;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nTimeout = 999999999999ULL;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThreshold = 15; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThresholdStart = 15; 
 
         // Deployment of DIP0008
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].bit = 4;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nStartTime = 0; 
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nTimeout = 999999999999ULL; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nStartTime = 0;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nTimeout = 999999999999ULL;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThreshold = 15; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThresholdStart = 15;
         //TODO L CHECK
 
         // Deployment of Block Reward Reallocation
@@ -571,7 +611,7 @@ public:
         pchMessageStart[1] = 0xb0;
         pchMessageStart[2] = 0xa1;
         pchMessageStart[3] = 0x77;
-        vAlertPubKey = ParseHex("046035ca716d089433f602a9dba3f609ea0ac8aec19ef7cf9bf97847c9dc42a71a22f82b4307edf058dfea198e135428d2a6802f89043fcfa6f8e30e080e95092b");
+        //vAlertPubKey = ParseHex("046035ca716d089433f602a9dba3f609ea0ac8aec19ef7cf9bf97847c9dc42a71a22f82b4307edf058dfea198e135428d2a6802f89043fcfa6f8e30e080e95092b");
         nDefaultPort = 41052;
         nPruneAfterHeight = 1000;
 
@@ -624,9 +664,10 @@ public:
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
-        checkpointData = (CCheckpointData) {
-            boost::assign::map_list_of
-            (    0, uint256S("0x000005e2d4cfe29bd3bfe07af45bd9639d284ce3b21ca79b629e7616c895e20a"))
+        checkpointData = {
+            {
+                {0, uint256S("0x000005e2d4cfe29bd3bfe07af45bd9639d284ce3b21ca79b629e7616c895e20a")}
+            }
         };
 
         chainTxData = ChainTxData{
@@ -691,28 +732,28 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 999999999999ULL;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 15;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThresholdStart = 15;
 
         // Deployment of BIP147
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].bit = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nTimeout = 999999999999ULL;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThreshold = 15;
+        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThresholdStart = 15;
 
         // Deployment of DIP0003
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].bit = 3;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nStartTime = 1535752800; // Sep 1st, 2018
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nTimeout = 1567288800; // Sep 1st, 2019
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThreshold = 15; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThresholdStart = 15; 
 
         // Deployment of DIP0008
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].bit = 4;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nStartTime = 0; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nTimeout = 999999999999ULL; 
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nWindowSize = 30;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThreshold = 15; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThresholdStart = 15; 
         //TODO L CHECK
         // Deployment of Block Reward Reallocation
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].bit = 5;
@@ -742,7 +783,7 @@ public:
         pchMessageStart[1] = 0x31;
         pchMessageStart[2] = 0x57;
         pchMessageStart[3] = 0x3e;
-        vAlertPubKey = ParseHex("046035ca716d089433f602a9dba3f609ea0ac8aec19ef7cf9bf97847c9dc42a71a22f82b4307edf058dfea198e135428d2a6802f89043fcfa6f8e30e080e95092b");
+        //vAlertPubKey = ParseHex("046035ca716d089433f602a9dba3f609ea0ac8aec19ef7cf9bf97847c9dc42a71a22f82b4307edf058dfea198e135428d2a6802f89043fcfa6f8e30e080e95092b");
         nDefaultPort = 41052;
         nPruneAfterHeight = 1000;
 
@@ -802,9 +843,10 @@ public:
         fBIP9CheckMasternodesUpgraded = false;
 
         checkpointData = (CCheckpointData) {
-            boost::assign::map_list_of
-            (      0, uint256S("0x65d6bb7b6fcaac47bde82851fc826415238eddfdc8c49bdb00210649df85ec2a"))
-            (      1, devnetGenesis.GetHash())
+            {
+                {0, uint256S("0x65d6bb7b6fcaac47bde82851fc826415238eddfdc8c49bdb00210649df85ec2a")},
+                {1, devnetGenesis.GetHash()}
+            }
         };
 
         chainTxData = ChainTxData{
@@ -928,9 +970,10 @@ public:
         // regtest usually has no masternodes in most tests, so don't check for upgraged MNs
         fBIP9CheckMasternodesUpgraded = false;
 
-        checkpointData = (CCheckpointData){
-            boost::assign::map_list_of
-            ( 0, uint256S("0x65d6bb7b6fcaac47bde82851fc826415238eddfdc8c49bdb00210649df85ec2a"))
+        checkpointData = {
+            {
+                {0, uint256S("0x65d6bb7b6fcaac47bde82851fc826415238eddfdc8c49bdb00210649df85ec2a")}
+            }
         };
 
         chainTxData = ChainTxData{
