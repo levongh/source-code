@@ -1,8 +1,8 @@
-// Copyright (c) 2014-2018 The Dash Core developers
+// Copyright (c) 2014-2020 The Dash Core developers
 
-#include "governance.h"
+#include <governance/governance.h>
 
-#include "test/test_helleniccoin.h"
+#include <test/test_helleniccoin.h>
 
 #include <boost/test/unit_test.hpp>
 
