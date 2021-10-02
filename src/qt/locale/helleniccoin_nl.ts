@@ -2,6 +2,10 @@
 <context>
     <name>AddressBookPage</name>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Voer een adres of label in om te zoeken</translation>
+    </message>
+    <message>
         <source>Right-click to edit address or label</source>
         <translation>Rechtermuisklik om het adres of het label aan te passen</translation>
     </message>
@@ -27,7 +31,7 @@
     </message>
     <message>
         <source>&amp;Show QR code</source>
-        <translation>Toon QR-Code</translation>
+        <translation>&amp;Toon QR-Code</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -130,6 +134,45 @@
     </message>
 </context>
 <context>
+    <name>AppearanceWidget</name>
+    <message>
+        <source>Lighter</source>
+        <translation>Lichter</translation>
+    </message>
+    <message>
+        <source>Bolder</source>
+        <translation>Vetter</translation>
+    </message>
+    <message>
+        <source>Font Weight Normal:</source>
+        <translation>Lettertype normaal:</translation>
+    </message>
+    <message>
+        <source>Smaller</source>
+        <translation>Kleiner</translation>
+    </message>
+    <message>
+        <source>Bigger</source>
+        <translation>Groter</translation>
+    </message>
+    <message>
+        <source>Font Scale:</source>
+        <translation>Lettertype grootte:</translation>
+    </message>
+    <message>
+        <source>Font Family:</source>
+        <translation>Lettertype:</translation>
+    </message>
+    <message>
+        <source>Theme:</source>
+        <translation>Thema:</translation>
+    </message>
+    <message>
+        <source>Font Weight Bold:</source>
+        <translation>Vet lettertype:</translation>
+    </message>
+</context>
+<context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
@@ -146,6 +189,10 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Herhaal nieuwe wachtwoordzin</translation>
+    </message>
+    <message>
+        <source>Show password</source>
+        <translation>Toon wachtwoord</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -200,10 +247,6 @@
         <translation>Portemonnee is versleuteld</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your funds from being stolen by malware infecting your computer.</source>
-        <translation>%1 wordt nu afgesloten om de versleuteling te voltooien. Denk eraan dat het versleutelen van uw portemonnee niet volledig kan beschermen tegen diefstal van uw geld door malware op uw computer.</translation>
-    </message>
-    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. Previous backups of the unencrypted wallet file contain the same HD seed and still have full access to all your funds just like the new, encrypted wallet.</source>
         <translation>BELANGRIJK: Alle eerder gemaakte back-up van uw portemonneebestand dienen vervangen te worden door het nieuw gegenereerde, versleutelde portemonneebestand. Eerdere back-ups van de niet versleutelde portemonnee bevatten dezelfde HD seed en zullen nog steeds volledig toegang hebben tot uw geld net als de nieuwe, versleutelde portemonnee.</translation>
     </message>
@@ -253,6 +296,13 @@
     <message>
         <source>Banned Until</source>
         <translation>Geband tot</translation>
+    </message>
+</context>
+<context>
+    <name>BitcoinAmountField</name>
+    <message>
+        <source>Amount in %1</source>
+        <translation>Bedrag in %1</translation>
     </message>
 </context>
 <context>
@@ -340,6 +390,10 @@
     <message>
         <source>&amp;About %1</source>
         <translation>&amp;Over %1</translation>
+    </message>
+    <message>
+        <source>Send %1 funds to a HellenicCoin address</source>
+        <translation>Stuur %1 vergoeding naar een HellenicCoin-adres</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -498,16 +552,26 @@
         <translation>%1 client</translation>
     </message>
     <message>
-        <source>&amp;PrivateSend information</source>
-        <translation>&amp;PrivateSend informatie</translation>
+        <source>Wallet: %1
+</source>
+        <translation>Portemonnee: %1
+</translation>
     </message>
     <message>
-        <source>Show the PrivateSend basic information</source>
-        <translation>Toon de PrivateSend basis informatie</translation>
+        <source>Wallet is &lt;b&gt;unencrypted&lt;/b&gt;</source>
+        <translation>Portemonnee is &lt;b&gt;onversleuteld&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;File</source>
         <translation>&amp;Bestand</translation>
+    </message>
+    <message>
+        <source>%1 &amp;information</source>
+        <translation>%1 &amp;Informatie</translation>
+    </message>
+    <message>
+        <source>Show the %1 basic information</source>
+        <translation>Toon de %1 basis informatie</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
@@ -598,6 +662,30 @@
         <translation>Informatie</translation>
     </message>
     <message>
+        <source>Received and sent multiple transactions</source>
+        <translation>Meerdere transacties ontvangen en verstuurd</translation>
+    </message>
+    <message>
+        <source>Sent multiple transactions</source>
+        <translation>Meerdere transacties verstuurd</translation>
+    </message>
+    <message>
+        <source>Received multiple transactions</source>
+        <translation>Meerdere transacties ontvangen</translation>
+    </message>
+    <message>
+        <source>Sent Amount: %1
+</source>
+        <translation>Verstuurd bedrag: %1
+</translation>
+    </message>
+    <message>
+        <source>Received Amount: %1
+</source>
+        <translation>Ontvangen bedrag: %1
+</translation>
+    </message>
+    <message>
         <source>Date: %1
 </source>
         <translation>Datum: %1
@@ -640,27 +728,16 @@
         <translation>HD sleutel generatie is &lt;b&gt;ingeschakeld&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD sleutel generatie is &lt;b&gt;uitgeschakeld&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;ontgrendeld&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for mixing only</source>
-        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;ontgrendeld&lt;/b&gt; enkel voor mixing</translation>
+        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;ontgrendeld&lt;/b&gt; enkel voor mixen</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;vergrendeld&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>ClientModel</name>
-    <message>
-        <source>Network Alert</source>
-        <translation>Netwerkwaarschuwing</translation>
     </message>
 </context>
 <context>
@@ -730,8 +807,8 @@
         <translation>Ontvangst adressen</translation>
     </message>
     <message>
-        <source>PS Rounds</source>
-        <translation>PS Rondes</translation>
+        <source>Mixing Rounds</source>
+        <translation>Mixrondes</translation>
     </message>
     <message>
         <source>Date</source>
@@ -798,10 +875,6 @@
         <translation>Schakel over naar "Lijst mode" om deze functie te gebruiken.</translation>
     </message>
     <message>
-        <source>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</source>
-        <translation>Niet-anonieme invoer geselecteerd. &lt;b&gt;PrivateSend wordt uitgeschakeld. &lt;/b&gt;&lt;br&gt;&lt;br&gt; Indien je toch PrivateSend wenst te gebruiken, deselecteer dan eerst alle niet-anonieme invoer. Vink daarna PrivateSend opnieuw aan.</translation>
-    </message>
-    <message>
         <source>(%1 locked)</source>
         <translation>(%1 geblokeerd)</translation>
     </message>
@@ -820,6 +893,30 @@
     <message>
         <source>Can vary +/- %1 duff(s) per input.</source>
         <translation>Kan +/- %1 duff(s) per invoer variëren.</translation>
+    </message>
+    <message>
+        <source>Some coins were unselected because they were spent.</source>
+        <translation>Sommige munten zijn niet geselecteerd omdat ze al zijn uitgegeven.</translation>
+    </message>
+    <message>
+        <source>Some coins were unselected because they do not have enough mixing rounds.</source>
+        <translation>Sommige munten zijn niet geselecteerd omdat ze niet genoeg mengrondes hebben.</translation>
+    </message>
+    <message>
+        <source>Show all coins</source>
+        <translation>Toon alle munten</translation>
+    </message>
+    <message>
+        <source>Hide %1 coins</source>
+        <translation>Verberg %1-munten</translation>
+    </message>
+    <message>
+        <source>Show all %1 coins</source>
+        <translation>Toon alle %1-munten</translation>
+    </message>
+    <message>
+        <source>Show spendable coins only</source>
+        <translation>Toon alleen besteedbare munten</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -859,10 +956,6 @@
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>Het adres dat bij dit adres item hoort. Dit kan alleen bewerkt worden voor verstuur adressen.</translation>
-    </message>
-    <message>
-        <source>New receiving address</source>
-        <translation>Nieuw ontvangstadres</translation>
     </message>
     <message>
         <source>New sending address</source>
@@ -935,48 +1028,12 @@
         <translation>opdrachtregelopties</translation>
     </message>
     <message>
-        <source>Usage:</source>
-        <translation>Gebruik:</translation>
+        <source>%1 information</source>
+        <translation>%1 Informatie</translation>
     </message>
     <message>
-        <source>command-line options</source>
-        <translation>opdrachtregelopties</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>UI-opties:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Kies gegevensmap bij opstarten (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Stel taal in, bijvoorbeeld "nl_NL" (standaard: systeemlocale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Geminimaliseerd starten</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Zet SSL-rootcertificaat voor betalingsverzoeken (standaard: -systeem-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Toon opstartscherm bij opstarten (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>Reset alle wijzigingen aan instellingen gedaan in de GUI</translation>
-    </message>
-    <message>
-        <source>PrivateSend information</source>
-        <translation>PrivateSend informatie</translation>
-    </message>
-    <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the HellenicCoin in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 HNC, 0.01 HNC, 0.1 HNC, 1 HNC and 10 HNC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.helleniccoin.org/en/latest/wallets/helleniccoincore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend geeft u een echte financiële privacy door de oorsprong van uw geld te verschuilen. Alle HellenicCoin in uw portefeuille bestaat uit verschillende "inputs" die u kunt beschouwen als afzonderlijke, discrete munten.&lt;br&gt; PrivateSend maakt gebruik van een innovatief proces om uw invoer te mengen met de invoer van twee andere mensen, zonder dat uw munten ooit uw portemonnee verlaten . U behoudt de controle over uw geld te allen tijde. &lt;hr&gt; &lt;b&gt;Het PrivateSend-proces werkt als volgt: &lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begint door uw transactie-inputs in de standaard denominaties te breken. Deze denominaties zijn 0,001 HNC, 0,01 HNC, 0,1 HNC, 1 HNC en 10 HNC - zoals de papiergeld dat u elke dag gebruikt.&lt;/li&gt; &lt;li&gt;Jouw portemonnee stuurt dan verzoeken naar speciaal geconfigureerde software nodes op het netwerk, genaamd "masternodes." Deze masternodes worden dan op de hoogte gesteld dat u geïnteresseerd bent in het mengen van een bepaalde denominaties. Er wordt geen identificeerbare informatie naar de masternodes gestuurd, zodat ze nooit weten wie je bent.&lt;/li&gt; &lt;li&gt;Wanneer twee andere mensen dezelfde berichten sturen, die aanduiden dat ze dezelfde denominaties willen vermengen, begint een mengsessie. De masternode mengt alle invoeren en instrueert de portefeuilles van alle drie de gebruikers om de nu getransformeerde invoer aan zichzelf terug te betalen. Jouw portemonnee betaalt die denominaties rechtstreeks naar zichzelf, maar met een ander adres (een wijziging adres genoemd).&lt;/li&gt; &lt;li&gt;Om uw geld volledig te verschuilen, moet uw portemonnee dit proces een aantal keren herhalen voor elke denominaties. Elke keer dat het proces wordt voltooid, dit heet een 'ronde'. Elke ronde van PrivateSend maakt het exponentieel moeilijker om te bepalen waar uw geld van afkomstig is.&lt;/li&gt; &lt;li&gt;Dit mengproces gebeurt op de achtergrond zonder enige interventie van uw kant. Wanneer u een transactie wenst uit te voeren, zijn uw fondsen al geanonimiseerd. Er is geen extra wachttijd nodig.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;BELANGRIJK:&lt;/b&gt; Je portemonnee bevat slechts 1000 van deze "wijzigingsadressen". Elke keer dat er een mengsessie plaatsvindt, worden maximaal 9 van uw adressen opgebruikt. Dit betekent dat deze 1000 adressen voor ongeveer 100 mengsessies volstaat. Wanneer er 900 werden gebruikt, moet je portemonnee meer adressen aanmaken. Dit kan alleen maar als u automatische back-ups hebt ingeschakeld.&lt;br&gt; Bijgevolg hebben gebruikers die back-ups hebben uitgeschakeld, ook PrivateSend uitgeschakeld. &lt;hr&gt;Voor meer informatie zie de &lt;a href="https://docs.helleniccoin.org/en/latest/wallets/helleniccoincore/privatesend-instantsend.html"&gt;PrivateSend documentatie&lt;/a&gt;.</translation>
+        <source>&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the HellenicCoin in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 HNC, 0.01 HNC, 0.1 HNC, 1 HNC and 10 HNC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style="%2" href="%3"&gt;%1 documentation&lt;/a&gt;.</source>
+        <translation>&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 geeft u een echte financiële privacy door de oorsprong van uw geld te verschuilen. Alle HellenicCoin in uw portefeuille bestaat uit verschillende "inputs" die u kunt beschouwen als afzonderlijke, discrete munten.&lt;br&gt; %1 maakt gebruik van een innovatief proces om uw invoer te mengen met de invoer van twee andere mensen, zonder dat uw munten ooit uw portemonnee verlaten . U behoudt de controle over uw geld te allen tijde. &lt;hr&gt; &lt;b&gt;Het %1-proces werkt als volgt: &lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 begint door uw transactie-inputs in de standaard denominaties te breken. Deze denominaties zijn 0,001 HNC, 0,01 HNC, 0,1 HNC, 1 HNC en 10 HNC - zoals het papiergeld dat u elke dag gebruikt.&lt;/li&gt; &lt;li&gt;Uw portemonnee stuurt dan verzoeken naar speciaal geconfigureerde software nodes op het netwerk, genaamd "masternodes." Deze masternodes worden dan op de hoogte gesteld dat u geïnteresseerd bent in het mengen van een bepaalde denominaties. Er wordt geen identificeerbare informatie naar de masternodes gestuurd, zodat ze nooit weten wie u bent.&lt;/li&gt; &lt;li&gt;Wanneer twee andere mensen dezelfde berichten sturen, die aanduiden dat ze dezelfde denominaties willen vermengen, begint een mengsessie. De masternode mengt alle invoeren en instrueert de portefeuilles van alle drie de gebruikers om de nu getransformeerde invoer aan zichzelf terug te betalen. Uw portemonnee betaalt die denominaties rechtstreeks naar zichzelf, maar met een ander adres (een wijzigingadres genoemd).&lt;/li&gt; &lt;li&gt;Om uw geld volledig te verschuilen, moet uw portemonnee dit proces een aantal keren herhalen voor alle denominaties. Elke keer dat het proces wordt voltooid, heet dit een 'ronde'. Elke ronde van %1 maakt het exponentieel moeilijker om te bepalen waar uw geld van afkomstig is.&lt;/li&gt; &lt;li&gt;Dit mengproces gebeurt op de achtergrond zonder enige interventie van uw kant. Wanneer u een transactie wenst uit te voeren, is uw saldo al geanonimiseerd. Er is geen extra wachttijd nodig.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;BELANGRIJK:&lt;/b&gt; Uw portemonnee bevat slechts 1000 van deze "wijzigingsadressen". Elke keer dat er een mengsessie plaatsvindt, worden maximaal 9 van uw adressen opgebruikt. Dit betekent dat deze 1000 adressen voor ongeveer 100 mengsessies volstaat. Wanneer er 900 zijn verbruikt, moet uw portemonnee meer adressen aanmaken. Dit kan alleen maar als u automatische back-ups hebt ingeschakeld.&lt;br&gt; Daarom zodra gebruikers die back-ups hebben uitgeschakeld, ook %1 is uitgeschakeld. &lt;hr&gt;Voor meer informatie zie de &lt;a style="%2" href="%3"&gt;%1 documentatie&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1053,16 +1110,8 @@
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
         <source>Status</source>
         <translation>Status</translation>
-    </message>
-    <message>
-        <source>Payee</source>
-        <translation>Begunstigde</translation>
     </message>
     <message>
         <source>0</source>
@@ -1081,16 +1130,16 @@
         <translation>Aantal Nodes:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternodes</translation>
-    </message>
-    <message>
         <source>Show only masternodes this wallet has keys for.</source>
         <translation>Toon alleen masternodes waar deze portemonnee sleutels voor heeft.</translation>
     </message>
     <message>
         <source>My masternodes only</source>
         <translation>Alleen mijn masternodes</translation>
+    </message>
+    <message>
+        <source>Service</source>
+        <translation>Service</translation>
     </message>
     <message>
         <source>PoSe Score</source>
@@ -1109,8 +1158,24 @@
         <translation>Volgende betaling</translation>
     </message>
     <message>
+        <source>Payout Address</source>
+        <translation>Betalingsadres</translation>
+    </message>
+    <message>
         <source>Operator Reward</source>
         <translation>Vergoeding voor Bediener</translation>
+    </message>
+    <message>
+        <source>Collateral Address</source>
+        <translation>Onderpand adres</translation>
+    </message>
+    <message>
+        <source>Owner Address</source>
+        <translation>Adres eigenaar</translation>
+    </message>
+    <message>
+        <source>Voting Address</source>
+        <translation>Stemadres</translation>
     </message>
     <message>
         <source>Copy ProTx Hash</source>
@@ -1119,6 +1184,10 @@
     <message>
         <source>Copy Collateral Outpoint</source>
         <translation>Kopieer Onderpand Outpoint</translation>
+    </message>
+    <message>
+        <source>Updating...</source>
+        <translation>Bezig met bijwerken...</translation>
     </message>
     <message>
         <source>ENABLED</source>
@@ -1147,6 +1216,14 @@
     <message>
         <source>NONE</source>
         <translation>GEEN</translation>
+    </message>
+    <message>
+        <source>Filter by any property (e.g. address or protx hash)</source>
+        <translation>Filter op elke eigenschap (bv. adres of protx hash)</translation>
+    </message>
+    <message>
+        <source>Please wait...</source>
+        <translation>Wachten aub...</translation>
     </message>
     <message>
         <source>Additional information for DIP3 Masternode %1</source>
@@ -1254,12 +1331,12 @@
         <translation>(0 = auto, &lt;0 = laat dit aantal kernen vrij)</translation>
     </message>
     <message>
-        <source>Amount of HellenicCoin to keep anonymized</source>
-        <translation>Aantal HellenicCoin om geanonimiseerd te houden</translation>
-    </message>
-    <message>
         <source>W&amp;allet</source>
         <translation>W&amp;allet</translation>
+    </message>
+    <message>
+        <source>&amp;Appearance</source>
+        <translation>&amp;Uiterlijk</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1270,53 +1347,68 @@
         <translation>Toon Masternodes tab</translation>
     </message>
     <message>
-        <source>Show additional information and buttons for PrivateSend on overview screen.</source>
-        <translation>Toon extra informatie en knoppen voor PrivateSend op het overzichtscherm.</translation>
-    </message>
-    <message>
-        <source>Enable advanced PrivateSend interface</source>
-        <translation>Schakel de geavanceerde PrivateSend interface in</translation>
-    </message>
-    <message>
-        <source>Show warning dialog when PrivateSend detects that wallet has very low number of keys left.</source>
-        <translation>Toon waarschuwing-dialoog wanneer PrivateSend detecteert dat je portemonnee slechts een klein aantal sleutels over heeft.</translation>
-    </message>
-    <message>
-        <source>Warn if PrivateSend is running out of keys</source>
-        <translation>Waarschuw als de sleutels voor PrivateSend dreigen op te raken</translation>
-    </message>
-    <message>
-        <source>Whether to use experimental PrivateSend mode with multiple mixing sessions per block.&lt;br/&gt;Note: You must use this feature carefully.&lt;br/&gt;Make sure you always have recent wallet (auto)backup in a safe place!</source>
-        <translation>Of je de experimentele PrivateSend-modus wenst te gebruiken met meerdere mengingssessies per blok.&lt;br/&gt;Nota: Je moet deze functie zorgvuldig gebruiken.&lt;br/&gt;Zorg ervoor dat je steeds een recente (auto)backup van jouw portemonnee op een veilige plek hebt!</translation>
-    </message>
-    <message>
-        <source>Enable PrivateSend &amp;multi-session</source>
-        <translation>Schakel PrivateSend &amp;multi-sessie in</translation>
-    </message>
-    <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>Indien het uitgeven van onbevestigd wisselgeld uitgeschakeld wordt dan kan het wisselgeld van een transactie niet worden gebruikt totdat de transactie ten minste een bevestiging heeft. 
-Dit heeft ook invloed op de manier waarop uw saldo wordt berekend.</translation>
+        <translation>Indien het uitgeven van onbevestigd wisselgeld uitgeschakeld wordt dan kan het wisselgeld van een transactie&lt;br/&gt;niet worden gebruikt totdat de transactie ten minste een bevestiging heeft.&lt;br/&gt;Dit heeft ook invloed op de manier waarop uw saldo wordt berekend.</translation>
     </message>
     <message>
-        <source>PrivateSend rounds to use</source>
-        <translation>PrivateSend rondes te gebruiken</translation>
+        <source>Show mixing interface on Overview screen and reveal an additional screen which allows to spend fully mixed coins only.&lt;br/&gt;A new tab with more settings will also appear in this dialog, please make sure to check them before mixing your coins.</source>
+        <translation>Toon de mix interface op het overzichtsscherm en open een extra scherm waarin u alleen volledig gemixte munten kunt uitgeven. &lt;br/&gt; Er verschijnt ook een nieuw tabblad met meer instellingen in dit dialoogvenster, controleer deze voordat u uw munten gaat mixen.</translation>
     </message>
     <message>
-        <source>This amount acts as a threshold to turn off PrivateSend once it's reached.</source>
-        <translation>Dit bedrag fungeert als een drempel om PrivateSend uit te schakelen zodra het werd bereikt.</translation>
+        <source>Show additional information and buttons on overview screen.</source>
+        <translation>Toon extra informatie en knoppen op het overzichtscherm.</translation>
+    </message>
+    <message>
+        <source>Enable advanced interface</source>
+        <translation>Schakel de geavanceerde interface in</translation>
+    </message>
+    <message>
+        <source>Show system popups for mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
+        <translation>Toon systeem popups voor mixtransacties&lt;br/&gt;, net zoals voor alle andere transactie types.</translation>
+    </message>
+    <message>
+        <source>Show popups for mixing transactions</source>
+        <translation>Toon popups voor mixtransacties</translation>
+    </message>
+    <message>
+        <source>Show warning dialog when the wallet has very low number of keys left.</source>
+        <translation>Toon waarschuwingsvenster wanneer de portefeuille een zeer laag aantal sleutels over heeft.</translation>
+    </message>
+    <message>
+        <source>Warn if the wallet is running out of keys</source>
+        <translation>Waarschuw als de portemonnee bijna geen sleutels meer heeft</translation>
+    </message>
+    <message>
+        <source>Whether to use experimental mode with multiple mixing sessions per block.&lt;br/&gt;Note: You must use this feature carefully.&lt;br/&gt;Make sure you always have recent wallet (auto)backup in a safe place!</source>
+        <translation>Of je de experimentele modus wenst te gebruiken met meerdere mixsessies per blok.&lt;br/&gt;Nota: Je moet deze functie zorgvuldig gebruiken.&lt;br/&gt;Zorg ervoor dat je steeds een recente (auto)backup van jouw portemonnee op een veilige plek hebt!</translation>
+    </message>
+    <message>
+        <source>Enable &amp;multi-session</source>
+        <translation>Schakel &amp;multi-sessie in</translation>
+    </message>
+    <message>
+        <source>Mixing rounds</source>
+        <translation>Mixrondes</translation>
+    </message>
+    <message>
+        <source>This amount acts as a threshold to turn off mixing once it's reached.</source>
+        <translation>Dit bedrag fungeert als een drempel om het mixen uit te schakelen zodra het is bereikt.</translation>
+    </message>
+    <message>
+        <source>Target balance</source>
+        <translation>Target Saldo</translation>
     </message>
     <message>
         <source>Automatically open the HellenicCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Open automatisch de HellenicCoin client poort op de router. Dit werkt alleen als uw router UPnP ondersteunt en dit is ingeschakeld.</translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>Laat uitgaande verbindingen toe.</translation>
+        <source>Accept connections from outside.</source>
+        <translation>Accepteer verbindingen van buitenaf.</translation>
     </message>
     <message>
-        <source>Allow incoming connections</source>
-        <translation>Laat binnenkomende verbindingen toe</translation>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Sta inkomen&amp;de verbindingen toe</translation>
     </message>
     <message>
         <source>Connect to the HellenicCoin network through a SOCKS5 proxy.</source>
@@ -1327,6 +1419,22 @@ Dit heeft ook invloed op de manier waarop uw saldo wordt berekend.</translation>
         <translation>&amp;Verbind via een SOCKS-proxy (standaardproxy):</translation>
     </message>
     <message>
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>Toont of de opgegeven standaard SOCK5 proxy gebruikt is om peers via dit netwerk type te bereiken.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Gebruik afzonderlijke SOCKS&amp;5 proxy om peers te bereiken via verborgen Tor services:</translation>
+    </message>
+    <message>
+        <source>Hide the icon from the system tray.</source>
+        <translation>Verberg het pictogram in het systeemvak.</translation>
+    </message>
+    <message>
+        <source>&amp;Hide tray icon</source>
+        <translation>&amp;Verberg het pictogram in het systeemvak</translation>
+    </message>
+    <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>Minimaliseren in plaats van de applicatie af te sluiten wanneer het venster is afgesloten. Als deze optie is ingeschakeld, zal de toepassing pas worden afgesloten na het selecteren van Exit in het menu.</translation>
     </message>
@@ -1335,13 +1443,8 @@ Dit heeft ook invloed op de manier waarop uw saldo wordt berekend.</translation>
         <translation>Derde partij URL's (bijvoorbeeld block explorer) dat in de transacties tab verschijnen als contextmenu elementen. %s in de URL is vervangen door transactie hash. Verscheidene URL's zijn gescheiden met een verticale streep |.  </translation>
     </message>
     <message>
-        <source>Expert</source>
-        <translation>Expert</translation>
-    </message>
-    <message>
-        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>Deze instelling bepaalt het aantal individuele masternodes waardoor een input zal worden geanonimiseerd. 
-Meer anonimisatie rondes geeft een hoger niveau van privacy, maar kost ook meer aan vergoedingen.</translation>
+        <source>&amp;Third party transaction URLs</source>
+        <translation>&amp;Transactie-URL's van derden</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1360,16 +1463,12 @@ Meer anonimisatie rondes geeft een hoger niveau van privacy, maar kost ook meer 
         <translation>Coin &amp;Control activeren</translation>
     </message>
     <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Toon systeem popups voor PrivateSend mixing transacties &lt;br/&gt;, net zoals voor alle andere transactie types.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Toon popups voor PrivateSend transacties</translation>
-    </message>
-    <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Spendeer onbevestigd wisselgeld</translation>
+    </message>
+    <message>
+        <source>This setting determines the amount of individual masternodes that an input will be mixed through.&lt;br/&gt;More rounds of mixing gives a higher degree of privacy, but also costs more in fees.</source>
+        <translation>Deze instelling bepaalt het aantal individuele masternodes waardoor een input zal worden geanonimiseerd.&lt;br/&gt;Meer mixrondes geeft een hoger niveau van privacy, maar kost ook meer aan vergoedingen.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1400,10 +1499,6 @@ Meer anonimisatie rondes geeft een hoger niveau van privacy, maar kost ook meer 
         <translation>Gebruikt om peers te bereiken via:</translation>
     </message>
     <message>
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Toont of de opgegeven standaard SOCK5 proxy gebruikt is om peers via dit netwerk type te bereiken</translation>
-    </message>
-    <message>
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1418,22 +1513,6 @@ Meer anonimisatie rondes geeft een hoger niveau van privacy, maar kost ook meer 
     <message>
         <source>Connect to the HellenicCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Maak verbinding met HellenicCoinnetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Gebruik aparte SOCK5 proxy om peers via Tor hidden services te bereiken:</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Scherm</translation>
-    </message>
-    <message>
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Verberg het icoon van het systeemvak.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Verberg systeemvakicoon</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1466,10 +1545,6 @@ https://www.transifex.com/projects/p/helleniccoin/</source>
 https://www.transifex.com/projects/p/helleniccoin/</translation>
     </message>
     <message>
-        <source>User Interface Theme:</source>
-        <translation>Gebruikersinterface thema:</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Eenheid om bedrag in te tonen:</translation>
     </message>
@@ -1480,10 +1555,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Decimal digits</source>
         <translation>Decimalen</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>Transactie-URLs van derde partijen</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -1506,12 +1577,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Ann&amp;uleren</translation>
     </message>
     <message>
-        <source>default</source>
-        <translation>standaard</translation>
+        <source>Enable %1 features</source>
+        <translation>Schakel %1 functies in</translation>
     </message>
     <message>
-        <source>none</source>
-        <translation>geen</translation>
+        <source>default</source>
+        <translation>standaard</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
@@ -1605,10 +1676,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
-    </message>
-    <message>
         <source>Status:</source>
         <translation>Status:</translation>
     </message>
@@ -1619,22 +1686,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Completion:</source>
         <translation>Voltooiing:</translation>
-    </message>
-    <message>
-        <source>Try to manually submit a PrivateSend request.</source>
-        <translation>Probeer handmatig een PrivateSend verzoek in te dienen</translation>
-    </message>
-    <message>
-        <source>Reset the current status of PrivateSend (can interrupt PrivateSend if it's in the process of Mixing, which can cost you money!)</source>
-        <translation>Reset de huidige status van PrivateSend (kan PrivateSend onderbreken indien het Mix proces bezig is, wat u geld kan kosten!)</translation>
-    </message>
-    <message>
-        <source>Information about PrivateSend and Mixing</source>
-        <translation>Informatie over PrivateSend en mixen</translation>
-    </message>
-    <message>
-        <source>Info</source>
-        <translation>Informatie</translation>
     </message>
     <message>
         <source>Amount and Rounds:</source>
@@ -1658,28 +1709,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     </message>
     <message>
         <source>Start/Stop Mixing</source>
-        <translation>Start/Stop met Mixen</translation>
-    </message>
-    <message>
-        <source>PrivateSend Balance:</source>
-        <translation>PrivateSend-balans:</translation>
+        <translation>Start/Stop met mixen</translation>
     </message>
     <message>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
         <translation>De denominaties zijn bij de Masternode ingebracht. 
 Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</translation>
-    </message>
-    <message>
-        <source>(Last Message)</source>
-        <translation>(Laatste Bericht)</translation>
-    </message>
-    <message>
-        <source>Try Mix</source>
-        <translation>Probeer te Mixen</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Reset</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -1690,28 +1725,24 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Automatische backups uitgeschakeld, Mixfunctie is niet beschikbaar!</translation>
     </message>
     <message>
-        <source>Start Mixing</source>
-        <translation>Start met Mixen</translation>
-    </message>
-    <message>
-        <source>Stop Mixing</source>
-        <translation>Stop met Mixen</translation>
-    </message>
-    <message>
         <source>No inputs detected</source>
         <translation>Geen input gedetecteerd</translation>
+    </message>
+    <message>
+        <source>%1 Balance</source>
+        <translation>%1 Saldo</translation>
     </message>
     <message numerus="yes">
         <source>%n Rounds</source>
         <translation><numerusform>%n Ronde</numerusform><numerusform>%n Rondes</numerusform></translation>
     </message>
     <message>
-        <source>Found enough compatible inputs to anonymize %1</source>
-        <translation>Genoeg compatible munten om te anonimiseren %1</translation>
+        <source>Found enough compatible inputs to mix %1</source>
+        <translation>Voldoende compatibele inputs gevonden om %1 te mixen</translation>
     </message>
     <message>
-        <source>Not enough compatible inputs to anonymize &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style='color:red;'&gt;%2&lt;/span&gt; instead</source>
-        <translation>Niet genoeg compatibele inputs &lt;span style='color:red;'&gt;%1&lt;/span&gt;te anonimiseren,&lt;br&gt; zal in plaats daarvan &lt;span style='color:red;'&gt;%2&lt;/span&gt; anonimiseren</translation>
+        <source>Not enough compatible inputs to mix &lt;span style='%1'&gt;%2&lt;/span&gt;,&lt;br&gt;will mix &lt;span style='%1'&gt;%3&lt;/span&gt; instead</source>
+        <translation>Niet genoeg compatibele inputs om  &lt;span style='%1'&gt;%2&lt;/span&gt; te mixen, &lt;br&gt; zal &lt;span style='%1'&gt;%3&lt;/span&gt; mixen</translation>
     </message>
     <message>
         <source>Overall progress</source>
@@ -1722,12 +1753,12 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Gedenomineerd</translation>
     </message>
     <message>
-        <source>Mixed</source>
-        <translation>Gemixt</translation>
+        <source>Partially mixed</source>
+        <translation>Gedeeltelijk gemengd</translation>
     </message>
     <message>
-        <source>Anonymized</source>
-        <translation>Geanonimiseerd</translation>
+        <source>Mixed</source>
+        <translation>Gemixt</translation>
     </message>
     <message numerus="yes">
         <source>Denominated inputs have %5 of %n rounds on average</source>
@@ -1738,6 +1769,26 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>sleutels over: %1</translation>
     </message>
     <message>
+        <source>Start %1</source>
+        <translation>Start %1</translation>
+    </message>
+    <message>
+        <source>If you don't want to see internal %1 fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
+        <translation>Als je de interne %1 transactiekosten niet wil zien, selecteer dan "Meest gebruikte" als type in de "Transacties" tab.</translation>
+    </message>
+    <message>
+        <source>%1 requires at least %2 to use.</source>
+        <translation>%1 benodigd ten minste %2 om te gebruiken.</translation>
+    </message>
+    <message>
+        <source>Wallet is locked and user declined to unlock. Disabling %1.</source>
+        <translation>De portemonnee is vergrendeld en de gebruiker heeft geweigerd deze te ontgrendelen. %1 is uitgeschakeld.</translation>
+    </message>
+    <message>
+        <source>Stop %1</source>
+        <translation>Stop %1</translation>
+    </message>
+    <message>
         <source>Disabled</source>
         <translation>Uitgeschakeld</translation>
     </message>
@@ -1746,8 +1797,8 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Het aantal overgebleven sleutels sinds de laatste backup is erg laag!</translation>
     </message>
     <message>
-        <source>We are about to create a new automatic backup for you, however &lt;span style='color:red;'&gt; you should always make sure you have backups saved in some safe place&lt;/span&gt;!</source>
-        <translation>We staan op het punt om een nieuwe automatische backup voor u aan te maken, echter &lt;span style='color:red;'&gt;u moet er zelf altijd voor zorgen dat u backups op een veilige locatie heeft opgeslagen!&lt;/span&gt;</translation>
+        <source>We are about to create a new automatic backup for you, however &lt;span style='%1'&gt; you should always make sure you have backups saved in some safe place&lt;/span&gt;!</source>
+        <translation>We staan op het punt om een nieuwe automatische backup voor u aan te maken, echter &lt;span style='%1'&gt;u moet er zelf altijd voor zorgen dat u backups op een veilige locatie heeft opgeslagen&lt;/span&gt;!</translation>
     </message>
     <message>
         <source>Note: You can turn this message off in options.</source>
@@ -1777,28 +1828,6 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <source>WARNING! Failed to replenish keypool, please unlock your wallet to do so.</source>
         <translation>WAARSCHUWING! Het aanvullen van de keypool is mislukt, ontgrendel alstublieft uw portemonnee om dit te doen.</translation>
     </message>
-    <message>
-        <source>Last PrivateSend message:
-</source>
-        <translation>Laatste PrivateSend bericht:
-</translation>
-    </message>
-    <message>
-        <source>PrivateSend was successfully reset.</source>
-        <translation>PrivateSend is succesvol gereset</translation>
-    </message>
-    <message>
-        <source>If you don't want to see internal PrivateSend fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>Als u de interne PrivateSend transacties/vergoeding niet wilt zien, selecteer dan "Meest gebruikte" als Type in de "Transacties" tab.</translation>
-    </message>
-    <message>
-        <source>PrivateSend requires at least %1 to use.</source>
-        <translation>PrivateSend benodigd ten minste %1 om te gebruiken.</translation>
-    </message>
-    <message>
-        <source>Wallet is locked and user declined to unlock. Disabling PrivateSend.</source>
-        <translation>De portemonnee is vergrendeld en de gebruiker heeft geweigerd deze te ontgrendelen. PrivateSend is uitgeschakeld.</translation>
-    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1813,6 +1842,10 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     <message>
         <source>URI handling</source>
         <translation>URI-afhandeling</translation>
+    </message>
+    <message>
+        <source>'helleniccoin://' is not a valid URI. Use 'helleniccoin:' instead.</source>
+        <translation>'helleniccoin://' is geen geldige URI. Gebruik in plaats daarvan 'helleniccoin:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1909,9 +1942,57 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
+    <message>
+        <source>Sent</source>
+        <translation>Verstuurd</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ontvangen</translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
+    <message>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Kies data map bij opstarten (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Set the font family. Possible values: %1. (default: %2)</source>
+        <translation>Stel de lettertypefamilie in. Mogelijke waarden: %1. (standaard: %2)</translation>
+    </message>
+    <message>
+        <source>Set a scale factor which gets applied to the base font size. Possible range %1 (smallest fonts) to %2 (largest fonts). (default: %3)</source>
+        <translation>Stel een schaalfactor in die wordt toegepast op de basislettergrootte. Mogelijk bereik %1 (kleinste lettertypen) tot %2 (grootste lettertypen). (standaard: %3)</translation>
+    </message>
+    <message>
+        <source>Set the font weight for bold texts. Possible range %1 to %2 (default: %3)</source>
+        <translation>Stel het lettertype in voor vetgedrukte teksten. Mogelijk bereik %1 tot %2 (standaard: %3)</translation>
+    </message>
+    <message>
+        <source>Set the font weight for normal texts. Possible range %1 to %2 (default: %3)</source>
+        <translation>Stel het lettertype in voor normale teksten. Mogelijk bereik %1 tot %2 (standaard: %3)</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Stel taal in, bijvoorbeeld ''nl_NL" (standaard: systeeminstellingen)</translation>
+    </message>
+    <message>
+        <source>Start minimized</source>
+        <translation>Geminimaliseerd starten</translation>
+    </message>
+    <message>
+        <source>Reset all settings changed in the GUI</source>
+        <translation>Reset alle wijzigingen aan instellingen gedaan in de GUI</translation>
+    </message>
+    <message>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Zet SSL root certificaten voor betalingsverzoek (standaard: -sytem-)</translation>
+    </message>
+    <message>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Toon splash-scherm bij opstarten (standaard: %u)</translation>
+    </message>
     <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 sloot nog niet veilig af...</translation>
@@ -1923,6 +2004,18 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     <message>
         <source>Enter a HellenicCoin address (e.g. %1)</source>
         <translation>Voer een HellenicCoinadres in (bijv. %1)</translation>
+    </message>
+    <message>
+        <source>Appearance Setup</source>
+        <translation>Uiterlijk Setup</translation>
+    </message>
+    <message>
+        <source>Please choose your preferred settings for the appearance of %1</source>
+        <translation>Kies a.u.b. je voorkeursinstellingen voor het uiterlijk van %1</translation>
+    </message>
+    <message>
+        <source>This can also be adjusted later in the "Appearance" tab of the preferences.</source>
+        <translation>Dit kan later ook worden aangepast in het tabblad "Uiterlijk" van de voorkeuren.</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1981,6 +2074,22 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>%1 en %2</translation>
     </message>
     <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
         <source>unknown</source>
         <translation>onbekend</translation>
     </message>
@@ -1998,6 +2107,34 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     <message>
         <source>Error: %1</source>
         <translation>Fout: %1</translation>
+    </message>
+    <message>
+        <source>Error: Failed to load application fonts.</source>
+        <translation>Fout: kan lettertypen niet laden.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-family invalid. Valid values: %1.</source>
+        <translation>Fout: opgegeven lettertypefamilie ongeldig. Geldige waarden: %1.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-weight-normal invalid. Valid range %1 to %2.</source>
+        <translation>Fout: opgegeven lettertype-normaal ongeldig. Geldig bereik %1 tot %2.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-weight-bold invalid. Valid range %1 to %2.</source>
+        <translation>Fout: opgegeven lettertype vet is ongeldig. Geldig bereik %1 tot %2.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-scale invalid. Valid range %1 to %2.</source>
+        <translation>Fout: opgegeven lettertype grootte is ongeldig. Geldig bereik %1 tot %2.</translation>
+    </message>
+    <message>
+        <source>Error: Invalid -custom-css-dir path.</source>
+        <translation>Fout: ongeldig pad van -custom-css-dir.</translation>
+    </message>
+    <message>
+        <source>Error: %1 CSS file(s) missing in -custom-css-dir path.</source>
+        <translation>Fout: %1 CSS-bestand(en) ontbreken in het pad -custom-css-dir.</translation>
     </message>
 </context>
 <context>
@@ -2148,14 +2285,6 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>&amp;Netwerkverkeer</translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Wissen</translation>
-    </message>
-    <message>
-        <source>Totals</source>
-        <translation>Totalen</translation>
-    </message>
-    <message>
         <source>Received</source>
         <translation>Ontvangen</translation>
     </message>
@@ -2166,6 +2295,10 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     <message>
         <source>&amp;Peers</source>
         <translation>&amp;Peers</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Portemonnee:</translation>
     </message>
     <message>
         <source>Banned peers</source>
@@ -2200,6 +2333,22 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Gesynchroniseerde blocks </translation>
     </message>
     <message>
+        <source>Rescan blockchain files 1</source>
+        <translation>Herscan blokketenbestanden 1</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain files 2</source>
+        <translation>Herscan blokketenbestanden 2</translation>
+    </message>
+    <message>
+        <source>-rescan=1: Rescan the block chain for missing wallet transactions starting from wallet creation time.</source>
+        <translation>-rescan=1: Scan de blockchain opnieuw op ontbrekende transacties vanaf het moment dat de portefeuille is aangemaakt.</translation>
+    </message>
+    <message>
+        <source>-rescan=2: Rescan the block chain for missing wallet transactions starting from genesis block.</source>
+        <translation>-rescan=2: Scan de Blockchain opnieuw op ontbrekende transacties, startend bij de allereerste block.</translation>
+    </message>
+    <message>
         <source>Wallet Path</source>
         <translation>Portemonnee bestandspad</translation>
     </message>
@@ -2212,8 +2361,20 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Gegevensmap</translation>
     </message>
     <message>
+        <source>Last block hash</source>
+        <translation>Laatste block hash</translation>
+    </message>
+    <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Open het %1 debug-logbestand van de huidige gegevensmap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
+    </message>
+    <message>
+        <source>InstantSend locks</source>
+        <translation>InstantSend vergrendelingen</translation>
+    </message>
+    <message>
+        <source>(none)</source>
+        <translation>(geen)</translation>
     </message>
     <message>
         <source>Decrease font size</source>
@@ -2222,6 +2383,18 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     <message>
         <source>Increase font size</source>
         <translation>Vergroot lettergrootte</translation>
+    </message>
+    <message>
+        <source>&amp;Reset</source>
+        <translation>&amp;Reset</translation>
+    </message>
+    <message>
+        <source>Node Type</source>
+        <translation>Node Type</translation>
+    </message>
+    <message>
+        <source>PoSe Score</source>
+        <translation>PoSe Score</translation>
     </message>
     <message>
         <source>Services</source>
@@ -2272,10 +2445,6 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Herstel portemonnee</translation>
     </message>
     <message>
-        <source>Rescan blockchain files</source>
-        <translation>Herscan blokketenbestanden</translation>
-    </message>
-    <message>
         <source>Recover transactions 1</source>
         <translation>Herstel transacties 1</translation>
     </message>
@@ -2294,10 +2463,6 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     <message>
         <source>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</source>
         <translation>-herstel portemonnee: Poging om geheime sleutels terug te halen uit het beschadigde portemonnee bestand (wallet.dat.)</translation>
-    </message>
-    <message>
-        <source>-rescan: Rescan the block chain for missing wallet transactions.</source>
-        <translation>-herscan: Herscan de blokketen voor verlopen transacties.</translation>
     </message>
     <message>
         <source>-zapwallettxes=1: Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
@@ -2356,16 +2521,20 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Welkom bij de %1 RPC-console.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gebruik de pijltjestoetsen om door de geschiedenis te navigeren, en &lt;b&gt;Ctrl-L&lt;/b&gt; om het scherm leeg te maken.</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Gebruik de pijl toetsen om door de geschiedenis te navigeren, en %1 om het scherm te wissen.</translation>
     </message>
     <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Typ &lt;b&gt;help&lt;/b&gt; voor een overzicht van de beschikbare commando's.</translation>
+        <source>Type %1 for an overview of available commands.</source>
+        <translation>Typ %1 voor een overzicht van beschikbare opdrachten.</translation>
     </message>
     <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation>WAARSCHUWING: Er zijn oplichters die gebruikers hier commando's in laten voeren om zo de inhoud van hun portemonnee te stelen. Gebruik deze console niet zonder dat u de gevolgen van uw commando's volledig begrijpt.</translation>
+        <source>For more information on using this console type %1.</source>
+        <translation>Typ %1 voor meer informatie over het gebruik van deze console.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>PAS OP: Oplichters zijn actief, die proberen om gebruikers hier opdrachten te typen, waardoor de inhoud van de portemonnee gestolen kan worden. Gebruik deze console niet zonder de consequenties van een opdracht volledig te begrijpen.</translation>
     </message>
     <message>
         <source>In:</source>
@@ -2384,20 +2553,12 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Totaal: %1 (Ingeschakeld: %2)</translation>
     </message>
     <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
+        <source>Executing command without any wallet</source>
+        <translation>Opdracht uitvoeren zonder portemonnee</translation>
     </message>
     <message>
-        <source>%1 KB</source>
-        <translation>%1 Kb</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 Gb</translation>
+        <source>Executing command using "%1" wallet</source>
+        <translation>Opdracht uitvoeren met portemonnee "%1" </translation>
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -2428,22 +2589,24 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Nee</translation>
     </message>
     <message>
+        <source>Regular</source>
+        <translation>Regulier</translation>
+    </message>
+    <message>
+        <source>Masternode</source>
+        <translation>Masternode</translation>
+    </message>
+    <message>
+        <source>Verified Masternode</source>
+        <translation>geverifieerde Masternode</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>onbekend</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
-    <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Gebruik een van de eerder gebruikte ontvangstadressen opnieuw.
-Het opnieuw gebruiken van adressen heeft beveiliging- en privacy problemen. 
-Gebruik dit niet, behalve als er eerder een betalingsverzoek opnieuw gegenereerd is.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>H&amp;ergebruik en bestaand ontvangstadres (niet aanbevolen)</translation>
-    </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HellenicCoin network.</source>
         <translation>Een optioneel bericht om aan het betalingsverzoek toe te voegen, die zal worden getoond wanneer het verzoek wordt geopend. Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoin netwerk.</translation>
@@ -2490,10 +2653,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Wissen</translation>
     </message>
     <message>
-        <source>Request InstantSend</source>
-        <translation>Verzoek InstantSend</translation>
-    </message>
-    <message>
         <source>Requested payments history</source>
         <translation>Geschiedenis van de betalingsverzoeken</translation>
     </message>
@@ -2512,6 +2671,14 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>Remove</source>
         <translation>Verwijder</translation>
+    </message>
+    <message>
+        <source>Enter a label to associate with the new receiving address</source>
+        <translation>Voeg een label toe aan het nieuwe ontvangende adres</translation>
+    </message>
+    <message>
+        <source>Enter a message to attach to the payment request</source>
+        <translation>Voeg een bericht toe om bij het betalingsverzoek te voegen</translation>
     </message>
     <message>
         <source>Copy URI</source>
@@ -2577,16 +2744,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Bericht</translation>
     </message>
     <message>
-        <source>InstantSend</source>
-        <translation>InstantSend</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>Ja</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Nee</translation>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -2695,14 +2854,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Kies...</translation>
     </message>
     <message>
-        <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until your have validated the complete chain.</source>
-        <translation>Het gebruik van de terugvalvergoeding kan resulteren in het verzenden van een transactie die meerdere uren of dagen (of nooit) nodig heeft om bevestigd te worden. Overweeg om handmatig een vergoeding te kiezen of wacht totdat de volledige blockchain gevalideerd is.</translation>
-    </message>
-    <message>
-        <source>Warning: Fee estimation is currently not possible.</source>
-        <translation>Waarschuwing: Schatting van de transactiekosten is momenteel niet mogelijk.</translation>
-    </message>
-    <message>
         <source>collapse fee-settings</source>
         <translation>Klap de vergoedinginstellingen dicht</translation>
     </message>
@@ -2711,20 +2862,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Bevestigingstijddoel:</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
-    </message>
-    <message>
-        <source>InstantSend</source>
-        <translation>InstantSend</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 Hellenic and the transaction is only 250 bytes, then "per kilobyte" only pays 250 Hellenic in fee,&lt;br /&gt;while "at least" pays 1000 Hellenic. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 Hellenic en de transactie is maar 250 bytes, dan wordt bij "per kilobyte" 250 Hellenic aan toeslag berekend, &lt;br /&gt;terwijl er bij "tenminste" 1000 Hellenic worden berekend. Voor transacties die groter zijn dan een kilobyte, wordt in beide gevallen per kilobyte de toeslag berekend.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 Hellenic and the transaction is only 250 bytes, then "per kilobyte" only pays 250 Hellenic in fee,&lt;br /&gt;while "total at least" pays 1000 Hellenic. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste toeslag is ingesteld op 1000 Hellenic en de transactie is maar 250 bytes, dan wordt bij "per kilobyte" 250 Hellenic aan toeslag berekend, &lt;br /&gt;terwijl er bij "totaal tenminste" 1000 Hellenic worden berekend. Voor transacties die groter zijn dan een kilobyte, wordt in beide gevallen per kilobyte de toeslag berekend.</translation>
+        <source>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 duffs in fee,&lt;br /&gt;while "at least" pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 duffs en de transactie is maar 250 bytes, dan wordt bij "per kilobyte" 250 duffs aan toeslag berekend, &lt;br /&gt;terwijl er bij "tenminste" 1000 duffs worden berekend. Voor transacties die groter zijn dan een kilobyte, wordt in beide gevallen per kilobyte de toeslag berekend.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for helleniccoin transactions than the network can process.</source>
@@ -2735,12 +2874,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>per kilobyte</translation>
     </message>
     <message>
-        <source>Hide</source>
-        <translation>Verbergen</translation>
+        <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
+        <translation>Het gebruik van de terugval vergoeding kan resulteren in het verzenden van een transactie die enkele uren of dagen (of nooit) duurt om te bevestigen. Overweeg uw tarief handmatig te kiezen of wacht tot u de volledige keten hebt gevalideerd.</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>minimaal totaal</translation>
+        <source>Note: Not enough data for fee estimation, using the fallback fee instead.</source>
+        <translation>Opmerking: niet genoeg gegevens voor het schatten van de transactievergoeding, in plaats daarvan wordt de terugval vergoeding gebruikte.</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Verbergen</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2757,14 +2900,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Slimme kosten zijn nog niet geïnitialiseerd Dit duurt meestal een paar blocks ...)</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normaal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>snel</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -2823,24 +2958,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Kopieer wijziging</translation>
     </message>
     <message>
+        <source>%1 (%2 blocks)</source>
+        <translation>%1 (%2 blokken)</translation>
+    </message>
+    <message>
+        <source>from wallet %1</source>
+        <translation>van portemonnee %1</translation>
+    </message>
+    <message>
         <source>using</source>
         <translation>gebruiken</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>anonieme geldmiddelen</translation>
-    </message>
-    <message>
-        <source>(privatesend requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(PrivateSend vereist dat dit bedrag afgerond wordt naar dedichtstbijzijnde %1)</translation>
-    </message>
-    <message>
-        <source>any available funds (not anonymous)</source>
-        <translation>Al het beschikbare geldmiddelen (niet anoniem)</translation>
-    </message>
-    <message>
-        <source>and InstantSend</source>
-        <translation>en InstantSend</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2861,6 +2988,42 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
         <translation>&lt;b&gt;(%1 van de %2 items weergegeven)&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>S&amp;end mixed funds</source>
+        <translation>V$erstuur gemixt saldo</translation>
+    </message>
+    <message>
+        <source>Confirm the %1 send action</source>
+        <translation>Bevestig de %1 verstuuractie</translation>
+    </message>
+    <message>
+        <source>%1 funds only</source>
+        <translation>alleen %1 saldo</translation>
+    </message>
+    <message>
+        <source>any available funds</source>
+        <translation>Beschikbare fondsen</translation>
+    </message>
+    <message>
+        <source>(%1 transactions have higher fees usually due to no change output being allowed)</source>
+        <translation>(%1-transacties hebben hogere kosten doordat er geen wisselgeld output is toegestaan)</translation>
+    </message>
+    <message>
+        <source>Transaction size: %1</source>
+        <translation>Transactiegrootte: %1</translation>
+    </message>
+    <message>
+        <source>Fee rate: %1</source>
+        <translation>Transactievergoeding: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>This transaction will consume %n input(s)</source>
+        <translation><numerusform>Deze transactie verbruikt %n inputs</numerusform><numerusform>Deze transactie verbruikt %n inputs</numerusform></translation>
+    </message>
+    <message>
+        <source>Warning: Using %1 with %2 or more inputs can harm your privacy and is not recommended</source>
+        <translation>Waarschuwing: het gebruik van %1 met %2 of meer ingangen kan uw privacy schaden en wordt niet aanbevolen</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2901,10 +3064,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>Payment request expired.</source>
         <translation>Betalingsverzoek verlopen.</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n block(s)</source>
-        <translation><numerusform>%n blok</numerusform><numerusform>%n blocks</numerusform></translation>
     </message>
     <message>
         <source>Pay only the required fee of %1</source>
@@ -2988,6 +3147,10 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>Trek de transactiekosten a&amp;f van het bedrag.</translation>
+    </message>
+    <message>
+        <source>Use available balance</source>
+        <translation>Gebruik het beschikbare saldo</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -3123,8 +3286,20 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Verwijder alles in de invulvelden</translation>
     </message>
     <message>
+        <source>Enter a message to be signed</source>
+        <translation>Voer een bericht in dat ondertekend moet worden </translation>
+    </message>
+    <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Klik op "Onderteken Bericht" om de handtekening te genereren</translation>
+    </message>
+    <message>
+        <source>Enter a message to be verified</source>
+        <translation>Voer een bericht in om te worden geverifieerd</translation>
+    </message>
+    <message>
+        <source>Enter a signature for the message to be verified</source>
+        <translation>Voer een handtekening in voor het bericht dat moet worden geverifieerd</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3181,16 +3356,24 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <source>[testnet]</source>
         <translation>[testnetwerk]</translation>
     </message>
-    <message>
-        <source>Version %1</source>
-        <translation>Versie %1</translation>
-    </message>
 </context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
         <source>KB/s</source>
         <translation>KB/s</translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation>Totaal</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ontvangen</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Is verzonden</translation>
     </message>
 </context>
 <context>
@@ -3206,10 +3389,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>conflicted</source>
         <translation>Conflicterend</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/offline</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
@@ -3236,36 +3415,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>%1 bevestigingen</translation>
     </message>
     <message>
-        <source>locked via LLMQ based ChainLocks</source>
-        <translation>vergrendeld door LLMQ-gebaseerde ChainLocks</translation>
-    </message>
-    <message>
-        <source>verified via LLMQ based InstantSend</source>
-        <translation>vergrendeld door LLMQ-gebaseerde InstandSend</translation>
+        <source>locked via ChainLocks</source>
+        <translation>op slot via ChainLocks</translation>
     </message>
     <message>
         <source>verified via InstantSend</source>
-        <translation>geverifieerd met InstantSend</translation>
-    </message>
-    <message>
-        <source>InstantSend verification in progress - %1 of %2 signatures</source>
-        <translation>Bezig met InstantSend verficatie - %1 van %2 ondertekeningen</translation>
-    </message>
-    <message>
-        <source>InstantSend verification failed</source>
-        <translation>InstantSend verificatie mislukt</translation>
+        <translation>geverifieerd via InstantSend</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>Status</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, is nog niet met succes uitgezonden</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, uitgezonden via %n node</numerusform><numerusform>, uitgezonden via %n nodes</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3422,10 +3581,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Open tot %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>Offline</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Onbevestigd</translation>
     </message>
@@ -3450,12 +3605,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Niet beschikbaar (%1 bevestigingen, zal beschikbaar zijn na %2)</translation>
     </message>
     <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Dit blok is niet ontvangen bij andere nodes en zal waarschijnlijk niet worden geaccepteerd!</translation>
-    </message>
-    <message>
         <source>Generated but not accepted</source>
         <translation>Gegenereerd maar niet geaccepteerd</translation>
+    </message>
+    <message>
+        <source>verified via InstantSend</source>
+        <translation>geverifieerd via InstantSend</translation>
+    </message>
+    <message>
+        <source>locked via ChainLocks</source>
+        <translation>op slot via ChainLocks</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -3466,8 +3625,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Ontvangen van</translation>
     </message>
     <message>
-        <source>Received via PrivateSend</source>
-        <translation>Ontvangen via PrivateSend</translation>
+        <source>Received via %1</source>
+        <translation>Ontvangen via %1</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3482,24 +3641,24 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Gedolven</translation>
     </message>
     <message>
-        <source>PrivateSend Denominate</source>
-        <translation>PrivateSend denominatie</translation>
+        <source>%1 Mixing</source>
+        <translation>%1 Mixen</translation>
     </message>
     <message>
-        <source>PrivateSend Collateral Payment</source>
-        <translation>PrivateSend Onderpand Betaling</translation>
+        <source>%1 Collateral Payment</source>
+        <translation>%1 Onderpand Betaling</translation>
     </message>
     <message>
-        <source>PrivateSend Make Collateral Inputs</source>
-        <translation>PrivateSend Vorm Onderpand Inputs</translation>
+        <source>%1 Make Collateral Inputs</source>
+        <translation>%1 Vorm Onderpand Inputs</translation>
     </message>
     <message>
-        <source>PrivateSend Create Denominations</source>
-        <translation>PrivateSend Creëer Denominaties</translation>
+        <source>%1 Create Denominations</source>
+        <translation>%1 Creëer Denominaties</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
+        <source>%1 Send</source>
+        <translation>%1 Verstuur</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3530,10 +3689,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Of er een alleen-bekijken-adres is betrokken bij deze transactie.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Of deze transactie wel of niet was vastgezet door InstantSend.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Door gebruiker gedefinieerde intentie/doel van de transactie.</translation>
     </message>
@@ -3547,14 +3702,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>All</source>
         <translation>Alles</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>Geblokkeerd door InstantSend</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>Niet geblokkeerd door InstantSend</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3593,24 +3740,24 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Verzonden aan</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
+        <source>%1 Send</source>
+        <translation>%1 Verstuur</translation>
     </message>
     <message>
-        <source>PrivateSend Make Collateral Inputs</source>
-        <translation>PrivateSend Vorm Onderpand Inputs</translation>
+        <source>%1 Make Collateral Inputs</source>
+        <translation>%1 Vorm Onderpand Inputs</translation>
     </message>
     <message>
-        <source>PrivateSend Create Denominations</source>
-        <translation>PrivateSend Creëer Denominaties</translation>
+        <source>%1 Create Denominations</source>
+        <translation>%1 Creëer Denominaties</translation>
     </message>
     <message>
-        <source>PrivateSend Denominate</source>
-        <translation>PrivateSend Denomineren</translation>
+        <source>%1 Mixing</source>
+        <translation>%1 Mixen</translation>
     </message>
     <message>
-        <source>PrivateSend Collateral Payment</source>
-        <translation>PrivateSend Onderpand Betaling</translation>
+        <source>%1 Collateral Payment</source>
+        <translation>%1 Onderpand Betaling</translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -3625,8 +3772,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Anders</translation>
     </message>
     <message>
-        <source>Enter address or label to search</source>
-        <translation>Vul adres of label in om te zoeken</translation>
+        <source>Enter address, transaction id, or label to search</source>
+        <translation>Voer een adres, transactie ID of label in om te zoeken</translation>
     </message>
     <message>
         <source>Min amount</source>
@@ -3757,14 +3904,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <source>Send Coins</source>
         <translation>Verstuur munten</translation>
     </message>
-    <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HNC.</source>
-        <translation>InstantSend ondersteund het verzenden van zulke hoge bedragen nog niet. Transacties zijn momenteel gelimiteerd tot %1 HellenicCoin.</translation>
-    </message>
-    <message>
-        <source>Used way too many inputs (&gt;%1) for this InstantSend transaction, fees could be huge.</source>
-        <translation>Er worden veel te veel inputs (&gt;%1) gebruikt voor deze InstantSend transactie, de vergoeding kan enorm zijn.</translation>
-    </message>
 </context>
 <context>
     <name>WalletView</name>
@@ -3804,40 +3943,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <source>The wallet data was successfully saved to %1.</source>
         <translation>De portemonneedata is succesvol opgeslagen in %1.</translation>
     </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Annuleren</translation>
+    </message>
 </context>
 <context>
     <name>helleniccoin-core</name>
     <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Bind aan opgegeven adres en luister er altijd op. Gebruik [host]:port notatie voor IPv6</translation>
-    </message>
-    <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Fout: luisteren naar binnenkomende verbindingen mislukt (luisteren gaf foutmelding %s)</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Voer opdracht uit zodra een waarschuwing is ontvangen of wanneer we een erg lange fork detecteren (%s in opdracht wordt vervangen door bericht)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Voer opdracht uit zodra een portemonneetransactie verandert (%s in cmd wordt vervangen door TxID)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Voer opdracht uit zodra het beste blok verandert (%s in cmd wordt vervangen door blokhash)</translation>
-    </message>
-    <message>
-        <source>Name to construct url for KeePass entry that stores the wallet passphrase</source>
-        <translation>Naam om url te vormen voor de KeePass invoer die de wachtwoordzin van de wallet opslaat</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Stel de maximale grote in van hoge prioriteit/lage kosten transacties in bytes (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Kies het aantal scriptverificatie processen (%u tot %d, 0 = auto, &lt;0 = laat dit aantal kernen vrij, standaard: %d)</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -3852,56 +3967,20 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Waarschuwing: Het lijkt erop dat we geen consensus kunnen vinden met onze peers! Mogelijk dient u te upgraden, of andere nodes moeten wellicht upgraden.</translation>
     </message>
     <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Ontvang command-lijn en JSON-RPC commando's.</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Voeg een node toe om mee te verbinden en probeer de verbinding open te houden.</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Sta DNS opzoekingen to voor -addnode, -seednode en -connect</translation>
-    </message>
-    <message>
         <source>Already have that input.</source>
         <translation>Deze invoer is reeds gekend</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Opties bij aanmaken van blokken:</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
         <translation>Kan de portemonnee niet verlagen van versie</translation>
     </message>
     <message>
-        <source>Cannot write default address</source>
-        <translation>Kan niet schrijven naar het standaard adres</translation>
-    </message>
-    <message>
         <source>Collateral not valid.</source>
         <translation>Onderpand niet geldig.</translation>
     </message>
     <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Verbind naar een node om het peer adres op te halen en verbreek.</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Verbindingsopties:</translation>
-    </message>
-    <message>
         <source>Corrupted block database detected</source>
         <translation>Corrupte blok database gedetecteerd</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Debug-/testopties:</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Laad geen portemonnee en laat geen RPC berichten toe</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3948,164 +4027,36 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Het is mislukt om naar gelijk welke poort te luisteren. Gebruik -listen=0 als je dit wil</translation>
     </message>
     <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = behoudt tx meta data bijv. account eigenaar en betalingsverzoek informatie, 2. sla tx meta data niet op)</translation>
-    </message>
-    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee staat zeer hoog! Transactiekosten van deze grootte kunnen worden gebruikt in een enkele transactie.</translation>
     </message>
     <message>
-        <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
-        <translation>Een transactietarief (in %s/kB) dat gebruikt wordt als de transactiekosten schatting niet genoeg data heeft. (normaal: %s)</translation>
-    </message>
-    <message>
-        <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
-        <translation>Accepteer doorgestuurde transacties ontvangen van goedgekeurde peers, ook wanneer je zelf geen transacties doorstuurt (standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Sta JSON-RPC verbindingen toe vanuit een gespecificeerde bron. Geldig voor &lt;ip&gt; zijn een enkel IP (bijv. 1.2.3.4), een netwerk/netmask (bijv. 1.2.3.4/255.255.255.0) of een netwerk/CIDR (bijv. 1.2.3.4/24). Deze optie kan meerdere keren gespecificeerd worden.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Bind aan opgegeven adres en keur peers die ermee verbinden goed. Gebruik [host]:poort notatie voor IPv6</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Creër nieuwe bestanden met standaard systeem bestandsrechten in plaats van umask 077 (alleen effectief met uitgeschakelde portemonnee functionaliteit)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Verwijder alle transacties van de portemonnee en herstel alleen de delen van de blokketen door -rescan tijdens het opstarten</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Inschakelen van ruwe transacties van pogingen van InstantSend double spend in&lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Inschakelen van het publiceren van transactiehashes van pogingen van InstantSend double spend in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
-        <translation>Fout bij het laden van %s: U kunt HD niet inschakelen op een al bestaande non-HD wallet</translation>
+        <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
+        <translation>Kan geen verbindingen bieden en addrman tegelijkertijd uitgaande verbindingen laten zoeken.</translation>
     </message>
     <message>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
         <translation>Niet-bevestigde denominatie outputs gevonden, voortzetting zal worden  gepauseerd totdat deze zijn bevestigd.</translation>
     </message>
     <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>Hoe grondig de blockverificatie van -checkblocks is (0-4, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Als paytxfee niet is ingesteld, voeg voldoende vergoeding toe zodat transacties starten met bevestigingen binnen n blocks (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Als dit blok in de keten staat, gaat het ervan uit dat dit blok en zijn voorouders geldig zijn en mogelijk hun script verificatie overslaan (0 om alles te verifiëren, standaard:%s, testnet:%s)</translation>
+        <source>Invalid -socketevents ('%s') specified. Only these modes are supported: %s</source>
+        <translation>Ongeldige -socketevents ('%s') opgegeven. Alleen deze modi worden ondersteund: %s</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>ongeldig bedrag voor -maxtxfee=&lt;bedrag&gt;: '%s' (moet ten minste de minimale doorgeefvergoeding van %s zijn om vastgelopen transacties te voorkomen)</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Onderhoud een volledige transactieindex, gebruikt door de getrawtransaction rpc call (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Make sure to encrypt your wallet and delete all non-encrypted backups after you verified that wallet works!</source>
-        <translation>Zorg ervoor dat u uw wallet versleuteld, verwijder alle niet versleutelde backups nadat u getest hebt dat de nieuwe wallet werkt!</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maximale grootte van de gegevens in gegevensdragertransacties die we doorgeven en mijnen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Aantal seconden dat zich misdragende peers niet opnieuw kunnen verbinden (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Output extra debugginginformatie (standaard: %u, het leveren van &lt;categorie&gt; is optioneel)</translation>
-    </message>
-    <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Overschrijf minimum spork ondertekenaars om de spork waarde te veranderen. Alleen bruikbaar bij regtest en devnet. Door dit te gebruiken op mainnet of testnet zal een ban opleveren.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>Gebruik N verschillende masternodes tegelijk om saldo te mixen (%u-%u, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Gebruik een aparte SOCKS5 proxy om verborgen diensten van Tor te bereiken (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>User defined mnemonic for HD wallet (bip39). Only has effect during wallet creation/first start (default: randomly generated)</source>
-        <translation>Door de gebruiker gedefinieerde mnemonic voor HD-wallet (bip39). Werkt alleen tijdens het aanmaken van een wallet/ eerste start (standaard: willekeurig gegenereerd)</translation>
-    </message>
-    <message>
-        <source>User defined seed for HD wallet (should be in hex). Only has effect during wallet creation/first start (default: randomly generated)</source>
-        <translation>Door de gebruiker gedefinieerde seed voor HD-wallet (moet in hex zijn). Heeft alleen effect tijdens het aanmaken van een portemonnee / eerste start (standaard: willekeurig gegenereerd)</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Goedgekeurde peers kunnen niet ge-DoS-banned worden en hun transacties worden altijd doorgegeven, zelfs als ze reeds in de mempool aanwezig zijn, nuttig voor bijv. een gateway</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation>U moet de database herbouwen met -reindex-chainstate om -txindex aan te passen</translation>
-    </message>
-    <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>U dient een masternode BLS geheime sleutel te specificeren in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(standaard: %s)</translation>
-    </message>
-    <message>
-        <source>-wallet parameter must only specify a filename (not a path)</source>
-        <translation>-wallet parameter mag alleen een bestandsnaam zijn (niet een pad)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Laat publiek REST vragen toe (standaard %u)</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Vind anderen door middel van een DNS-naslag (standaard: %u)</translation>
+        <source>Transaction index can't be disabled with governance validation enabled. Either start with -disablegovernance command line switch or enable transaction index.</source>
+        <translation>Transactieindex kan niet worden uitgeschakeld als validatie van governance is ingeschakeld. Begin met -disablegovernance command line switch of schakel transactieindex in.</translation>
     </message>
     <message>
         <source>Can't mix: no compatible inputs found!</source>
         <translation>Kan niet mixen: geen compatibele inputs gevonden!</translation>
     </message>
     <message>
-        <source>Chain selection options:</source>
-        <translation>Keten selectie opties:</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Verbind via SOCKS5 proxy</translation>
-    </message>
-    <message>
-        <source>Connect to KeePassHttp on port &lt;port&gt; (default: %u)</source>
-        <translation>Verbind naar KeePassHttps via poort &lt;port&gt; (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Stel de client toe om te handelen als een masternode (0-1, standaard: %u)</translation>
-    </message>
-    <message>
         <source>Entry exceeds maximum size.</source>
         <translation>Invoer overschrijdt de maximale grootte.</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't disable HD on a already existing HD wallet</source>
-        <translation>Fout bij het laden van %s: U kunt HD niet uitschakelen op een al bestaande HD wallet</translation>
     </message>
     <message>
         <source>Failed to load fulfilled requests cache from</source>
@@ -4128,16 +4079,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Voldoende gebruikers gevonden, aan het ondertekenen ...</translation>
     </message>
     <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Aantal te checken blocks bij het opstarten (standaard: %u, 0 = allemaal)</translation>
-    </message>
-    <message>
         <source>Importing...</source>
         <translation>Importeren...</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>IP-adressen toevoegen in de debuguitvoer (standaard: %u)</translation>
     </message>
     <message>
         <source>Incompatible mode.</source>
@@ -4164,12 +4107,12 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Ontoereikend saldo.</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Ongeldig bedrag voor -paytxfee=&lt;bedrag&gt;: '%s' (Minimum %s)</translation>
+        <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldig bedrag voor -discardfee = &lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Ongeldige masternode BLS geheime sleutel. Raadpleeg de documentatie.</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Ongeldig bedrag voor -paytxfee=&lt;bedrag&gt;: '%s' (Minimum %s)</translation>
     </message>
     <message>
         <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
@@ -4178,14 +4121,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Keypool op geraakt, roep alsjeblieft eerst keypoolrefill functie aan</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister naar JSON-RPC-verbindingen op &lt;poort&gt; (standaard: %u of testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister naar verbindingen op &lt;poort&gt; (standaard: %u of testnet: %u)</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
@@ -4204,20 +4139,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Vergrendeling is al op zijn plaats.</translation>
     </message>
     <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximum per-connectie ontvangstbuffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximum per-connectie verstuurbuffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
-    </message>
-    <message>
         <source>Mixing in progress...</source>
         <translation>Bezig met mixen...</translation>
-    </message>
-    <message>
-        <source>Mnemonic passphrase is too long, must be at most 256 characters</source>
-        <translation>Mnemonisch wachtwoordzin is te lang: mag maximaal 256 tekens bevatten</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
@@ -4232,96 +4155,20 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Geen compatibele Masternode gevonden.</translation>
     </message>
     <message>
+        <source>Not enough funds to mix.</source>
+        <translation>Onvoldoende fondsen om te mixen.</translation>
+    </message>
+    <message>
         <source>Not in the Masternode list.</source>
         <translation>Niet in de Masternode lijst.</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Verbind alleen met nodes in netwerk &lt;net&gt; (ipv4, ipv6 of onion)</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Begin debug output met tijdstempel (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
-        <translation>Herbouw ketenstaat en block index met behulp van de blk*.dat bestanden op de harde schijf</translation>
-    </message>
-    <message>
-        <source>Rebuild chain state from the currently indexed blocks</source>
-        <translation>Herbouw ketenstaat vanuit de huidige geindexeerde blocks</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to debug.log file (default: %u)</source>
-        <translation>Stuur traceer-/debuginformatie naar debug.log (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Verstuur transacties als nul-vergoedingtransacties indien mogelijk (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Stel sleutelpoelgrootte in op &lt;n&gt; (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>Stel de BLS geheime sleutel van de masternode in</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Stel het aantal threads in om RPC-aanvragen mee te bedienen (standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Specificeer configuratiebestand (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Specificeer de time-out tijd in milliseconden (minimum: 1, standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Specificeer pid-bestand (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Besteed onbevestigd wisselgeld bij het doen van transacties (standaard: %u)</translation>
     </message>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Ingediend bij masternode, wachten in de wachtrij %s</translation>
     </message>
     <message>
-        <source>Synchronization failed</source>
-        <translation>Synchronisatie mislukt</translation>
-    </message>
-    <message>
         <source>Synchronization finished</source>
         <translation>Synchronisatie voltooid</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Dit is geen Masternode.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Drempel om verbinding te verbreken naar zich misdragende peers (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, removing.</source>
-        <translation>Te veel %f denominaties, verwijderen.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Te veel %f denominaties, overgeslagen.</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor bepaalt poortwachtwoord (standaard: empty)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor bepaalt welke poort te gebruiken als luisteren naar onion wordt gebruikt (standaard: %s)</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
@@ -4344,24 +4191,12 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Niet-ondersteund argument -tor gevonden, gebruik -onion.</translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format on startup</source>
-        <translation>Upgrade portemonee naar laatste formaat bij opstarten</translation>
-    </message>
-    <message>
-        <source>Use KeePass 2 integration using KeePassHttp plugin (default: %u)</source>
-        <translation>Gebruik KeePass 2 integratie met KeePassHttp-plugin (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Gebruik UPnP om de luisterende poort te mappen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Use the test chain</source>
-        <translation>Gebruik de test keten</translation>
-    </message>
-    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>User Agentcommentaar (%s) bevat onveilige karakters.</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)...</source>
+        <translation>Portemonnee(s) verifiëren..... </translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4372,8 +4207,20 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Kan Masternode niet vinden.</translation>
     </message>
     <message>
+        <source>%s can't be lower than %s</source>
+        <translation>%s kan niet lager zijn dan %s</translation>
+    </message>
+    <message>
+        <source>%s is idle.</source>
+        <translation>%s is in rust.</translation>
+    </message>
+    <message>
+        <source>%s request incomplete: %s</source>
+        <translation>%s aanvraag niet volledig: %s</translation>
+    </message>
+    <message>
         <source>Can't mix while sync in progress.</source>
-        <translation>Kan niet Mixen tijdens het synchroniseren.</translation>
+        <translation>Kan niet mixen tijdens het synchroniseren.</translation>
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
@@ -4384,100 +4231,20 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Ongeldig script gevonden.</translation>
     </message>
     <message>
-        <source>KeePassHttp id for the established association</source>
-        <translation>KeePassHttp id voor de ingestelde associatie</translation>
-    </message>
-    <message>
-        <source>KeePassHttp key for AES encrypted communication with KeePass</source>
-        <translation>KeePassHttp sleutel voor AES versleutelde communicatie met KeePass</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Houd maximaal &lt;n&gt; onverbonden transacties in geheugen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Disable all HellenicCoin specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Uitschakelen van alle HellenicCoin specifieke functies (Masternodes, PrivateSend, InstantSend, Governance) (0-1, standaard: %u)</translation>
-    </message>
-    <message>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
         <translation>%s bestand bevat alle persoonlijke sleutel van deze portemonnee. Deel deze met niemand!</translation>
     </message>
     <message>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>Bind met opgegeven address om te luisteren voor JSON-RPC-connections. Deze optie wordt genegeerd behalve als -rpcallowip ook opgegeven is. Poort is optioneel en overschrijft -rpcport. Gebruik [host]:port notatie voor IPv6. Deze optie kan meerdere keren worden meegegeven (standaard: 127.0.0.1 en ::1 bijvoobeeld, localhost, of als -rpcallowip is opgegeven, 0.0.0.0 en :: bijvoorbeeld, alle adressen)</translation>
-    </message>
-    <message>
-        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>Ontdek eigen IP-adressen (standaard: 1 voor luisteren en geen -externalip of -proxy)</translation>
-    </message>
-    <message>
-        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
-        <translation>Bewaar transactie niet langer dan &lt;n&gt; uren in de geheugenpool (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable InstantSend, show confirmations for locked transactions (0-1, default: %u)</source>
-        <translation>Inschakelen van InstantSend, toon bevestigingen van vastgezette transacties (0-1, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable multiple PrivateSend mixing sessions per block, experimental (0-1, default: %u)</source>
-        <translation>Inschakel van meerdere PrivateSend mix sessies per blok, experimenteel (0-1, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable use of automated PrivateSend for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Inschakelen van het automatisch gebruik van PrivateSend voor geld opgeslagen in deze wallet (0-1, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet InstantSend transaction is successfully locked (%s in cmd is replaced by TxID)</source>
-        <translation>Voer opdracht uit zodra een wallettransactie succesvol vastgezet is (%s in cmd wordt vervangen door TxID)</translation>
-    </message>
-    <message>
-        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>Extra transactie om in het geheugen te houden voor de reconstructie van compacte blokken (standaard: %u)</translation>
+        <source>-masternode option is deprecated and ignored, specifying -masternodeblsprivkey is enough to start this node as a masternode.</source>
+        <translation>-masternode optie is verouderd en genegeerd, het specificeren van -masternodeblsprivkey is voldoende om deze node als een masternode te starten.</translation>
     </message>
     <message>
         <source>Failed to create backup, file already exists! This could happen if you restarted wallet in less than 60 seconds. You can continue if you are ok with this.</source>
         <translation>Backup maken is mislukt, het bestand bestaat al! Dit kan gebeuren als u de wallet herstart binnen 60 seconden. U kunt verder gaan als u hier ok mee bent.</translation>
     </message>
     <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-        <translation>Vergoedingen (in %s/kB) kleiner dan dit worden beschouwd als nul-vergoeding voor doorgeven, mijnen en transactiecreatie (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Transactiekosten (in %s/kB) kleiner dan dit worden beschouwd dat geen transactiekosten in rekening worden gebracht voor transactiecreatie (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
-        <translation>Als er geen &lt;categorie&gt; is opgegeven of als de &lt;categorie&gt; 1 is, laat dan alle debugginginformatie zien.</translation>
-    </message>
-    <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HNC.</source>
-        <translation>InstantSend ondersteund het verzenden van zulke hoge bedragen nog niet. Transacties zijn momenteel gelimiteerd tot %1 HellenicCoin.</translation>
-    </message>
-    <message>
-        <source>InstantSend requires inputs with at least %d confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>InstantSend vereist dat inputs ten minste %d bevestigingen hebben, u zult een paar minuten moeten wachten en opnieuw moeten proberen.</translation>
-    </message>
-    <message>
-        <source>Maintain a full address index, used to query for the balance, txids and unspent outputs for addresses (default: %u)</source>
-        <translation>Hou een volledige transactieindex bij, wordt gebruikt om het balans, txids en niet-uitgegeven outputs voor adresen op te vragen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: %u)</source>
-        <translation>Hou een volledige uitgaveindex bij, wordt gebruikt om de txids van uitgaven en input index voor een outpoint op te vragen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: %u)</source>
-        <translation>Hou een tijdstempelindex bij voor block hashes, wordt gebruikt om blockhashes op te vragen voor een bereik aan tijdstempels (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (temporary service connections excluded) (default: %u)</source>
-        <translation>Onderhoudt maximaal &lt;n&gt; connecties met peers (tijdelijke service connecties uitgezonderd) (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>PrivateSend gebruikt exact gedenomineerde bedragen om geld te versturen, u zult wellicht simpelweg meer geld moeten anonimiseren.</translation>
+        <source>Make sure to encrypt your wallet and delete all non-encrypted backups after you have verified that the wallet works!</source>
+        <translation>Zorg ervoor dat u uw portefeuille codeert en alle niet-gecodeerde back-ups verwijdert nadat u hebt geverifieerd dat de portefeuille werkt!</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -4488,20 +4255,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Prune: laatste wallet synchronisatie gaat verder terug dan de middels -prune beperkte data. U moet -reindex gebruiken (downloadt opnieuw de gehele blockchain voor een pruned node)</translation>
     </message>
     <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Gebruik willekeurige inloggegevens voor elke proxyverbinding. Dit maakt streamisolatie voor Tor mogelijk (standaard: %u)</translation>
-    </message>
-    <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
         <translation>Herscannen is niet mogelijk i.c.m. -prune. U moet -reindex gebruiken dat de hele blockchain opnieuw zal downloaden.</translation>
-    </message>
-    <message>
-        <source>Specify full path to directory for automatic wallet backups (must exist)</source>
-        <translation>Voer het volledige pad in voor de map met automatische walletbackups (moet al bestaan)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Ondersteun filtering van blocks en transacties met bloomfilters (standaard: %u)</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
@@ -4516,18 +4271,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Totale lengte van netwerkversiestring (%i) overschrijdt maximale lengte (%i). Verminder het aantal of grootte van uacomments.</translation>
     </message>
     <message>
-        <source>Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</source>
-        <translation>Transactie index kan niet uitgeschakeld worden in volledige modus. Start met -litemode commando-optie, of activeer transactie index.</translation>
-    </message>
-    <message>
-        <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>Pogingen om uitgaand verkeer onder een bepaald doel te houden (in MiB per 24u), 0 = geen limiet (standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough PrivateSend denominated funds for this transaction.</source>
-        <translation>Kan onvoldoende met PrivateSend gedenomineerd geld vinden voor deze transactie.</translation>
-    </message>
-    <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Niet-ondersteund argument -socks gevonden. Instellen van SOCKS-versie is niet meer mogelijk, alleen SOCKS5-proxies worden ondersteund.</translation>
     </message>
@@ -4536,92 +4279,72 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Niet ondersteund argument -whitelistalwaysrelay genegeerd, gebruik -whitelistrelay en/of -whitelistforcerelay.</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
-        <translation>Gebruik UPnP om de luisterende poort te mappen (standaard: 1 als er geluisterd worden en geen -proxy is meegegeven)</translation>
-    </message>
-    <message>
         <source>WARNING! Failed to replenish keypool, please unlock your wallet to do so.</source>
         <translation>WAARSCHUWING! Het bijvullen van de keypool is mislukt, ontgrendel alstublieft uw wallet om dit te doen. </translation>
     </message>
     <message>
         <source>Wallet is locked, can't replenish keypool! Automatic backups and mixing are disabled, please unlock your wallet to replenish keypool.</source>
-        <translation>Wallet is vergrendeld, niet instaat om keypool aan te vullen! Automatische backups en PrivateSend zijn uitgeschakeld, ontgrendel alstublieft uw wallet om de keypool aan te vullen.</translation>
+        <translation>Wallet is vergrendeld, niet instaat om keypool aan te vullen! Automatische backups en mixen zijn uitgeschakeld, ontgrendel alstublieft uw wallet om de keypool aan te vullen.</translation>
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
         <translation>Waarschuwing: Onbekende blok versies worden gemined! Er zijn mogelijk onbekende regels in werking getreden</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, all HellenicCoin-specific functionality is disabled.</source>
-        <translation>Je start in lite modus. Alle HellenicCoin specifieke functionaliteit is uitgeschakeld.</translation>
+        <source>You need to rebuild the database using -reindex to change -timestampindex</source>
+        <translation>U moet de database opnieuw opbouwen met behulp van -reindex om -timestampindex te wijzigen</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>U moet de database herbouwen met -reindex om terug te gaan naar de niet-prune modus. Dit zal de gehele blockchain opnieuw downloaden.</translation>
     </message>
     <message>
-        <source>(default: %u)</source>
-        <translation>(default: %u)</translation>
+        <source>-litemode is deprecated.</source>
+        <translation>-litemode is vervallen.</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
         <translation>-maxmempool moet minstens %d MB zijn</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;categorie&gt; kan zijn:</translation>
-    </message>
-    <message>
-        <source>Append comment to the user agent string</source>
-        <translation>Voeg commentaar toe aan de user agent string</translation>
-    </message>
-    <message>
         <source>Automatic backups disabled</source>
         <translation>Automatische backups uitgeschakeld</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Creëer automatisch verborgen dienst van Tor (standaard:%d)</translation>
     </message>
     <message>
         <source>ERROR! Failed to create automatic backup</source>
         <translation>FOUT! Het maken van een automatische backup is mislukt</translation>
     </message>
     <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Sta toe om hashblok te publiceren in &lt;adres&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</source>
-        <translation>Inschakelen van hash van governance objecten (zoals voorstellen) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance votes in &lt;address&gt;</source>
-        <translation>Inschakelen van publiceren van governance stemmen in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via InstantSend) in &lt;address&gt;</source>
-        <translation>Inschakelen publiceren van de hashtransactie (vastgezet met InstantSend) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Sta toe om hashtransactie te publiceren in &lt;adres&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Sta toe rauw blok te publiceren in &lt;adres&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via InstantSend) in &lt;address&gt;</source>
-        <translation>Inschakelen het publiceren van de ruwe transactie (vastgezet via InstantSend) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Sta toe ruwe transacties te publiceren in &lt;adres&gt;</translation>
+        <source>Error upgrading evo database</source>
+        <translation>Fout bij het upgraden van de evo database</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Fout: er is een fout opgetreden,  zie debug.log voor details</translation>
+    </message>
+    <message>
+        <source>Error: failed to add socket to epollfd (epoll_ctl returned error %s)</source>
+        <translation>Fout: kan geen socket toevoegen aan epollfd (epoll_ctl geeft fout %s)</translation>
+    </message>
+    <message>
+        <source>Exceeded max tries.</source>
+        <translation>Maximum aantal pogingen overschreden.</translation>
+    </message>
+    <message>
+        <source>Failed to clear fulfilled requests cache at</source>
+        <translation>Fout bij het wissen van de fulfilled requests cache uit</translation>
+    </message>
+    <message>
+        <source>Failed to clear governance cache at</source>
+        <translation>Fout bij het wissen van de governance cache uit</translation>
+    </message>
+    <message>
+        <source>Failed to clear masternode cache at</source>
+        <translation>Fout bij het wissen van de masternode cache uit</translation>
+    </message>
+    <message>
+        <source>Failed to commit EvoDB</source>
+        <translation>EvoDB kan niet worden vastgelegd</translation>
     </message>
     <message>
         <source>Failed to create backup %s!</source>
@@ -4636,44 +4359,28 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Verwijderen van de back-up is mislukt, foutmelding: %s</translation>
     </message>
     <message>
-        <source>Failed to load InstantSend data cache from</source>
-        <translation>Fout bij het laden van InstandSend data cache uit</translation>
-    </message>
-    <message>
         <source>Failed to load sporks cache from</source>
         <translation>Fout bij het inladen van de sporks cache uit</translation>
     </message>
     <message>
-        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>Transactievergoeding (in %s/kB) toevoegen aan transacties die u doet (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file on startup</source>
-        <translation>Importeer blocks van externe blk000??.dat-bestand bij opstarten</translation>
-    </message>
-    <message>
-        <source>InstantSend options:</source>
-        <translation>InstantSend-opties:</translation>
+        <source>Failed to rescan the wallet during initialization</source>
+        <translation>Het herscannen van de portemonnee is mislukt tijdens het initialiseren</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>Ongeldig bedrag voor -fallbackfee=&lt;bedrag&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
-        <translation>De transactiegeheugenpool moet onder de &lt;n&gt; megabytes blijven (standaard: %u)</translation>
+        <source>Invalid masternodeblsprivkey. Please see documentation.</source>
+        <translation>Ongeldige masternodeblsprivkey. Zie documentatie.</translation>
     </message>
     <message>
-        <source>Last PrivateSend was too recent.</source>
-        <translation>Vorige PrivateSend is te recent.</translation>
+        <source>It has been replaced by -disablegovernance.</source>
+        <translation>Het is vervangen door -disablegovernance.</translation>
     </message>
     <message>
-        <source>Last successful PrivateSend action was too recent.</source>
-        <translation>Vorige succesvolle PrivateSend actie is te recent.</translation>
-    </message>
-    <message>
-        <source>Loading InstantSend data cache...</source>
-        <translation>Laden van InstantSend data cache...</translation>
+        <source>Its replacement -disablegovernance has been forced instead.</source>
+        <translation>In plaats daarvan is -disablegovernance als vervanging afgedwongen.</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4696,28 +4403,12 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Laden portemonnee...</translation>
     </message>
     <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Locatie van de auth cookie (standaard: data dir)</translation>
-    </message>
-    <message>
-        <source>Make the wallet broadcast transactions</source>
-        <translation>Laat de portemonnee transacties uitsturen</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Masternode-opties:</translation>
-    </message>
-    <message>
         <source>Masternode queue is full.</source>
         <translation>Masternode wachtrij is vol.</translation>
     </message>
     <message>
         <source>Masternode:</source>
         <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Minimum bytes per sigop in transactions we relay and mine (default: %u)</source>
-        <translation>Minimale bytes per sigop in transacties die worden doorgegeven en gemijnd (standaard: %u)</translation>
     </message>
     <message>
         <source>Missing input transaction information.</source>
@@ -4732,14 +4423,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Geen overeenkomende denominaties gevonden om mee te mixen.</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Node doorgeefopties:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Niet-standaard publieke sleutel aangetroffen.</translation>
-    </message>
-    <message>
         <source>Not compatible with existing transactions.</source>
         <translation>Niet compatibel met bestaande transacties.</translation>
     </message>
@@ -4748,44 +4431,12 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Niet genoeg file descriptors beschikbaar.</translation>
     </message>
     <message>
-        <source>Not enough funds to anonymize.</source>
-        <translation>Niet genoeg geld om the anonimiseren.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: %u)</source>
-        <translation>Aantal automatische wallet back-ups (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Opties:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Paswoord voor JSON-RPC verbinding</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>Print versie en sluit af</translation>
-    </message>
-    <message>
-        <source>PrivateSend is idle.</source>
-        <translation>PrivateSend is niet actief.</translation>
-    </message>
-    <message>
-        <source>PrivateSend options:</source>
-        <translation>PrivateSend-opties:</translation>
-    </message>
-    <message>
-        <source>PrivateSend request complete:</source>
-        <translation>PrivateSend verzoek voltooid:</translation>
-    </message>
-    <message>
-        <source>PrivateSend request incomplete:</source>
-        <translation>PrivateSend aanvraag niet voltooid:</translation>
-    </message>
-    <message>
         <source>Prune cannot be configured with a negative value.</source>
         <translation>Prune kan niet worden geconfigureerd met een negatieve waarde.</translation>
+    </message>
+    <message>
+        <source>Prune mode is incompatible with -disablegovernance=false.</source>
+        <translation>Prune modus is niet compatibel met -disablegovernance=false.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
@@ -4796,16 +4447,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Terugsnoeien blockstore...</translation>
     </message>
     <message>
-        <source>Rescan the block chain for missing wallet transactions on startup</source>
-        <translation>Herscan de blokketen voor missende portemonneetransacties bij opstarten</translation>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>Opgegeven -walletdir "%s" bestaat niet</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u</source>
-        <translation>Volgende masternode entries zijn ingediend: %u</translation>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>Opgegeven -walletdir "%s" is een relatief pad</translation>
     </message>
     <message>
-        <source>Submitted to masternode, waiting for more entries ( %u ) %s</source>
-        <translation>Ingediend bij masternode, wachtende op meer entries ( %u ) %s</translation>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>Opgegeven -walletdir "%s" is geen map</translation>
     </message>
     <message>
         <source>Synchronizing blockchain...</source>
@@ -4814,6 +4465,10 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>De portemonnee vermijdt minder te betalen dan de minimale doorgeef vergoeding.</translation>
+    </message>
+    <message>
+        <source>This is expected because you are running a pruned node.</source>
+        <translation>Dit wordt verwacht omdat u een pruned node gebruikt.</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
@@ -4848,20 +4503,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Niet in staat om %s te verbinden op deze computer. %s draait waarschijnlijk al.</translation>
     </message>
     <message>
+        <source>Unable to generate initial keys</source>
+        <translation>Kan eerste sleutels niet genereren</translation>
+    </message>
+    <message>
         <source>Upgrading UTXO database</source>
         <translation>Upgraden UTXO-database</translation>
     </message>
     <message>
-        <source>Use devnet chain with provided name</source>
-        <translation>Gebruik Devnet chain met de opgegeven naam</translation>
-    </message>
-    <message>
-        <source>Wallet debugging/testing options:</source>
-        <translation>Portemonee debugging/testing opties:</translation>
-    </message>
-    <message>
-        <source>Wallet is not initialized</source>
-        <translation>Portemonnee is niet geïnitialiseerd</translation>
+        <source>Wallet %s resides outside wallet directory %s</source>
+        <translation>Portemonnee %s bevindt zich buiten de portemonnee map %s</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
@@ -4876,28 +4527,28 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Was niet in staat om de back-up folder aan te maken %s!</translation>
     </message>
     <message>
-        <source>Whether to operate in a blocks only mode (default: %u)</source>
-        <translation>Om in alleen een blockmodus te opereren (standaard: %u)</translation>
+        <source>You can not start a masternode with wallet enabled.</source>
+        <translation>U kunt geen masternode starten met portemennee ingeschakeld.</translation>
     </message>
     <message>
-        <source>You can not start a masternode in lite mode.</source>
-        <translation>Je kan geen masternode starten in lite modus.</translation>
+        <source>You need to rebuild the database using -reindex to change -addressindex</source>
+        <translation>U moet de database opnieuw opbouwen met behulp van -reindex om -addressindex te wijzigen</translation>
     </message>
     <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ notificatieopties:</translation>
+        <source>You need to rebuild the database using -reindex to change -spentindex</source>
+        <translation>U moet de database opnieuw opbouwen met behulp van -reindex om -spentindex te wijzigen</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>U moet de database opnieuw opbouwen met behulp van -reindex om -txindex te wijzigen</translation>
     </message>
     <message>
         <source>no mixing available.</source>
-        <translation>Geen Mixen beschikbaar.</translation>
+        <translation>Mixen is niet beschikbaar.</translation>
     </message>
     <message>
         <source>see debug.log for details.</source>
         <translation>zie debug.log voor meer informatie.</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>RPC-serveropties:</translation>
     </message>
     <message>
         <source>HellenicCoin Core</source>
@@ -4908,44 +4559,28 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>De %s ontwikkelaars</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation>Sta verbindingen van buiten toe (standaard: 1 zonder -proxy of -connect/-noconnect)</translation>
+        <source>%s uses exact denominated amounts to send funds, you might simply need to mix some more coins.</source>
+        <translation>%s gebruikt exact genoemde bedragen om geld te verzenden. Wellicht moet u gewoon wat meer munten mixen.</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
         <translation>Kan geen lock verkrijgen op gegevensmap %s. %s draait waarschijnlijk al.</translation>
     </message>
     <message>
-        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation>Verbindt alleen met opgegeven node(s); -noconnect of -connect=0 alleen bestemd om automatische verbindingen uit te schakelen</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Uitgegeven onder de MIT software licentie, zie het bijgevoegde bestand %s of %s</translation>
+    </message>
+    <message>
+        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
+        <translation>Fout bij laden %s: HD kan niet worden geactiveerd bij een bestaande non-HD portemonnee.</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Waarschuwing: Fout bij het lezen van %s! Alle sleutels zijn in goede orde uitgelezen, maar transactiedata of adresboeklemma's zouden kunnen ontbreken of fouten bevatten.</translation>
     </message>
     <message>
-        <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
-        <translation>Forceer het doorsturen van transacties van goedgekeurde peers, zelfs wanneer deze niet voldoen aan de lokale doorstuurregels (standaard: %d)</translation>
-    </message>
-    <message>
         <source>Incorrect or no devnet genesis block found. Wrong datadir for devnet specified?</source>
         <translation>Onjuiste of geen devnet genesisblok gevonden. Verkeerde devnet gegevensmap opgegeven?</translation>
-    </message>
-    <message>
-        <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
-        <translation>Maximum toegestane peer tijd compensatie. Lokaal perspectief van tijd mag worden beinvloed door peers die met deze hoeveelheid voor of achter lopen. (standaard: %u seconden)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees (in %s) to use in a single wallet transaction or raw transaction; setting this too low may abort large transactions (default: %s)</source>
-        <translation>Maximum totale transactiekosten (in %s) om te gebruiken in een enkele portemonneetransactie; als dit te laag is ingesteld kunnen grote transacties worden verhinderd (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Overschrijf spork adres. Alleen bruikbaar voor regtest en devnet. Dit gebruiken op mainnet of testnet zal u een ban opleveren.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -4956,20 +4591,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Gelieve bij te dragen als je %s nuttig vindt. Bezoek %s voor meer informatie over de software.</translation>
     </message>
     <message>
-        <source>Provide liquidity to PrivateSend by infrequently mixing coins on a continual basis (%u-%u, default: %u, 1=very frequent, high fees, %u=very infrequent, low fees)</source>
-        <translation>Voorzie PrivateSend van liquiditeit door niet vaak maar stelselmatig geld te mixen (%u-%u, standaard: %u, 1=heel vaak, hoge vergoedingen, %u=heel zelden, lage vergoedingen)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation>Vraag peer adressen aan via DNS-naslag, indien weinig adressen (standaard: 1 tenzij -connect/-noconnect)</translation>
-    </message>
-    <message>
-        <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
-        <translation>Beperk benodigde opslag door het prunen (verwijderen) van oude blocks in te schakelen. Dit maakt het mogelijk om het pruneblockchain RPC commando aan te roepen om specifieke blocks te verwijderen, en maakt het automatische prunen van oude blocks mogelijk wanneer een doelgrootte in MiB is ingesteld. Deze modus is niet compatibel met -txindex en -rescan. Waarschuwing: ongedaan maken van deze instellingen vereist het opnieuw downloaden van gehele de blocks. (standaard:0 = uitschakelen prunen, 1 = handmatig prunen via RPC toestaan, &gt;%u = automatisch blokketen bestanden prunen om beneden de gespecificeerde doelgrootte in MiB te blijven)</translation>
-    </message>
-    <message>
-        <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
-        <translation>Specificeer het laagste tarief (in %s/kB) voor transacties die bij het maken van een blok moeten worden in rekening worden gebracht (standaard: %s)</translation>
+        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
+        <translation>Dit is de transactievergoeding die u kunt negeren als het wisselgeld kleiner is dan het restantbedrag</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
@@ -4980,36 +4603,16 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Dit product bevat software dat ontwikkeld is door het OpenSSL Project voor gebruik in de OpenSSL Toolkit %s en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction.</source>
-        <translation>Kan onvoldoende met PrivateSend niet-gedenomineerd geld vinden voor deze transactie.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes for each denominated input to mix funds (%u-%u, default: %u)</source>
-        <translation>Gebruik N afzonderlijke masternodes voor elke gedenomineerde input om geld te mixen (%u-%u, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Use hierarchical deterministic key generation (HD) after BIP39/BIP44. Only has effect during wallet creation/first start</source>
-        <translation>Gebruik hierarchisch deterministische sleutelgeneratie (HD) na BIP39/BIP44. Heeft alleen effect tijdens het maken van de wallet / eerste start.</translation>
-    </message>
-    <message>
-        <source>User defined mnemonic passphrase for HD wallet (BIP39). Only has effect during wallet creation/first start (default: empty string)</source>
-        <translation>Gebruik de door de gebruiker opgegeven mnemonische wachtwoordzin voor HD-wallet (BIP39). Heeft alleen effect tijdens het aanmaken van de portemonnee/eerste start (standaard: empty string)</translation>
-    </message>
-    <message>
-        <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
-        <translation>Gebruikersnaam en gehasht wachtwoord voor JSON-RPC-verbindingen. Het veld &lt;userpw&gt; is in het formaat: &lt;GEBRUIKERSNAAM&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Een kanoniek Pythonscript is inbegrepen in share/rpcuser. De client verbindt dan normaal via de rpcuser=&lt;GEBRUIKERSNAAM&gt;/rpcpassword=&lt;PASWOORD&gt; argumenten. Deze optie kan meerdere keren worden meegegeven</translation>
-    </message>
-    <message>
-        <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
-        <translation>Portemonnee creëert geen transacties die mempool-ketenlimieten schenden (standaard: %u)</translation>
+        <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
+        <translation>Kan blokken niet nalopen. U moet de database opnieuw opbouwen met behulp van -reindex-chainstate.</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Waarschuwing: portemonnee bestand is corrupt, data is veiliggesteld! Originele %s is opgeslagen als %s in %s; als uw balans of transacties incorrect zijn dient u een backup terug te zetten.</translation>
     </message>
     <message>
-        <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
-        <translation>Goedgekeurde peers die verbinden vanaf een bepaald IP adres (vb. 1.2.3.4) of CIDR genoteerd netwerk (vb. 1.2.3.0/24). Kan meerdere keren worden gespecificeerd.</translation>
+        <source>%d of last 100 blocks have unexpected version</source>
+        <translation>%d van de laatste 100 blokken hebben een onverwachte versie</translation>
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -5024,10 +4627,6 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>%s is zeer hoog ingesteld!</translation>
     </message>
     <message>
-        <source>(press q to shutdown and continue later)</source>
-        <translation>(druk op q om af te sluiten en later verder te gaan)</translation>
-    </message>
-    <message>
         <source>-devnet can only be specified once</source>
         <translation>-devnet kan maar één keer worden opgegeven</translation>
     </message>
@@ -5040,16 +4639,12 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>-rpcport moet worden opgegeven wanneer -devnet en -server worden gebruikt</translation>
     </message>
     <message>
-        <source>Allow RFC1918 addresses to be relayed and connected to (default: %u)</source>
-        <translation>Sta toe dat RFC1918 adressen worden doorgegeven en er mee wordt verbonden (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet on startup</source>
-        <translation>Probeer bij het opstarten de geheime sleutel te herstellen van een beschadigde wallet</translation>
-    </message>
-    <message>
         <source>Cannot resolve -%s address: '%s'</source>
         <translation>Kan -%s adres niet herleiden: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>Kan niet schrijven naar data map '%s'; controleer rechten.</translation>
     </message>
     <message>
         <source>Change index out of range</source>
@@ -5072,20 +4667,40 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Fout bij laden %s: Portemonnee vereist een nieuwere versie van %s</translation>
     </message>
     <message>
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>Fout bij laden %s. HD kan niet worden uitgeschakeld bij een HD portemonnee.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
+        <translation>Fout bij het laden van portemonnee %s. Dubbele -wallet bestandsnaam gespecificeerd.</translation>
+    </message>
+    <message>
         <source>Error upgrading chainstate database</source>
         <translation>Fout bij het upgraden van de ketenstaat database</translation>
     </message>
     <message>
+        <source>Error: failed to add socket to kqueuefd (kevent returned error %s)</source>
+        <translation>Fout: kan socket niet toevoegen aan kqueuefd (kevent geeft fout %s)</translation>
+    </message>
+    <message>
         <source>Failed to find mixing queue to join</source>
-        <translation>Het is niet gelukt om een Mix-wachtrij te vinden om bij aan te sluiten</translation>
+        <translation>Het is niet gelukt om een mixwachtrij te vinden om bij aan te sluiten</translation>
     </message>
     <message>
         <source>Failed to start a new mixing queue</source>
-        <translation>Het is niet gelukt om een nieuwe Mix-wachtrij te starten</translation>
+        <translation>Het is niet gelukt om een nieuwe mixwachtrij te starten</translation>
+    </message>
+    <message>
+        <source>Incorrect -rescan mode, falling back to default value</source>
+        <translation>Onjuiste -rescan modus, er wordt terug gevallen op de standaardwaarde</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>Initialisatie sanity check mislukt. %s is aan het afsluiten.</translation>
+    </message>
+    <message>
+        <source>Inputs vs outputs size mismatch.</source>
+        <translation>Invoer versus uitvoer komt niet overeen.</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
@@ -5100,52 +4715,24 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Ongeldig bedrag voor -%s=&lt;bedrag&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid characters in -wallet filename</source>
-        <translation>Ongeldige karakters in -wallet bestandsnaam</translation>
-    </message>
-    <message>
         <source>Invalid spork address specified with -sporkaddr</source>
         <translation>Ongeldig sporkadres opgegeven met -sporkaddr</translation>
-    </message>
-    <message>
-        <source>Keep N HNC anonymized (%u-%u, default: %u)</source>
-        <translation>Hou N HellenicCoin geanonimiseerd (%u-%u, standaard: %u)</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>
         <translation>P2P-adressen aan het laden...</translation>
     </message>
     <message>
-        <source>Print this help message and exit</source>
-        <translation>Print dit helpbericht en sluit af</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Ontvang en geef P2P network alerts weer (standaard: %u)</translation>
-    </message>
-    <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation>Verminder -maxconnections van %d naar %d, vanwege systeembeperkingen.</translation>
     </message>
     <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Geef gegevensdragertransacties door en mijn ze ook (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Geef non-P2SH multisig door (standaard: %u)</translation>
+        <source>Replaying blocks...</source>
+        <translation>Replaying blocks...</translation>
     </message>
     <message>
         <source>Rescanning...</source>
         <translation>Opnieuw scannen...</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Draai in de achtergrond als daemon en aanvaard opdrachten</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Verzend trace/debug-info naar de console in plaats van het debug.log-bestand</translation>
     </message>
     <message>
         <source>Session not complete!</source>
@@ -5156,44 +4743,24 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Sessie verlopen.</translation>
     </message>
     <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Zet database cache grootte in megabytes (%d tot %d, standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Stel de maximale blok grootte in bytes in (standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Toon alle foutopsporingsopties (gebruik: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Verklein debug.log-bestand bij het opstarten van de client (standaard: 1 als geen -debug)</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Ondertekenen van transactie mislukt</translation>
     </message>
     <message>
-        <source>Specify data directory</source>
-        <translation>Stel gegevensmap in</translation>
+        <source>Specified blocks directory "%s" does not exist.</source>
+        <translation>De opgegeven map voor blocks "%s" bestaat niet.</translation>
     </message>
     <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Specificeer het portemonnee bestand (vanuit de gegevensmap)</translation>
+        <source>Last queue was created too recently.</source>
+        <translation>Vorige wachtrij is te recent gecreëerd.</translation>
     </message>
     <message>
-        <source>Specify your own public address</source>
-        <translation>Specificeer uw eigen publieke adres</translation>
+        <source>Last successful action was too recent.</source>
+        <translation>Vorige succesvolle actie is te recent.</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
         <translation>Netwerkthread starten...</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Synchronisatie in behandeling...</translation>
     </message>
     <message>
         <source>Synchronizing governance objects...</source>
@@ -5236,6 +4803,14 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Niet in staat om aan %s te binden op deze computer (bind gaf error %s)</translation>
     </message>
     <message>
+        <source>Unable to locate enough mixed funds for this transaction.</source>
+        <translation>Kan onvoldoende met gedenomineerd geld vinden voor deze transactie.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough non-denominated funds for this transaction.</source>
+        <translation>Kan onvoldoende met niet-gedenomineerd geld vinden voor deze transactie.</translation>
+    </message>
+    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Niet in staat om het sporkbericht te ondertekenen, verkeerde sleutel?</translation>
     </message>
@@ -5248,48 +4823,48 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het HellenicCoi
         <translation>Onbekende staat: id = %u</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Gebruikersnaam voor JSON-RPC-verbindingen</translation>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>Niet-ondersteunde logboekcategorie %s=%s.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>blocks aan het controleren...</translation>
     </message>
     <message>
-        <source>Verifying wallet...</source>
-        <translation>Wallet wordt geverifieerd...</translation>
-    </message>
-    <message>
         <source>Very low number of keys left: %d</source>
         <translation>Het aantal resterende sleutels is heel laag: %d</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Wallet %s bevindt zich buiten de gegevensmap %s</translation>
     </message>
     <message>
         <source>Wallet is locked.</source>
         <translation>Portemonnee zit op slot.</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Portemonnee-opties</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Wallet venster titel</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Waarschuwing</translation>
     </message>
     <message>
-        <source>Your entries added successfully.</source>
-        <translation>Uw gegevens zijn succesvol toegevoegd.</translation>
+        <source>Warning: %s is deprecated, please use %s instead</source>
+        <translation>Waarschuwing: %s is verouderd, gebruik in plaats daarvan %s</translation>
     </message>
     <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Uw transactie was geaccepteerd in de pool!</translation>
+        <source>Warning: can't use %s and %s together, will prefer %s</source>
+        <translation>Waarschuwing: kan %s en %s niet samen gebruiken, voorkeur voor %s</translation>
+    </message>
+    <message>
+        <source>Warning: incorrect parameter %s, path must exist! Using default path.</source>
+        <translation>Waarschuwing: onjuiste parameter %s, pad moet bestaan! Standaard pad wordt gebruikt</translation>
+    </message>
+    <message>
+        <source>You are starting with governance validation disabled.</source>
+        <translation>U begint met governance-validatie uitgeschakeld.</translation>
+    </message>
+    <message>
+        <source>You can not disable governance validation on a masternode.</source>
+        <translation>U kunt governance-validatie op een masternode niet uitschakelen.</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>Uw gegevens zijn succesvol toegevoegd.</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>

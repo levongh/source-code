@@ -2,6 +2,10 @@
 <context>
     <name>AddressBookPage</name>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Търсене по адрес или наименование</translation>
+    </message>
+    <message>
         <source>Right-click to edit address or label</source>
         <translation>Десен бутон за да редактирате адрес или наименование</translation>
     </message>
@@ -130,6 +134,45 @@
     </message>
 </context>
 <context>
+    <name>AppearanceWidget</name>
+    <message>
+        <source>Lighter</source>
+        <translation>Изсветлен</translation>
+    </message>
+    <message>
+        <source>Bolder</source>
+        <translation>Потъмнен</translation>
+    </message>
+    <message>
+        <source>Font Weight Normal:</source>
+        <translation>Нормален шрифт:</translation>
+    </message>
+    <message>
+        <source>Smaller</source>
+        <translation>По-малък</translation>
+    </message>
+    <message>
+        <source>Bigger</source>
+        <translation>По-голям</translation>
+    </message>
+    <message>
+        <source>Font Scale:</source>
+        <translation>Мащаб на шрифта:</translation>
+    </message>
+    <message>
+        <source>Font Family:</source>
+        <translation>Вид на шрифта:</translation>
+    </message>
+    <message>
+        <source>Theme:</source>
+        <translation>Тема:</translation>
+    </message>
+    <message>
+        <source>Font Weight Bold:</source>
+        <translation>Потъмнен шрифт:</translation>
+    </message>
+</context>
+<context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
@@ -146,6 +189,10 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Въведете новата парола повторно</translation>
+    </message>
+    <message>
+        <source>Show password</source>
+        <translation>Покажи парола</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -200,10 +247,6 @@
         <translation>Портфейлът е шифриран</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your funds from being stolen by malware infecting your computer.</source>
-        <translation>%1  ще се затвори сега, за да завърши процеса на шифроване. Не забравяйте, че шифроването на портфейла Ви не може напълно да предпази средствата ви да бъдат откраднати от злонамерен софтуер, който е заразил компютъра Ви.</translation>
-    </message>
-    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. Previous backups of the unencrypted wallet file contain the same HD seed and still have full access to all your funds just like the new, encrypted wallet.</source>
         <translation>ВАЖНО: Всички предишни архиви, които сте направили от файла на портфейла, трябва да бъдат заменени с новоиздадения, шифрован файл на портфейла. Предишните архиви на нешифрования файл с портфейли съдържат едно и също HD сиид и все още имат пълен достъп до всичките ви средства, точно като новия криптиран портфейл.</translation>
     </message>
@@ -253,6 +296,13 @@
     <message>
         <source>Banned Until</source>
         <translation>Забранен до</translation>
+    </message>
+</context>
+<context>
+    <name>BitcoinAmountField</name>
+    <message>
+        <source>Amount in %1</source>
+        <translation>Количество в %1</translation>
     </message>
 </context>
 <context>
@@ -340,6 +390,10 @@
     <message>
         <source>&amp;About %1</source>
         <translation>&amp;Относно %1</translation>
+    </message>
+    <message>
+        <source>Send %1 funds to a HellenicCoin address</source>
+        <translation>Изпрати %1 средства до HellenicCoin адрес</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -498,16 +552,26 @@
         <translation>%1 клиент</translation>
     </message>
     <message>
-        <source>&amp;PrivateSend information</source>
-        <translation>&amp;PrivateSend информация</translation>
+        <source>Wallet: %1
+</source>
+        <translation>Портфейл: %1
+</translation>
     </message>
     <message>
-        <source>Show the PrivateSend basic information</source>
-        <translation>Показване на базова информация на PrivateSend </translation>
+        <source>Wallet is &lt;b&gt;unencrypted&lt;/b&gt;</source>
+        <translation>Портфейлът е &lt;b&gt;нешифрован&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
+    </message>
+    <message>
+        <source>%1 &amp;information</source>
+        <translation>%1 &amp;информация</translation>
+    </message>
+    <message>
+        <source>Show the %1 basic information</source>
+        <translation>Покажи %1 основната информация</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
@@ -598,6 +662,30 @@
         <translation>Информация</translation>
     </message>
     <message>
+        <source>Received and sent multiple transactions</source>
+        <translation>Получени и изпратени множество транзакции</translation>
+    </message>
+    <message>
+        <source>Sent multiple transactions</source>
+        <translation>Изпратени множество транзакции</translation>
+    </message>
+    <message>
+        <source>Received multiple transactions</source>
+        <translation>Получени множество транзакции</translation>
+    </message>
+    <message>
+        <source>Sent Amount: %1
+</source>
+        <translation>Изпратена сума: %1
+</translation>
+    </message>
+    <message>
+        <source>Received Amount: %1
+</source>
+        <translation>Получена сума: %1
+</translation>
+    </message>
+    <message>
         <source>Date: %1
 </source>
         <translation>Дата: %1
@@ -640,10 +728,6 @@
         <translation>HD ключ генератора е &lt;b&gt;включен&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD ключ генератора е &lt;b&gt;изключен&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и в момента &lt;b&gt;отключен&lt;/b&gt;</translation>
     </message>
@@ -654,13 +738,6 @@
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и в момента &lt;b&gt;заключен&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>ClientModel</name>
-    <message>
-        <source>Network Alert</source>
-        <translation>Предупреждение от мрежата</translation>
     </message>
 </context>
 <context>
@@ -730,8 +807,8 @@
         <translation>Получени с адрес</translation>
     </message>
     <message>
-        <source>PS Rounds</source>
-        <translation>PS цикли</translation>
+        <source>Mixing Rounds</source>
+        <translation>Цикли на смесване</translation>
     </message>
     <message>
         <source>Date</source>
@@ -798,10 +875,6 @@
         <translation>Моля преминете към "Режим Списък" за да използвате тази функция.</translation>
     </message>
     <message>
-        <source>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</source>
-        <translation>Избран е не анонимизиран вход. &lt;b&gt;PrivateSend ще бъде изключен.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Ако все още желаете да използвате PrivateSend, моля отмаркирайте всички не анонимизирани входове и след това изберете PrivateSend опцията отново.</translation>
-    </message>
-    <message>
         <source>(%1 locked)</source>
         <translation>(%1 заключен)</translation>
     </message>
@@ -820,6 +893,30 @@
     <message>
         <source>Can vary +/- %1 duff(s) per input.</source>
         <translation>Може да варира +/- %1 duff(s) за вход.</translation>
+    </message>
+    <message>
+        <source>Some coins were unselected because they were spent.</source>
+        <translation>Някои монети не бяха избрани, защото бяха похарчени.</translation>
+    </message>
+    <message>
+        <source>Some coins were unselected because they do not have enough mixing rounds.</source>
+        <translation>Някои монети не бяха избрани, тъй като нямат достатъчно цикли за смесване.</translation>
+    </message>
+    <message>
+        <source>Show all coins</source>
+        <translation>Покажи всички монети</translation>
+    </message>
+    <message>
+        <source>Hide %1 coins</source>
+        <translation>Скрий %1 монети</translation>
+    </message>
+    <message>
+        <source>Show all %1 coins</source>
+        <translation>Покажи всички %1 монети</translation>
+    </message>
+    <message>
+        <source>Show spendable coins only</source>
+        <translation>Покажи само похарчените монети</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -859,10 +956,6 @@
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>Адресът свързан с този запис от списък с адреси. Може да бъде променен само за адреси за изпращане.</translation>
-    </message>
-    <message>
-        <source>New receiving address</source>
-        <translation>Нов адрес за получаване</translation>
     </message>
     <message>
         <source>New sending address</source>
@@ -935,48 +1028,12 @@
         <translation>Опции за командния ред</translation>
     </message>
     <message>
-        <source>Usage:</source>
-        <translation>Използване:</translation>
+        <source>%1 information</source>
+        <translation>%1 информация</translation>
     </message>
     <message>
-        <source>command-line options</source>
-        <translation>опции на командния ред</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>UI опции:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Изберете директория за данни при стартиране (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Задаване на език, например "de_DE" (по подразбиране: какъвто е от системата)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Стартирай минимизиран</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Задай SSL основен сертификат при искане за плащане (по подразбиране: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Покажи начален екран при стартиране (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>Нулиране на всички настройки направени чрез GUI</translation>
-    </message>
-    <message>
-        <source>PrivateSend information</source>
-        <translation>PrivateSend информация</translation>
-    </message>
-    <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the HellenicCoin in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 HNC, 0.01 HNC, 0.1 HNC, 1 HNC and 10 HNC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.helleniccoin.org/en/latest/wallets/helleniccoincore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;PrivateSend основни понятия&lt;/h3&gt; PrivateSend ви дава истинска финансова независимост чрез скриване произхода на средствата ви. Всички HellenicCoin монети в портфейла ви са съставени от различни "входове" които можете да приемете като отделни дискретни монети&lt;br&gt; PrivateSend използва иновативен процес като смесва вашите входове с входовете на други двама души без монетите да напускат изобщо портфейла ви. Имате пълен контрол върху парите си през цялото време. &lt;hr&gt; &lt;b&gt; PrivateSend процесът работи по следния начин:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend започва чрез разделяне на транзакцията ви до стандартни деноминации. Тези деноминации са 0.001 HNC, 0.01 HNC, 0.1 HNC, 1 HNC и 10 HNC --подобно на стандартните пари, които ползваме ежедневно.&lt;/li&gt; &lt;li&gt;Вашия портфейл изпраща запитване към специално конфигурираните софтуерни възли в мрежата, наречени "masternodes." Тези masternodes са информирани, че се интересувате от смесване на определена деноминация. Никаква идентификационна информация не се изпраща към   masternodes, така, че те никога не знаят "кой" сте.&lt;/li&gt; &lt;li&gt;Когато други двама души изпратят подобни съобщения, обозначаващи, че искат да смесят същата деноминация, смесващата сесия започва. Masternode смесват входовете и инструктират портфейлите на тримата потребители да платят новотрансформираните входове обратно към притежателите им. Вашият портфейл плаща деноминацията директно на себе си, но с различен адрес (наричан сменен адрес).  &lt;/li&gt; &lt;li&gt;С цел напълно скриване на доходите ви, вашият портфейл трябва да повтори този процес няколко пъти във всяка деноминация.  Всеки път завършеният процес се нарича "цикъл." Всеки цикъл на PrivateSend прави откриването на първоначалния източник на вашите средства напълно непроследим.&lt;/li&gt; &lt;li&gt;Този смесващ процес се случва като процес на заден фон без никаква намеса от ваша страна. Когато искате да направите транзакция, вашите средства са винаги анонимни. Не е необходимо допълнително изчакване. &lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;ВАЖНО:&lt;/b&gt; Вашият портфейл съдържа само 1000 от тези "сменяеми адреси". Всеки път когато се случва смесването до 9 от вашите адреси се ползват.  Това означава, че тези 1000 адреси се миксират в около 100 смесващи събития. Когато 900 се използват, вашия портфейл трябва да създаде повече адреси. Това може да стане само ако имате автоматично архивиране.&lt;br&gt; Следователно, потребителите, на които е изключено автоматичното архивиране, нямат и  PrivateSend включено. &lt;hr&gt;За повече информация вижте &lt;a href="https://docs.helleniccoin.org/en/latest/wallets/helleniccoincore/privatesend-instantsend.html"&gt;документацията за PrivateSend&lt;/a&gt;.</translation>
+        <source>&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the HellenicCoin in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 HNC, 0.01 HNC, 0.1 HNC, 1 HNC and 10 HNC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style="%2" href="%3"&gt;%1 documentation&lt;/a&gt;.</source>
+        <translation>&lt;h3&gt;%1 основни понятия&lt;/h3&gt; %1 ви дава истинска финансова независимост чрез скриване произхода на средствата ви. Всички HellenicCoin монети в портфейла ви са съставени от различни "входове" които можете да приемете като отделни дискретни монети&lt;br&gt; %1 използва иновативен процес като смесва вашите входове с входовете на други двама души без монетите да напускат изобщо портфейла ви. Имате пълен контрол върху парите си през цялото време. &lt;hr&gt; &lt;b&gt; %1 процесът работи по следния начин:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 започва чрез разделяне на транзакцията ви до стандартни деноминации. Тези деноминации са 0.001 HNC, 0.01 HNC, 0.1 HNC, 1 HNC и 10 HNC --подобно на стандартните пари, които ползваме ежедневно.&lt;/li&gt; &lt;li&gt;Вашия портфейл изпраща запитване към специално конфигурираните софтуерни възли в мрежата, наречени "masternodes." Тези masternodes са информирани, че се интересувате от смесване на определена деноминация. Никаква идентификационна информация не се изпраща към   masternodes, така, че те никога не знаят "кой" сте.&lt;/li&gt; &lt;li&gt;Когато други двама души изпратят подобни съобщения, обозначаващи, че искат да смесят същата деноминация, смесващата сесия започва. Masternode смесват входовете и инструктират портфейлите на тримата потребители да платят ново трансформираните входове обратно към притежателите им. Вашият портфейл плаща деноминацията директно на себе си, но с различен адрес (наричан сменен адрес).  &lt;/li&gt; &lt;li&gt;С цел напълно скриване на доходите ви, вашият портфейл трябва да повтори този процес няколко пъти във всяка деноминация.  Всеки път завършеният процес се нарича "цикъл." Всеки цикъл на %1 прави откриването на първоначалния източник на вашите средства напълно непроследим.&lt;/li&gt; &lt;li&gt;Този смесващ процес се случва като процес на заден фон без никаква намеса от ваша страна. Когато искате да направите транзакция, вашите средства са винаги анонимни. Не е необходимо допълнително изчакване. &lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;ВАЖНО:&lt;/b&gt; Вашият портфейл съдържа само 1000 от тези "сменяеми адреси". Всеки път когато се случва смесването до 9 от вашите адреси се ползват.  Това означава, че тези 1000 адреси се миксират в около 100 смесващи събития. Когато 900 се използват, вашия портфейл трябва да създаде повече адреси. Това може да стане само ако имате автоматично архивиране.&lt;br&gt; Следователно, потребителите, на които е изключено автоматичното архивиране, нямат и  %1 включено. &lt;hr&gt;За повече информация вижте &lt;a style="%2" href="%3"&gt;документацията за %1&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1053,16 +1110,8 @@
         <translation>От</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
-    </message>
-    <message>
         <source>Status</source>
         <translation>Статус</translation>
-    </message>
-    <message>
-        <source>Payee</source>
-        <translation>Получател</translation>
     </message>
     <message>
         <source>0</source>
@@ -1081,16 +1130,16 @@
         <translation>Брой възли:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternodes</translation>
-    </message>
-    <message>
         <source>Show only masternodes this wallet has keys for.</source>
         <translation>Показване само на masternodes, чиито ключове притежава този портфейл.</translation>
     </message>
     <message>
         <source>My masternodes only</source>
         <translation>Само моите masternodes</translation>
+    </message>
+    <message>
+        <source>Service</source>
+        <translation>Услуга</translation>
     </message>
     <message>
         <source>PoSe Score</source>
@@ -1109,8 +1158,24 @@
         <translation>Следващо плащане</translation>
     </message>
     <message>
+        <source>Payout Address</source>
+        <translation>Адрес за изплащане</translation>
+    </message>
+    <message>
         <source>Operator Reward</source>
         <translation>Награда на оператора</translation>
+    </message>
+    <message>
+        <source>Collateral Address</source>
+        <translation>Адрес за обезпечаване</translation>
+    </message>
+    <message>
+        <source>Owner Address</source>
+        <translation>Адрес на собственика</translation>
+    </message>
+    <message>
+        <source>Voting Address</source>
+        <translation>Адрес за гласуване</translation>
     </message>
     <message>
         <source>Copy ProTx Hash</source>
@@ -1119,6 +1184,10 @@
     <message>
         <source>Copy Collateral Outpoint</source>
         <translation>Копирай Collateral Outpoint</translation>
+    </message>
+    <message>
+        <source>Updating...</source>
+        <translation>Обновяване...</translation>
     </message>
     <message>
         <source>ENABLED</source>
@@ -1147,6 +1216,14 @@
     <message>
         <source>NONE</source>
         <translation>НИЩО</translation>
+    </message>
+    <message>
+        <source>Filter by any property (e.g. address or protx hash)</source>
+        <translation>Филтрирайте по някакво свойство (напр. Адрес или хеш на protx)</translation>
+    </message>
+    <message>
+        <source>Please wait...</source>
+        <translation>Моля изчакайте...</translation>
     </message>
     <message>
         <source>Additional information for DIP3 Masternode %1</source>
@@ -1254,12 +1331,12 @@
         <translation>(0 = автоматично, &lt;0 = оставете толкова неизползвани ядра)</translation>
     </message>
     <message>
-        <source>Amount of HellenicCoin to keep anonymized</source>
-        <translation>Постоянно поддържано количество анонимни HellenicCoin монети </translation>
-    </message>
-    <message>
         <source>W&amp;allet</source>
         <translation>П&amp;ортфейл</translation>
+    </message>
+    <message>
+        <source>&amp;Appearance</source>
+        <translation>&amp;Външен вид</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1270,52 +1347,68 @@
         <translation>Показване на раздел Masternodes </translation>
     </message>
     <message>
-        <source>Show additional information and buttons for PrivateSend on overview screen.</source>
-        <translation>Показване на допълнителна информация и бутон PrivateSend на основния екран.</translation>
-    </message>
-    <message>
-        <source>Enable advanced PrivateSend interface</source>
-        <translation>Включване PrivateSend интерфейс за напреднали</translation>
-    </message>
-    <message>
-        <source>Show warning dialog when PrivateSend detects that wallet has very low number of keys left.</source>
-        <translation>Показване на предупреждение когато PrivateSend засече прекалено малък брой оставащи ключове.</translation>
-    </message>
-    <message>
-        <source>Warn if PrivateSend is running out of keys</source>
-        <translation>Предупреди ако PrivateSend е стартиран при недостатъчно ключове</translation>
-    </message>
-    <message>
-        <source>Whether to use experimental PrivateSend mode with multiple mixing sessions per block.&lt;br/&gt;Note: You must use this feature carefully.&lt;br/&gt;Make sure you always have recent wallet (auto)backup in a safe place!</source>
-        <translation>Дали да се използва експериментален PrivateSend режим с мулти сесийно миксиране на блок.&lt;br/&gt;Бележка: Трябва да използвате тази функция внимателно.&lt;br/&gt;Убедете се, че винаги имате скоро направен (авто) архив копие на сигурно място!</translation>
-    </message>
-    <message>
-        <source>Enable PrivateSend &amp;multi-session</source>
-        <translation>Включи PrivateSend &amp;мулти сесия</translation>
-    </message>
-    <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
         <translation>Ако деактивирате харченето на непотвърдено ресто, рестото от транзакция&lt;br/&gt; няма да може да се използва преди да бъде получено поне едно потвърждение. &lt;br/&gt;Това се отразява и на начина на изчисление на баланса ви.</translation>
     </message>
     <message>
-        <source>PrivateSend rounds to use</source>
-        <translation>PrivateSend използвани цикъла</translation>
+        <source>Show mixing interface on Overview screen and reveal an additional screen which allows to spend fully mixed coins only.&lt;br/&gt;A new tab with more settings will also appear in this dialog, please make sure to check them before mixing your coins.</source>
+        <translation>Показване на интерфейса за смесване  в основния прозорец и показване на допълнителен процорез, който позволява да се харчат само напълно смесени монети.&lt;br/&gt; В този диалогов прозорец ще се появи и нов раздел с повече настройки, моля не забравяйте да ги проверите, преди да смесите монетите си. </translation>
     </message>
     <message>
-        <source>This amount acts as a threshold to turn off PrivateSend once it's reached.</source>
-        <translation>Тази сума действа като лимит, за да се изключи PrivateSend, когато веднъж бъде достигнат.</translation>
+        <source>Show additional information and buttons on overview screen.</source>
+        <translation>Показване на допълнителна информация и бутони на основния екран.</translation>
+    </message>
+    <message>
+        <source>Enable advanced interface</source>
+        <translation>Включване на интерфейс за напреднали</translation>
+    </message>
+    <message>
+        <source>Show system popups for mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
+        <translation>Показване на изскачащи прозорци за смесване на транзакции&lt;br/&gt;също както за всички други видове транзакции.</translation>
+    </message>
+    <message>
+        <source>Show popups for mixing transactions</source>
+        <translation>Показване на изскачащи прозорци за смесените транзакции</translation>
+    </message>
+    <message>
+        <source>Show warning dialog when the wallet has very low number of keys left.</source>
+        <translation>Показване на предупреждение когато портфейлът засече прекалено малък брой оставащи ключове.</translation>
+    </message>
+    <message>
+        <source>Warn if the wallet is running out of keys</source>
+        <translation>Предупреди ако портфейла е стартиран при недостатъчно ключове</translation>
+    </message>
+    <message>
+        <source>Whether to use experimental mode with multiple mixing sessions per block.&lt;br/&gt;Note: You must use this feature carefully.&lt;br/&gt;Make sure you always have recent wallet (auto)backup in a safe place!</source>
+        <translation>Дали да се използва експериментален  режим с мулти сесийно смесване за блок.&lt;br/&gt;Бележка: Трябва да използвате тази функция внимателно.&lt;br/&gt;Убедете се, че винаги имате скоро направен (автоматичен) архив на сигурно място!</translation>
+    </message>
+    <message>
+        <source>Enable &amp;multi-session</source>
+        <translation>Включи  &amp;мулти-сесия</translation>
+    </message>
+    <message>
+        <source>Mixing rounds</source>
+        <translation>Цикли на смесване</translation>
+    </message>
+    <message>
+        <source>This amount acts as a threshold to turn off mixing once it's reached.</source>
+        <translation>Тази сума действа като лимит за да се изключи смесването, когато веднъж бъде достигната.</translation>
+    </message>
+    <message>
+        <source>Target balance</source>
+        <translation>Желан баланс</translation>
     </message>
     <message>
         <source>Automatically open the HellenicCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматично отваря порта за HellenicCoin Core клиента в маршрутизатора. Това работи само когато вашият маршрутизатор поддържа UPnP и той е разрешен.</translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>риемай връзки отвън</translation>
+        <source>Accept connections from outside.</source>
+        <translation>Приеми връзки отвън</translation>
     </message>
     <message>
-        <source>Allow incoming connections</source>
-        <translation>Разрешени входящи връзки</translation>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Разреши входящи връзки</translation>
     </message>
     <message>
         <source>Connect to the HellenicCoin network through a SOCKS5 proxy.</source>
@@ -1326,6 +1419,22 @@
         <translation>&amp;Свързване през SOCKS5 прокси (прокси по подразбиране):</translation>
     </message>
     <message>
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>Показва ако зададеното по подразбиране SOCKS5 proxy се използва за намиране на пиъри чрез тази мрежа.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Използвай отделен SOCKS&amp;5 прокси за да достигнеш пиъри от Tor услуги:</translation>
+    </message>
+    <message>
+        <source>Hide the icon from the system tray.</source>
+        <translation>Скрий иконата от системният трей.</translation>
+    </message>
+    <message>
+        <source>&amp;Hide tray icon</source>
+        <translation>Скрий трей иконата</translation>
+    </message>
+    <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>При затваряне на прозореца приложението остава минимизирано. Ако изберете тази опция, приложението може да се затвори само чрез Изход в менюто.</translation>
     </message>
@@ -1334,12 +1443,8 @@
         <translation>URL адреси на трети страни (например block Explorer), които се появяват в раздела с транзакции, като елементи от контекстното меню. %s в URL е заменен с хеша на транзакцията. Отделните URL адреси са разделени с вертикална линия |.</translation>
     </message>
     <message>
-        <source>Expert</source>
-        <translation>Експерт</translation>
-    </message>
-    <message>
-        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>Тази настройка определя броя на отделните masternodes, чрез които ще се извършва анонимизирането.&lt;br/&gt;Повече цикли на анонимизиране дава по-висока степен на сигурност, но и  по-високи такси.</translation>
+        <source>&amp;Third party transaction URLs</source>
+        <translation>&amp;URL транзакции на трети страни</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1358,16 +1463,12 @@
         <translation>Активиране &amp;контролните функции на монетата</translation>
     </message>
     <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Показване на изскачащи системни прозорци при PrivateSend миксирани транзакции&lt;br/&gt;както за всички други видове транзакции.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Показване на изскачащи прозорци за PrivateSend транзакции</translation>
-    </message>
-    <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Изхарчете непотвърденото ресто</translation>
+    </message>
+    <message>
+        <source>This setting determines the amount of individual masternodes that an input will be mixed through.&lt;br/&gt;More rounds of mixing gives a higher degree of privacy, but also costs more in fees.</source>
+        <translation>Тази настройка определя броя на отделните masternodes, чрез които ще се извършва миксирането.&lt;br/&gt;Повече цикли на миксиране дава по-висока степен на сигурност/анонимност, но и  по-високи такси.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1398,10 +1499,6 @@
         <translation>Използва се достигане на пиъри чрез :</translation>
     </message>
     <message>
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Показва ако зададеното по подразбиране SOCKS5 proxy се използва за намиране на пиъри чрез тази мрежа.</translation>
-    </message>
-    <message>
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1416,22 +1513,6 @@
     <message>
         <source>Connect to the HellenicCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Свързване с мрежата на HellenicCoin чрез SOCKS5 прокси за Tor скрити услуги.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Използва отделен SOCKS5 прокси, за достигне на пиъри чрез Tor скрити услуги:</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Прозорец</translation>
-    </message>
-    <message>
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Скрии иконата от системният трей.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Скрий try иконата</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1464,10 +1545,6 @@ https://www.transifex.com/projects/p/helleniccoin/</source>
 https://www.transifex.com/projects/p/helleniccoin/</translation>
     </message>
     <message>
-        <source>User Interface Theme:</source>
-        <translation>Изглед на потребителския интерфейс:</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>Мерна единица за показваните суми:</translation>
     </message>
@@ -1478,10 +1555,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Decimal digits</source>
         <translation>Десетични цифри</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>URL транзакции на трети страни</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -1504,12 +1577,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>&amp;Отказ</translation>
     </message>
     <message>
-        <source>default</source>
-        <translation>по подразбиране</translation>
+        <source>Enable %1 features</source>
+        <translation>Включи%1 функции</translation>
     </message>
     <message>
-        <source>none</source>
-        <translation>няма</translation>
+        <source>default</source>
+        <translation>по подразбиране</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
@@ -1603,10 +1676,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Изразходени:</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
-    </message>
-    <message>
         <source>Status:</source>
         <translation>Статус:</translation>
     </message>
@@ -1617,22 +1686,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Completion:</source>
         <translation>Завършено:</translation>
-    </message>
-    <message>
-        <source>Try to manually submit a PrivateSend request.</source>
-        <translation>Опитай ръчно изпращане на PrivateSend заявка.</translation>
-    </message>
-    <message>
-        <source>Reset the current status of PrivateSend (can interrupt PrivateSend if it's in the process of Mixing, which can cost you money!)</source>
-        <translation>Изчистване на текущия статус на PrivateSend (може да прекъсне PrivateSend по време на миксиране, което може да ви коства пари!)</translation>
-    </message>
-    <message>
-        <source>Information about PrivateSend and Mixing</source>
-        <translation>Информация за PrivateSend and Миксирането</translation>
-    </message>
-    <message>
-        <source>Info</source>
-        <translation>Инфо</translation>
     </message>
     <message>
         <source>Amount and Rounds:</source>
@@ -1659,24 +1712,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Пусни/Спри Смесване</translation>
     </message>
     <message>
-        <source>PrivateSend Balance:</source>
-        <translation>PrivateSend баланс:</translation>
-    </message>
-    <message>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
         <translation>Деноминираните суми, които сте изпратили към Masternode. За смесване, другите потребители трябва да изпратят абсолютно същите деноминирани суми.</translation>
-    </message>
-    <message>
-        <source>(Last Message)</source>
-        <translation>(Последно съобщение)</translation>
-    </message>
-    <message>
-        <source>Try Mix</source>
-        <translation>Опитай смесване</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Изчистване</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -1687,28 +1724,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Автоматичното архивиране е изключено, няма миксиране на разположение!</translation>
     </message>
     <message>
-        <source>Start Mixing</source>
-        <translation>Стартирай миксиране</translation>
-    </message>
-    <message>
-        <source>Stop Mixing</source>
-        <translation>Спри миксиране</translation>
-    </message>
-    <message>
         <source>No inputs detected</source>
         <translation>Не са открити монети</translation>
+    </message>
+    <message>
+        <source>%1 Balance</source>
+        <translation>%1 Баланс</translation>
     </message>
     <message numerus="yes">
         <source>%n Rounds</source>
         <translation><numerusform>%n Цикли</numerusform><numerusform>%n Цикли</numerusform></translation>
     </message>
     <message>
-        <source>Found enough compatible inputs to anonymize %1</source>
-        <translation>Намерени са достатъчно съвместими постъпления за анонимизиране %1</translation>
+        <source>Found enough compatible inputs to mix %1</source>
+        <translation>Намерени са достатъчно съвместими постъпления за да се смесят %1</translation>
     </message>
     <message>
-        <source>Not enough compatible inputs to anonymize &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style='color:red;'&gt;%2&lt;/span&gt; instead</source>
-        <translation>Няма достатъчно съвместими постъпления за анонимизиране &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br/&gt;ще бъдат анонимизирани &lt;span style='color:red;'&gt;%2&lt;/span&gt; вместо</translation>
+        <source>Not enough compatible inputs to mix &lt;span style='%1'&gt;%2&lt;/span&gt;,&lt;br&gt;will mix &lt;span style='%1'&gt;%3&lt;/span&gt; instead</source>
+        <translation>Недостатъчно съвместими входове за смесване &lt;span style='%1'&gt;%2&lt;/span&gt;,&lt;br&gt;ще се смесят &lt;span style='%1'&gt;%3&lt;/span&gt; вместо</translation>
     </message>
     <message>
         <source>Overall progress</source>
@@ -1719,12 +1752,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Деноминирани</translation>
     </message>
     <message>
-        <source>Mixed</source>
-        <translation>Смесени</translation>
+        <source>Partially mixed</source>
+        <translation>Частично миксирани</translation>
     </message>
     <message>
-        <source>Anonymized</source>
-        <translation>Анонимизирани</translation>
+        <source>Mixed</source>
+        <translation>Смесени</translation>
     </message>
     <message numerus="yes">
         <source>Denominated inputs have %5 of %n rounds on average</source>
@@ -1735,6 +1768,26 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>оставащи ключове: %1</translation>
     </message>
     <message>
+        <source>Start %1</source>
+        <translation>Старт %1</translation>
+    </message>
+    <message>
+        <source>If you don't want to see internal %1 fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
+        <translation>Ако не искате да видите вътрешните %1 такси/транзакции изберете "Най-често срещаните" като тип от таб "Транзакции" .</translation>
+    </message>
+    <message>
+        <source>%1 requires at least %2 to use.</source>
+        <translation>%1 изисква поне %2 за да започне.</translation>
+    </message>
+    <message>
+        <source>Wallet is locked and user declined to unlock. Disabling %1.</source>
+        <translation>Портфейлът е заключен и потребителя отказва отключване. Изключване %1.</translation>
+    </message>
+    <message>
+        <source>Stop %1</source>
+        <translation>Стоп %1</translation>
+    </message>
+    <message>
         <source>Disabled</source>
         <translation>Неактивно</translation>
     </message>
@@ -1743,8 +1796,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Много малък брой ключове останали от последният автоматичен архив!</translation>
     </message>
     <message>
-        <source>We are about to create a new automatic backup for you, however &lt;span style='color:red;'&gt; you should always make sure you have backups saved in some safe place&lt;/span&gt;!</source>
-        <translation>Ние ще направим нов автоматичен архив за вас, въпреки това &lt;span style='color:red;'&gt; винаги трябва да сте сигурни, че имате архив запазен на сигурно място&lt;/span&gt;!</translation>
+        <source>We are about to create a new automatic backup for you, however &lt;span style='%1'&gt; you should always make sure you have backups saved in some safe place&lt;/span&gt;!</source>
+        <translation>Ние ще направим нов автоматичен архив за вас, въпреки това &lt;span style='%1'&gt; винаги трябва да сте сигурни, че имате архив запазен на сигурно място&lt;/span&gt;!</translation>
     </message>
     <message>
         <source>Note: You can turn this message off in options.</source>
@@ -1774,28 +1827,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <source>WARNING! Failed to replenish keypool, please unlock your wallet to do so.</source>
         <translation>ВНИМАНИЕ! Неуспешно попълване на keypool, моля отключете портфейла си за да се извърши.</translation>
     </message>
-    <message>
-        <source>Last PrivateSend message:
-</source>
-        <translation>Последно PrivateSend съобщение:
-</translation>
-    </message>
-    <message>
-        <source>PrivateSend was successfully reset.</source>
-        <translation>PrivateSend беше успешно нулиран.</translation>
-    </message>
-    <message>
-        <source>If you don't want to see internal PrivateSend fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>Ако не искате да видите вътрешните PrivateSend такси/транзакции изберете "Най-често срещаните" като тип от раздел "Транзакции" .</translation>
-    </message>
-    <message>
-        <source>PrivateSend requires at least %1 to use.</source>
-        <translation>PrivateSend се нуждае от поне %1 за да започне.</translation>
-    </message>
-    <message>
-        <source>Wallet is locked and user declined to unlock. Disabling PrivateSend.</source>
-        <translation>Портфейлът е заключен и потребителя отказва отключване. PrivateSend е деактивиран.</translation>
-    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1810,6 +1841,10 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>URI handling</source>
         <translation>Обработка на URI</translation>
+    </message>
+    <message>
+        <source>'helleniccoin://' is not a valid URI. Use 'helleniccoin:' instead.</source>
+        <translation>'helleniccoin://' не е валиден URI. Използвайте 'helleniccoin:' вместо това.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1906,9 +1941,57 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <source>Ping</source>
         <translation>Пинг</translation>
     </message>
+    <message>
+        <source>Sent</source>
+        <translation>Изпратени</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Получени</translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
+    <message>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Изберете папка за данни при стартиране (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Set the font family. Possible values: %1. (default: %2)</source>
+        <translation>Изберете вид на шрифта. Възможни стойности: %1. (по подразбиране: %2)</translation>
+    </message>
+    <message>
+        <source>Set a scale factor which gets applied to the base font size. Possible range %1 (smallest fonts) to %2 (largest fonts). (default: %3)</source>
+        <translation>Изберете мащабиране, което ще се приложи към основният размер на шрифта. Възможни граници %1 (най-малките шрифтове) до %2 (най-големите шрифтове). (по подразбиране: %3)</translation>
+    </message>
+    <message>
+        <source>Set the font weight for bold texts. Possible range %1 to %2 (default: %3)</source>
+        <translation>Задайте дебелина на шрифта за удебелени текстове. Възможни граници %1 до %2 (по подразбиране: %3)</translation>
+    </message>
+    <message>
+        <source>Set the font weight for normal texts. Possible range %1 to %2 (default: %3)</source>
+        <translation>Задайте дебелина за нормални текстове. Възможни граници %1 до %2 (по подразбиране: %3)</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Задаване на език, например "de_DE" (по подразбиране: какъвто системния)</translation>
+    </message>
+    <message>
+        <source>Start minimized</source>
+        <translation>Стартирай минимизиран</translation>
+    </message>
+    <message>
+        <source>Reset all settings changed in the GUI</source>
+        <translation>Нулиране на всички настройки направени чрез GUI</translation>
+    </message>
+    <message>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Задай SSL основен сертификат при искане за плащане (по подразбиране: -system-)</translation>
+    </message>
+    <message>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Покажи начален екран при стартиране (по подразбиране: %u)</translation>
+    </message>
     <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 все още не е излязъл безопастно...</translation>
@@ -1920,6 +2003,18 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Enter a HellenicCoin address (e.g. %1)</source>
         <translation>Въведете HellenicCoin адрес (напр.%1)</translation>
+    </message>
+    <message>
+        <source>Appearance Setup</source>
+        <translation>Конфигуриране на изгледа</translation>
+    </message>
+    <message>
+        <source>Please choose your preferred settings for the appearance of %1</source>
+        <translation>Моля изберете предпочитаните настройки за изгледа от %1</translation>
+    </message>
+    <message>
+        <source>This can also be adjusted later in the "Appearance" tab of the preferences.</source>
+        <translation>Това може да бъде настроено по-късно от "Изглед" таб в настройките.</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1978,6 +2073,22 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>%1 и %2</translation>
     </message>
     <message>
+        <source>%1 B</source>
+        <translation>%1 Б</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 КБ</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 МБ</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 ГБ</translation>
+    </message>
+    <message>
         <source>unknown</source>
         <translation>неизвестен</translation>
     </message>
@@ -1995,6 +2106,34 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Error: %1</source>
         <translation>Грешка: %1</translation>
+    </message>
+    <message>
+        <source>Error: Failed to load application fonts.</source>
+        <translation>Грешка: Неуспешно зареждане шрифтовете на приложението.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-family invalid. Valid values: %1.</source>
+        <translation>Грешка: Невалиден вид шрифт. Валидни стойности: %1.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-weight-normal invalid. Valid range %1 to %2.</source>
+        <translation>Грешка: Невалидна дебелина на нормален шрифт. Валидни граници %1 до %2.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-weight-bold invalid. Valid range %1 to %2.</source>
+        <translation>Грешка: Невалидна дебелина на удебелен шрифт. Валидни граници %1 до %2.</translation>
+    </message>
+    <message>
+        <source>Error: Specified font-scale invalid. Valid range %1 to %2.</source>
+        <translation>Грешка: Невалидно мащабиране на шрифта. Валидни граници %1 до %2.</translation>
+    </message>
+    <message>
+        <source>Error: Invalid -custom-css-dir path.</source>
+        <translation>Грешка: Невалиден -custom-css-dir път.</translation>
+    </message>
+    <message>
+        <source>Error: %1 CSS file(s) missing in -custom-css-dir path.</source>
+        <translation>Грешка: %1 CSS липсващи файлов(е) в -custom-css-dir път.</translation>
     </message>
 </context>
 <context>
@@ -2145,14 +2284,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>&amp;Мрежов трафик</translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Изчисти</translation>
-    </message>
-    <message>
-        <source>Totals</source>
-        <translation>Общо:</translation>
-    </message>
-    <message>
         <source>Received</source>
         <translation>Получени</translation>
     </message>
@@ -2163,6 +2294,10 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>&amp;Peers</source>
         <translation>&amp;Пиъри</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Портфейл:</translation>
     </message>
     <message>
         <source>Banned peers</source>
@@ -2197,6 +2332,22 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Синхронизирани блокове</translation>
     </message>
     <message>
+        <source>Rescan blockchain files 1</source>
+        <translation>Повторно сканиране на блокчейн файловете 1</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain files 2</source>
+        <translation>Повторно сканиране на блокчейн файловете 2</translation>
+    </message>
+    <message>
+        <source>-rescan=1: Rescan the block chain for missing wallet transactions starting from wallet creation time.</source>
+        <translation>-rescan=1: Повторно сканиране на блокчейна за липсващи транзакции в портфейла, започвайки от времето на създаване на портфейла.</translation>
+    </message>
+    <message>
+        <source>-rescan=2: Rescan the block chain for missing wallet transactions starting from genesis block.</source>
+        <translation>-rescan=2: Повторно сканиране на блокчейна за липсващи транзакции в портфейла, започвайки от първият блок в мрежата.</translation>
+    </message>
+    <message>
         <source>Wallet Path</source>
         <translation>Път на портфейла</translation>
     </message>
@@ -2209,8 +2360,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Datadir</translation>
     </message>
     <message>
+        <source>Last block hash</source>
+        <translation>Хеш на последният блок</translation>
+    </message>
+    <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Отваря %1 файла за откриване на грешки от текущата папка. Това може да отнеме няколко секунди при по-големи файлове.</translation>
+    </message>
+    <message>
+        <source>InstantSend locks</source>
+        <translation>InstantSend заключени</translation>
+    </message>
+    <message>
+        <source>(none)</source>
+        <translation>(липсва)</translation>
     </message>
     <message>
         <source>Decrease font size</source>
@@ -2219,6 +2382,18 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Increase font size</source>
         <translation>Увеличаване размера на шрифта</translation>
+    </message>
+    <message>
+        <source>&amp;Reset</source>
+        <translation>&amp;Изчистване</translation>
+    </message>
+    <message>
+        <source>Node Type</source>
+        <translation>Вид нод</translation>
+    </message>
+    <message>
+        <source>PoSe Score</source>
+        <translation>PoSe точки</translation>
     </message>
     <message>
         <source>Services</source>
@@ -2269,10 +2444,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Възстановен портфейл</translation>
     </message>
     <message>
-        <source>Rescan blockchain files</source>
-        <translation>Повторно сканиране на блокчейн файловете</translation>
-    </message>
-    <message>
         <source>Recover transactions 1</source>
         <translation>Възстановени транзакции 1</translation>
     </message>
@@ -2291,10 +2462,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</source>
         <translation>-salvagewallet: Опит да се възстановят частни ключове от повреден wallet.dat</translation>
-    </message>
-    <message>
-        <source>-rescan: Rescan the block chain for missing wallet transactions.</source>
-        <translation>-rescan: Повторно сканиране на регистъра от блокове за липсващи транзакции в портфейла.</translation>
     </message>
     <message>
         <source>-zapwallettxes=1: Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
@@ -2353,15 +2520,19 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Добре дошли в %1 RPC конзолата.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Използвайте стрелки надолу и нагореза разглеждане на историятаот команди и &lt;b&gt;Ctrl-L&lt;/b&gt; за изчистване на конзолата.</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Използвайте стрелките нагоре и надолу  за разглеждане на историята, и %1 за изчистване на екрана.</translation>
     </message>
     <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Напишете &lt;b&gt;help&lt;/b&gt;, за да прегледате възможните команди.</translation>
+        <source>Type %1 for an overview of available commands.</source>
+        <translation>Въведи %1 за преглед на наличните команди.</translation>
     </message>
     <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
+        <source>For more information on using this console type %1.</source>
+        <translation>За повече информация при използването на тази конзола въведете %1.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
         <translation>ВНИМАНИЕ: Измамниците са били активни, казвайки на потребителите да въвеждат команди тук, като крадат съдържанието на портфейла им. Не използвайте тази конзола, без да разберете напълно значението на командата.</translation>
     </message>
     <message>
@@ -2381,20 +2552,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Общо: %1 (Включено: %2)</translation>
     </message>
     <message>
-        <source>%1 B</source>
-        <translation>%1 Б</translation>
+        <source>Executing command without any wallet</source>
+        <translation>Изпълнение на команди без портфейл</translation>
     </message>
     <message>
-        <source>%1 KB</source>
-        <translation>%1 КБ</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 МБ</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 ГБ</translation>
+        <source>Executing command using "%1" wallet</source>
+        <translation>За изпълняване на команди използвайте "%1" портфейл</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -2425,20 +2588,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Не</translation>
     </message>
     <message>
+        <source>Regular</source>
+        <translation>Редовно</translation>
+    </message>
+    <message>
+        <source>Masternode</source>
+        <translation>Masternode</translation>
+    </message>
+    <message>
+        <source>Verified Masternode</source>
+        <translation>Проверен Masternode</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Неизвестни</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
-    <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Повторна употреба на един от адресите за получаване.&lt;br&gt;При повторно използване на адреси са възможни проблеми със сигурността и личната неприкосновеност.&lt;br&gt;Не използвайте адреса, освен ако не ре-генерирате предишна заявка за плащане.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>П&amp;овторно използване на съществуващ адрес за получаване (не се препоръчва)</translation>
-    </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HellenicCoin network.</source>
         <translation>Възможност  да се прикрепи съобщение към заявката за плащане, което да бъде показано при отваряне на заявката. Забележка: съобщението няма да бъде изпратено с плащането по мрежата на HellenicCoin.</translation>
@@ -2484,10 +2651,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Изчистване</translation>
     </message>
     <message>
-        <source>Request InstantSend</source>
-        <translation>Заявка за InstantSend</translation>
-    </message>
-    <message>
         <source>Requested payments history</source>
         <translation>История на заявките за плащане</translation>
     </message>
@@ -2506,6 +2669,14 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Remove</source>
         <translation>Премахване</translation>
+    </message>
+    <message>
+        <source>Enter a label to associate with the new receiving address</source>
+        <translation>Въведете етикет, с който да свържете  новия адрес за получаване</translation>
+    </message>
+    <message>
+        <source>Enter a message to attach to the payment request</source>
+        <translation>Въведете съобщение, което да прикачите към искането за плащане</translation>
     </message>
     <message>
         <source>Copy URI</source>
@@ -2571,16 +2742,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Съобщение</translation>
     </message>
     <message>
-        <source>InstantSend</source>
-        <translation>InstantSend</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>Да</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Не</translation>
+        <source>Wallet</source>
+        <translation>Портфейл</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -2689,14 +2852,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Избери...</translation>
     </message>
     <message>
-        <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until your have validated the complete chain.</source>
-        <translation>Използването на fallbackfee може да доведе до изпращане на транзакция, което ще отнеме няколко часа или дни (или никога), за да потвърдите. Помислете дали да изберете вашата такса ръчно или изчакате, докато валидирате пълната верига.</translation>
-    </message>
-    <message>
-        <source>Warning: Fee estimation is currently not possible.</source>
-        <translation>Внимание: В момента е невъзможно изчисляването на таксата</translation>
-    </message>
-    <message>
         <source>collapse fee-settings</source>
         <translation>Показване настройки за такса</translation>
     </message>
@@ -2705,20 +2860,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Целево време за потвърждение:</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
-    </message>
-    <message>
-        <source>InstantSend</source>
-        <translation>InstantSend</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 Hellenic and the transaction is only 250 bytes, then "per kilobyte" only pays 250 Hellenic in fee,&lt;br /&gt;while "at least" pays 1000 Hellenic. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако променената такса е 1000 Hellenic и транзакцията е само 250 байта, тогава "за килобайт" само плаща такса 250 Hellenic,,&lt;br /&gt; тогава"за последно" заплаща 1000 Hellenic. За транзакции по-големи от килобайт едновременно се заплащат от килобайт.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 Hellenic and the transaction is only 250 bytes, then "per kilobyte" only pays 250 Hellenic in fee,&lt;br /&gt;while "total at least" pays 1000 Hellenic. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако променената такса е 1000 Hellenic и транзакцията е само 250 байта, тогава "за килобайт" само плаща такса 250 Hellenic,&lt;br /&gt; тогава"за последно" заплаща 1000 Hellenic. За транзакции по-големи от килобайт едновременно се заплащат от килобайт.</translation>
+        <source>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 duffs in fee,&lt;br /&gt;while "at least" pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако променената такса е 1000 duffs и транзакцията е само 250 байта, тогава "за килобайт" само плаща такса 250 duffs,,&lt;br /&gt; тогава"за последно" заплаща 1000 duffs. За транзакции по-големи от килобайт едновременно се заплащат от килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for helleniccoin transactions than the network can process.</source>
@@ -2729,12 +2872,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>за килобайт</translation>
     </message>
     <message>
-        <source>Hide</source>
-        <translation>Скрит</translation>
+        <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
+        <translation>Използването на резервната такса може да доведе до изпращане на транзакция, което ще отнеме няколко часа или дни (или никога), за потвърждение. Помислете дали да изберете вашата такса ръчно или да изчакате, докато валидирате пълната верига.</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>сбор на края</translation>
+        <source>Note: Not enough data for fee estimation, using the fallback fee instead.</source>
+        <translation>Бележка: Няма достатъчно данни за оценка на таксата, вместо това използвайте резервната такса.</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Скрит</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2751,14 +2898,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Смарт таксата не е разпозната все още.Това ще отнеме няколко блока... )</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>нормално</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>бързо</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -2817,24 +2956,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Копирай рестото</translation>
     </message>
     <message>
+        <source>%1 (%2 blocks)</source>
+        <translation>%1 (%2 блока)</translation>
+    </message>
+    <message>
+        <source>from wallet %1</source>
+        <translation>от портфейл %1</translation>
+    </message>
+    <message>
         <source>using</source>
         <translation>използвайки</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>анонимни средства</translation>
-    </message>
-    <message>
-        <source>(privatesend requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(privatesend изисква тази сума да бъде закръглена до най-близката %1).</translation>
-    </message>
-    <message>
-        <source>any available funds (not anonymous)</source>
-        <translation>всякакви налични средства (не анонимизирани)</translation>
-    </message>
-    <message>
-        <source>and InstantSend</source>
-        <translation>и InstantSend</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2855,6 +2986,42 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
         <translation>&lt;b&gt;(%1 of %2 показани записи)&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>S&amp;end mixed funds</source>
+        <translation>Изпращайте смесени средства</translation>
+    </message>
+    <message>
+        <source>Confirm the %1 send action</source>
+        <translation>Потвърдете изпращането %1 </translation>
+    </message>
+    <message>
+        <source>%1 funds only</source>
+        <translation>%1 средства само</translation>
+    </message>
+    <message>
+        <source>any available funds</source>
+        <translation>всякакви налични средства</translation>
+    </message>
+    <message>
+        <source>(%1 transactions have higher fees usually due to no change output being allowed)</source>
+        <translation>(%1 транзакциите  имат по-високи такси, обикновено поради това, че не се допуска промяна на изхода)</translation>
+    </message>
+    <message>
+        <source>Transaction size: %1</source>
+        <translation>Размер на транзакцията: %1</translation>
+    </message>
+    <message>
+        <source>Fee rate: %1</source>
+        <translation>Стойност на таксата: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>This transaction will consume %n input(s)</source>
+        <translation><numerusform>Тази транзакция ще използва %n входа</numerusform><numerusform>Тази транзакция ще използва %n входа</numerusform></translation>
+    </message>
+    <message>
+        <source>Warning: Using %1 with %2 or more inputs can harm your privacy and is not recommended</source>
+        <translation>Внимание: Използването %1 с %2 или повече входове могат да навредят на поверителността ви и не се препоръчва</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2895,10 +3062,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Payment request expired.</source>
         <translation>Заявката за плащане е изтекла</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n block(s)</source>
-        <translation><numerusform>%n блокове</numerusform><numerusform>%n блокове </numerusform></translation>
     </message>
     <message>
         <source>Pay only the required fee of %1</source>
@@ -2982,6 +3145,10 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>Извадете таксата от сумата</translation>
+    </message>
+    <message>
+        <source>Use available balance</source>
+        <translation>Използвай наличния баланс</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -3117,8 +3284,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Изчисти всички проверени съобщения в полето</translation>
     </message>
     <message>
+        <source>Enter a message to be signed</source>
+        <translation>Въведете съобщение за подписване</translation>
+    </message>
+    <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Натиснете "Подписване на съобщение" за да създадете подпис</translation>
+    </message>
+    <message>
+        <source>Enter a message to be verified</source>
+        <translation>Въведете съобщението за проверка</translation>
+    </message>
+    <message>
+        <source>Enter a signature for the message to be verified</source>
+        <translation>Въведете подпис за проверка на съобщението</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3175,16 +3354,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
-    <message>
-        <source>Version %1</source>
-        <translation>Версия %1</translation>
-    </message>
 </context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
         <source>KB/s</source>
         <translation>КБ/с</translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation>Общо</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Получени</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Изпратени</translation>
     </message>
 </context>
 <context>
@@ -3200,10 +3387,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>conflicted</source>
         <translation>конфликтно</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/офлайн</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
@@ -3230,36 +3413,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>включена в %1 блока</translation>
     </message>
     <message>
-        <source>locked via LLMQ based ChainLocks</source>
-        <translation>заключена чрез LLMQ базирани ChainLocks</translation>
-    </message>
-    <message>
-        <source>verified via LLMQ based InstantSend</source>
-        <translation>потвърдена чрез LLMQ базиран InstantSend</translation>
+        <source>locked via ChainLocks</source>
+        <translation>заключена чрез  ChainLocks</translation>
     </message>
     <message>
         <source>verified via InstantSend</source>
         <translation>потвърдено чрез InstantSend</translation>
     </message>
     <message>
-        <source>InstantSend verification in progress - %1 of %2 signatures</source>
-        <translation>InstantSend потвърждение в процес - %1 от %2 подписани</translation>
-    </message>
-    <message>
-        <source>InstantSend verification failed</source>
-        <translation>InstantSend потвърждение неуспешно</translation>
-    </message>
-    <message>
         <source>Status</source>
         <translation>Статус</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, все още не е изпратено</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, излъчено през %n нода</numerusform><numerusform>, излъчено през %n нода</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3416,10 +3579,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Подлежи на промяна до %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>Офлайн</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Непотвърдено</translation>
     </message>
@@ -3444,12 +3603,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Неотлежал (%1 потвърждения, ще бъдат на разположение след %2)</translation>
     </message>
     <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Блокът не е получен от останалите участници и най-вероятно няма да бъде одобрен.</translation>
-    </message>
-    <message>
         <source>Generated but not accepted</source>
         <translation>Генерирана, но отхвърлена </translation>
+    </message>
+    <message>
+        <source>verified via InstantSend</source>
+        <translation>потвърдено чрез InstantSend</translation>
+    </message>
+    <message>
+        <source>locked via ChainLocks</source>
+        <translation>заключена чрез  ChainLocks</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -3460,8 +3623,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Получен от</translation>
     </message>
     <message>
-        <source>Received via PrivateSend</source>
-        <translation>Получени чрез PrivateSend</translation>
+        <source>Received via %1</source>
+        <translation>Получени с %1</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3476,24 +3639,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Емитирани</translation>
     </message>
     <message>
-        <source>PrivateSend Denominate</source>
-        <translation>PrivateSend деноминиране</translation>
+        <source>%1 Mixing</source>
+        <translation>%1 Смесване</translation>
     </message>
     <message>
-        <source>PrivateSend Collateral Payment</source>
-        <translation>PrivateSend обезпечение на плащането</translation>
+        <source>%1 Collateral Payment</source>
+        <translation>%1 обезпечено плащането</translation>
     </message>
     <message>
-        <source>PrivateSend Make Collateral Inputs</source>
-        <translation>PrivateSend прави обезпечение на входовете</translation>
+        <source>%1 Make Collateral Inputs</source>
+        <translation>%1 прави обезпечение на постъпленията</translation>
     </message>
     <message>
-        <source>PrivateSend Create Denominations</source>
-        <translation>PrivateSend създава деноминации</translation>
+        <source>%1 Create Denominations</source>
+        <translation>%1  направени деноминации</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
+        <source>%1 Send</source>
+        <translation>%1 Изпрати</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3524,10 +3687,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Дали има или не наблюдаван/watch-only адрес участващ в тази транзакция.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Дали тази транзакция е била заключена чрез InstantSend.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Дефинирани от потребителя намерение/цели на сделката.</translation>
     </message>
@@ -3541,14 +3700,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>All</source>
         <translation>Всички</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>Заключена чрез InstantSend</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>Не е заключена чрез InstantSend</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3587,24 +3738,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Изпратени на</translation>
     </message>
     <message>
-        <source>PrivateSend</source>
-        <translation>PrivateSend</translation>
+        <source>%1 Send</source>
+        <translation>%1 Изпрати</translation>
     </message>
     <message>
-        <source>PrivateSend Make Collateral Inputs</source>
-        <translation>PrivateSend прави обезпечение на входовете</translation>
+        <source>%1 Make Collateral Inputs</source>
+        <translation>%1 Направи обезпечение на постъпленията</translation>
     </message>
     <message>
-        <source>PrivateSend Create Denominations</source>
-        <translation>PrivateSend създава деноминации</translation>
+        <source>%1 Create Denominations</source>
+        <translation>%1  Направи деноминации</translation>
     </message>
     <message>
-        <source>PrivateSend Denominate</source>
-        <translation>PrivateSend деноминиране</translation>
+        <source>%1 Mixing</source>
+        <translation>%1 Смесване</translation>
     </message>
     <message>
-        <source>PrivateSend Collateral Payment</source>
-        <translation>PrivateSend обезпечение на плащането</translation>
+        <source>%1 Collateral Payment</source>
+        <translation>%1 обезпечено плащането</translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -3619,8 +3770,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Други</translation>
     </message>
     <message>
-        <source>Enter address or label to search</source>
-        <translation>Търсене по адрес или наименование</translation>
+        <source>Enter address, transaction id, or label to search</source>
+        <translation>Въведете адрес,номер на транзакция или етикет за търсене</translation>
     </message>
     <message>
         <source>Min amount</source>
@@ -3751,14 +3902,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <source>Send Coins</source>
         <translation>Изпращане</translation>
     </message>
-    <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HNC.</source>
-        <translation>InstantSend не поддържа толкова високи стойности за изпращане все още. Транзакциите в момента са ограничени до %1 HNC.</translation>
-    </message>
-    <message>
-        <source>Used way too many inputs (&gt;%1) for this InstantSend transaction, fees could be huge.</source>
-        <translation>Използвани са твърде много входове  (&gt;%1) за тази InstantSend транзакция, таксите могат да бъдат огромни.</translation>
-    </message>
 </context>
 <context>
     <name>WalletView</name>
@@ -3798,40 +3941,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Базата на портфейла беше запазена успешно в %1.</translation>
     </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отказ</translation>
+    </message>
 </context>
 <context>
     <name>helleniccoin-core</name>
     <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Свързва се с посочения адрес и винаги слуша за него. Използвайте [хост]:порт за изписване при IPv6</translation>
-    </message>
-    <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Грешка: Очакването на входящи връзки е неуспешно (върната грешка %s)</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Изпълни командата когато се получи съответното предупреждение или се появи друг проблем с мрежата (%s в cmd е подменено от съобщение)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Изпълнете командата когато транзакцията в портфейла се променя  (%s в cmd е подменено с TxID)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Изпълнете командата когато има промяна в най-добрият блок (%s в cmd е подменена от  block hash)</translation>
-    </message>
-    <message>
-        <source>Name to construct url for KeePass entry that stores the wallet passphrase</source>
-        <translation>Име за създаване на URL за KeePass входа , който съхранява паролата за портфейла</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Определя максималния размер на висок приоритет/ниска такса за транзакция в байтове (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Задаване броя на нишките потвърждаващи скрипта  (%u до %d, 0 = автоматично, &lt;0 = да се оставят толкова ядра свободни, по подразбиране: %d)</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -3846,56 +3965,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Внимание: Не е намерена пълна съвместимост с останалите в мрежата ! Може би се нуждаете от обновяване , или някой от другите нодове се нуждае от обновяване .</translation>
     </message>
     <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Приемай команден ред и JSON-RPC команди</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Добави възел, към който да се свърже и поддържай връзката отворена</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Разреши DNS справка за -addnode, -seednode и -connect</translation>
-    </message>
-    <message>
         <source>Already have that input.</source>
         <translation>Вече има такъв вход.</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Опции за създаване на блок:</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
         <translation>Връщане към по-стара версия на портфейла е невъзможно</translation>
     </message>
     <message>
-        <source>Cannot write default address</source>
-        <translation>Не може да напише адреса по подразбиране</translation>
-    </message>
-    <message>
         <source>Collateral not valid.</source>
         <translation>Обезпечението невалидно.</translation>
     </message>
     <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Свържи се с възел за зараждане на адреси на пиъри, след това прекъсни връзката</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Настройки на връзката:</translation>
-    </message>
-    <message>
         <source>Corrupted block database detected</source>
         <translation>Открита е повредена блок база данни</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Опции за Откриване на грешки/Тестване:</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Не зареждай портфейла и деактивирай RPC повикванията на портфейла</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3942,164 +4025,36 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Неуспешно "слушане" на всеки порт. Използвайте -listen=0 ако искате това.</translation>
     </message>
     <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 =запазва tx meta data напр.акаунта на собственика и информация за искането за плащане,  2 = отпада tx meta data)</translation>
-    </message>
-    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee  е с много голяма зададена стойност! Това е транзакционната такса, която ще платите ако направите единична транзакция.</translation>
     </message>
     <message>
-        <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
-        <translation>Размера на такса (в %s/kB), която ще бъде използвана има достатъчно данни(по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
-        <translation>Приема препредадените транзакции получени от белия списък на пиърите,  дори когато не са препредадени транзакциите (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Позволява JSON-RPC връзки от определен източник. Важи за &lt;IP&gt; са един единствен IP (например 1.2.3.4), мрежа / мрежова маска (напр. 1.2.3.4/255.255.255.0) или мрежа / CIDR (напр. 1.2.3.4/24). Тази опция може да бъде променяна многократно</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Свързва се с посочения адрес и добави в whitelist свързаните към него пиъри. Използвайте [хост]:порт за изписване при IPv6</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Създаване на нови файлове с достъп по подразбиране , вместо umask 077 (в сила само при изключена функционалност на портфейла)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Изтриване на всички транзакции на портфейла и  възстановява само тези части на блок веригата чрез -rescan при стартиране</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Включване публикуване на сурови транзакции при опит за двойно похарчване с InstantSend в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Включване публикуването хеша на транзакция при опит за двойно похарчване с InstantSend в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
-        <translation>Грешка при зареждане %s: Не може да включите HD на вече съществуващ не-HD портфейл</translation>
+        <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
+        <translation>Не може да осигури конкретни връзки и да накара addrman да намира изходящи връзки едновременно.</translation>
     </message>
     <message>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
         <translation>Намерени са непотвърдени деноминирани средства, трябва да изчакате потвърждаването им за да продължите</translation>
     </message>
     <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>Как цялостната проверка на блок от -checkblocks е (0-4, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Ако paytxfee не е зададен,включва достатъчно такса, така транзакциите започват потвърждение средно в рамките n блокове(по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Ако този блок е във веригата приемете, че той и предишните са валидни и евентуално пропуснете този скрипт за проверка (0 за проверка на всичко, по подразбиране: %s, testnet: %s)</translation>
+        <source>Invalid -socketevents ('%s') specified. Only these modes are supported: %s</source>
+        <translation>Невалидни -socketevents ('%s') . Само тези режим се поддържат: %s</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>Невалидна сума за -maxtxfee=&lt;amount&gt;: '%s' (трябва да бъде най-малко от %s за да се избегне забиване на транзакциите)</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Поддържай пълен списък с транзакциите, използван от getrawtransaction rpc повикването (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Make sure to encrypt your wallet and delete all non-encrypted backups after you verified that wallet works!</source>
-        <translation>Уверете се, че шифровате портфейла си и изтривате всички некриптирани архиви, след като сте проверили, че този портфейл работи!</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Максимален размер на данните в данни съдържащите транзакции , които можем да предадем или изкопаем  (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Брой секунди до възтановяване на връзката за зле държащите се пиъри (по подразбиране %u)</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Изходяща информация за грешки (по подразбиране: %u, задаването на &lt;category&gt; е опция)</translation>
-    </message>
-    <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Отменя се минималният брой ауторизатори на spork за промяна на стойността на spork. Полезно само за regtest и devnet. Използването на това в mainnet или testnet ще ви изхвърли от мрежата.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>Използвай N броя различни masternodes в паралел за миксиране на средства (%u-%u, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Използва отделен SOCKS5 прокси, за достигне на пиъри чрез Tor скрити услуги (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>User defined mnemonic for HD wallet (bip39). Only has effect during wallet creation/first start (default: randomly generated)</source>
-        <translation>Потребителски дефиниран мнемоничен за HD портфейла (bip39). Има ефект само по време на създаване на портфейла / първия старт (по подразбиране: произволно генериран)</translation>
-    </message>
-    <message>
-        <source>User defined seed for HD wallet (should be in hex). Only has effect during wallet creation/first start (default: randomly generated)</source>
-        <translation>Дефинирани от потребителя части за HD портфейл (трябва да са в шестнадесети). Има ефект само  по време на създаването на портфейла / първия старт (по подразбиране: произволно генериран)</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Whitelisted не могат да бъдат DoS забранени и техните транзакции ще бъдат винаги предадени, дори ако вече са в  mempool, полезно напр. за gateway</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation>Нужно е възстановяване на базата данни, използвайте -reindex-chainstate за промяна  на -txindex</translation>
-    </message>
-    <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Трябва да укажете masternodeblsprivkey в конфигурацията. Моля вижте документацията за помощ.</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>-wallet parameter must only specify a filename (not a path)</source>
-        <translation>-wallet трябва да показва само името на файла (не пътят)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Приема публични REST заявки (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Винаги пускай заявка за адреси на пиъри през DNS справката (по подразбиране:  %u)</translation>
+        <source>Transaction index can't be disabled with governance validation enabled. Either start with -disablegovernance command line switch or enable transaction index.</source>
+        <translation>Индексът на транзакциите не може да бъде деактивиран в пълен режим. Или започнете с -disablegovernanc от командния ред или активирайте индексиране на транзакциите.</translation>
     </message>
     <message>
         <source>Can't mix: no compatible inputs found!</source>
         <translation>Не може да бъде миксирано: няма останали съвместими входящи средства.</translation>
     </message>
     <message>
-        <source>Chain selection options:</source>
-        <translation>Опции за избор на верига:</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Свързване през SOCKS5 прокси</translation>
-    </message>
-    <message>
-        <source>Connect to KeePassHttp on port &lt;port&gt; (default: %u)</source>
-        <translation>Свързване към KeePassHttp през порт &lt;port&gt; (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Активиране на клиента да работи като masternode (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
         <source>Entry exceeds maximum size.</source>
         <translation>Входа надвишава максималният размер.</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't disable HD on a already existing HD wallet</source>
-        <translation>Грешка при зареждане %s: Не може да изключите HD на вече съществуващ HD портфейл</translation>
     </message>
     <message>
         <source>Failed to load fulfilled requests cache from</source>
@@ -4122,16 +4077,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Открити са достатъчно потребители, подписва...</translation>
     </message>
     <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Колко блока да проверява при стартиране (по подразбиране:  %u, 0 = всички)</translation>
-    </message>
-    <message>
         <source>Importing...</source>
         <translation>Внасяне...</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Прикрепва IP адреси към debug записа (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Incompatible mode.</source>
@@ -4158,12 +4105,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Недостатъчно средства.</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Невалидна сума за -paytxfee=&lt;amount&gt;: '%s' (трябва да бъде най-малко %s)</translation>
+        <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
+        <translation>Невалидно количество -discardfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Невалиден masternodeblsprivkey. Моля вижте документацията.</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Невалидна сума за -paytxfee=&lt;amount&gt;: '%s' (трябва да бъде най-малко %s)</translation>
     </message>
     <message>
         <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
@@ -4172,14 +4119,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Keypool изтече, моля поискайте първо keypoolrefill</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Очаквай JSON-RPC входящи връзки на &lt;port&gt; (по подразбиране:%u или за тестовата мрежа: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Слушане за входящи връзки на &lt;port&gt; (по подразбиране:%u или за тестовата мрежа: %u)</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
@@ -4198,20 +4137,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Заключването е вече налично.</translation>
     </message>
     <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимален размер на буфера при получаване, &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимален размер на буфера при изпращане, &lt;n&gt;*1000 байта (по подразбиране:  %u)</translation>
-    </message>
-    <message>
         <source>Mixing in progress...</source>
         <translation>В процес на смесване...</translation>
-    </message>
-    <message>
-        <source>Mnemonic passphrase is too long, must be at most 256 characters</source>
-        <translation>Мнемоничната парола е твърде дълга, трябва да бъде не по-дълга от 256 символа</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
@@ -4226,96 +4153,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Не e намерен съвместим Masternode.</translation>
     </message>
     <message>
+        <source>Not enough funds to mix.</source>
+        <translation>Недостатъчно средства за миксиране.</translation>
+    </message>
+    <message>
         <source>Not in the Masternode list.</source>
         <translation>Не е в Мasternode списъка.</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Свързване само към точки от мрежата &lt;net&gt; (IPv4, IPv6 или onion)</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Прикрепва справката за грешки към времевия запис(по подразбиране:  %u)</translation>
-    </message>
-    <message>
-        <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
-        <translation>Възстановяване състоянието на веригата и блок индекса от blk*.dat файловете на диска</translation>
-    </message>
-    <message>
-        <source>Rebuild chain state from the currently indexed blocks</source>
-        <translation>Възстановяване състоянието на веригата от сега индексирани блокове</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to debug.log file (default: %u)</source>
-        <translation>Изпрати информацията за грешки към  файла debug.log (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Изпрати с нулева такса за транзакция ако е възможно (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Задайте максимален брой на генерираните ключове до &lt;n&gt; (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>Задаване на masternode BLS частен ключ</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Задай брой заявки обслужващи процеса RPC повикванията (по подразбиране:  %d)</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Посочете конфигурационен файл (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Определете таймаут за свързване в милисекунди (минимум: 1, подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Посочете pid-файла (по подразбиране:  %s)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Изхарчете непотвърденото ресто при изпращане на транзакциите (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Изпратено към Мастернода, чака в опашката %s</translation>
     </message>
     <message>
-        <source>Synchronization failed</source>
-        <translation>Синхронизацията е неуспешна</translation>
-    </message>
-    <message>
         <source>Synchronization finished</source>
         <translation>Синхронизацията е завършена</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Това не е Masternode.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Праг на прекъсване на връзката при непорядъчно държащи се пиъри (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, removing.</source>
-        <translation>Твърде много %f деноминации, премахване.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Твърде много %f деноминации, прескочи.</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor контролира паролата на порта (по подразбиране: празно)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor контролира порта ако onion слушането е включено(по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
@@ -4338,24 +4189,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Неподдържан аргумент -tor е намерен,използвайте -onion.</translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format on startup</source>
-        <translation>Обновяване на портфейла до последният формат при стартиране</translation>
-    </message>
-    <message>
-        <source>Use KeePass 2 integration using KeePassHttp plugin (default: %u)</source>
-        <translation>Използвай KeePass 2 интеграция чрез плъгина KeePassHttp (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Използвай UPnP за определяне на порта за слушане (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use the test chain</source>
-        <translation>Използвайте тестовата мрежа</translation>
-    </message>
-    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>User Agent comment (%s) съдържа опасни символи.</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)...</source>
+        <translation>Проверка на портфейла(ите)...</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4364,6 +4203,18 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>Can't find random Masternode.</source>
         <translation>Не можете да намери случаен Masternode.</translation>
+    </message>
+    <message>
+        <source>%s can't be lower than %s</source>
+        <translation>%s не може да бъде по-малко от %s</translation>
+    </message>
+    <message>
+        <source>%s is idle.</source>
+        <translation>%s е в изчакване.</translation>
+    </message>
+    <message>
+        <source>%s request incomplete: %s</source>
+        <translation>%s незавършена заявка: %s</translation>
     </message>
     <message>
         <source>Can't mix while sync in progress.</source>
@@ -4378,100 +4229,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Открит е невалиден скрипт.</translation>
     </message>
     <message>
-        <source>KeePassHttp id for the established association</source>
-        <translation>KeePassHttp id за осъществяване на връзка</translation>
-    </message>
-    <message>
-        <source>KeePassHttp key for AES encrypted communication with KeePass</source>
-        <translation>KeePassHttp ключ за  AES криптирана връзка с KeePass</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Пази поне &lt;n&gt; неосъществени транзакции в паметта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Disable all HellenicCoin specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Изключване на всички специфични HellenicCoin функции (PrivateSend, InstantSend, Governance) (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
         <translation>Файл %s  съдържа всички частни ключове от този портфейл. Не го споделяйте с никого!</translation>
     </message>
     <message>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>Свържете с даден адрес за да слушате за JSON-RPC връзки. Тази опция се игнорира освен ако -rpcallowip също е преминал. Порта е опция и замества -rpcport. Използвай [host]:port нотация за IPv6. Тази опция може да бъде задавана многократно (по подразбиране: 127.0.0.1 и ::1 i.e., localhost, или ако -rpcallowip е посочен, 0.0.0.0 и:: т.е всички адреси)</translation>
-    </message>
-    <message>
-        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>Открий собствения IP адрес (по подразбиране: 1, когато слуша и няма -externalip или -proxy)</translation>
-    </message>
-    <message>
-        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
-        <translation>Не дръжте в мемпула транзакции повече от &lt;n&gt; часа (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable InstantSend, show confirmations for locked transactions (0-1, default: %u)</source>
-        <translation>Активиране на InstantSend, показва потвържденията за заключени транзакции (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable multiple PrivateSend mixing sessions per block, experimental (0-1, default: %u)</source>
-        <translation>Активиране на няколко PrivateSend миксиращи сесии за нлок, експериментално (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable use of automated PrivateSend for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Активиране на автоматизирано използване на PrivateSend за средствата съхранявани в този портфейл(0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet InstantSend transaction is successfully locked (%s in cmd is replaced by TxID)</source>
-        <translation>Изпълнена команда когато транзакцията в  InstantSend портфейла е успешно заключена (%s в cmd е заместен от TxID)</translation>
-    </message>
-    <message>
-        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>Допълнителни транзакции поддържани в паметта за реконструкции на компактни блокове (по подразбиране: %u)</translation>
+        <source>-masternode option is deprecated and ignored, specifying -masternodeblsprivkey is enough to start this node as a masternode.</source>
+        <translation>-masternode опцията е оттеглена и игнорирана, уточняването на -masternodeblsprivkey е достатъчно да стартирате този нод като masternode.</translation>
     </message>
     <message>
         <source>Failed to create backup, file already exists! This could happen if you restarted wallet in less than 60 seconds. You can continue if you are ok with this.</source>
         <translation>Не може да се създаде копие, файлът вече съществува! Това може да се случи, ако сте рестартирали портфейла си преди по-малко от 60 секунди. Може да продължите, ако сте разбрали това.</translation>
     </message>
     <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-        <translation>Такси (в %s/kB) по-малки от тази се считат за нулева такса за прилагане, при копаене и създаване на транзакция (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в %s/kB) по-малки от това се считат за нулева такса при създаване на транзакция (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
-        <translation>Ако &lt;category&gt; не е предоставена или ако &lt;category&gt; = 1, изведи цялата информация за отстраняване на грешки.</translation>
-    </message>
-    <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HNC.</source>
-        <translation>InstantSend не поддържа толкова високи стойности за изпращане все още. Транзакциите в момента са ограничени до %1 HNC.</translation>
-    </message>
-    <message>
-        <source>InstantSend requires inputs with at least %d confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>InstantX изисква средства с поне %d потвърждения, може да се наложи да почакате няколко минути и да опитате отново.</translation>
-    </message>
-    <message>
-        <source>Maintain a full address index, used to query for the balance, txids and unspent outputs for addresses (default: %u)</source>
-        <translation>Поддържай пълен списък с транзакциите, използван за заявка за баланс, txids и неусвоени изходи за адресите (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: %u)</source>
-        <translation>Поддържай пълен списък с транзакциите, използва   похарчената txids и входящият списък за един изход (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: %u)</source>
-        <translation>Поддържайте времеви отпечатък на индекса  за блокираните на хешове, използван за заявки към блок-хешове от поредица времеви отпечатъци (по подразбиране:%u)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (temporary service connections excluded) (default: %u)</source>
-        <translation>Поддържайте най-много &lt;n&gt; връзки към пиъри(без временните сервизни връзки)(по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>PrivateSend използва всички деноминирани наличности за да изпрати сумата, може би ще е необходимо да бъдат анонимизирани  още монети.</translation>
+        <source>Make sure to encrypt your wallet and delete all non-encrypted backups after you have verified that the wallet works!</source>
+        <translation>Уверете се, че криптирате портфейла си и изтривате всички незашифровани резервни копия, след като сте се уверили, че портфейлът Ви работи!</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -4482,20 +4253,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Изчистване: последното синхронизиране надхвърля почстените данни. Нужен е -reindex (изтегляне на цялата блко-верига в случай на "изчистен" възел)</translation>
     </message>
     <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>произволни удостоверения за всяка прокси връзка. Това дава възможност за изолация Tor потока (по подразбиране: %u)</translation>
-    </message>
-    <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
         <translation>Повторно сканиране не е възможно в изчистен режим. Вие ще трябва да използвате -reindex, което ще изтегли цялата блок-верига отново.</translation>
-    </message>
-    <message>
-        <source>Specify full path to directory for automatic wallet backups (must exist)</source>
-        <translation>Посочване на директория за автоматичен резервен архив на портфейла (трябва да съществува)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Поддържа филтриране на блоковете и транзакциите със свежи филтри (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
@@ -4510,28 +4269,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Общата дължина на мрежовата версия на низ (%i) надвишава максималната дължина (%i). Намалете  броя или размера на коментарите.</translation>
     </message>
     <message>
-        <source>Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</source>
-        <translation>Индексът на транзакциите не може да бъде деактивиран в пълен режим. Или започнете с превключване  -litemode от командния ред или активирайте индексиране на транзакциите.</translation>
-    </message>
-    <message>
-        <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>Опитва се да поддържа изходящият трафик по зададената цел (в MiB за 24h), 0 = без лимит (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough PrivateSend denominated funds for this transaction.</source>
-        <translation>Не са намерени достатъчно PrivateSend деноминирани средства за тази транзакция.</translation>
-    </message>
-    <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Открит е неподдържан аргумент -socks .Настройката SOCKS версия вече не е възможна, само SOCKS5 прокси се поддържа.</translation>
     </message>
     <message>
         <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
         <translation>Неподдържан аргумент -whitelistalwaysrelay игнориран, използвайте -whitelistrelay и/или -whitelistforcerelay.</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
-        <translation>Използвайте UPnP за определяне на порта за слушане (по подразбиране: 1 когато слуша без прокси)</translation>
     </message>
     <message>
         <source>WARNING! Failed to replenish keypool, please unlock your wallet to do so.</source>
@@ -4546,76 +4289,60 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>ВНИМАНИЕ: Непозната версия на блока!Възможно е да са активирани неизвестни правила</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, all HellenicCoin-specific functionality is disabled.</source>
-        <translation>Стартирали сте в олекотен режим, всички HellenicCoin- специфични функционалности са изключени.</translation>
+        <source>You need to rebuild the database using -reindex to change -timestampindex</source>
+        <translation>Трябва да възстановите базата данни, като използвате -reindex за да промените -timestampindex</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>Необходимо е повторно изграждане на базата данни използвайки -reindex за да се върнете в неизчистен режим.Това ще изтегли отново съществуващата блок-верига</translation>
     </message>
     <message>
-        <source>(default: %u)</source>
-        <translation>(по подразбиране: %u)</translation>
+        <source>-litemode is deprecated.</source>
+        <translation>-litemode е отстарял.</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
         <translation>-maxmempoolтрябва да бъде поне %d MB</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може да бъде:</translation>
-    </message>
-    <message>
-        <source>Append comment to the user agent string</source>
-        <translation>Добавяне на коментар към стринг на потребителският агент</translation>
-    </message>
-    <message>
         <source>Automatic backups disabled</source>
         <translation>Автоматичното архивиране е изключено</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Автоматично създаване на скрита Tor услуга (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>ERROR! Failed to create automatic backup</source>
         <translation>ГРЕШКА! Неуспешно създаване на автоматичен архив</translation>
     </message>
     <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Включва публикуване на блок хеш в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</source>
-        <translation>Активиране публикуването на хеш от обектите за управление (като предложения) в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance votes in &lt;address&gt;</source>
-        <translation>Активиране публикуването на хеш от управляващите гласове в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via InstantSend) in &lt;address&gt;</source>
-        <translation>Включва публикуване хеша на транзакцията  (заключен чрез InstantSend) в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Включва публикуване хеша на транзакцията в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Включва публикуване необработеният блок в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via InstantSend) in &lt;address&gt;</source>
-        <translation>Включва публикуване на необранотена транзакция (заключена чрез InstantSend) в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Включва публикуване на необранотена транзакция  в &lt;address&gt;</translation>
+        <source>Error upgrading evo database</source>
+        <translation>Грешка при надстройката на базата данни evo</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Грешка: Възникна сериозна вътрешна грешка, виж debug.log за подробности</translation>
+    </message>
+    <message>
+        <source>Error: failed to add socket to epollfd (epoll_ctl returned error %s)</source>
+        <translation>Грешка: неуспешно добавяне на socket към epollfd (epoll_ctl дава грешка %s)</translation>
+    </message>
+    <message>
+        <source>Exceeded max tries.</source>
+        <translation>Надвишен брой опити.</translation>
+    </message>
+    <message>
+        <source>Failed to clear fulfilled requests cache at</source>
+        <translation>Неуспешно изчистване на кеша на изпълнени заявки при</translation>
+    </message>
+    <message>
+        <source>Failed to clear governance cache at</source>
+        <translation>Неуспешно изчистване на кеша за управление на</translation>
+    </message>
+    <message>
+        <source>Failed to clear masternode cache at</source>
+        <translation>Неуспешно изчистване на кеша на masternode при</translation>
+    </message>
+    <message>
+        <source>Failed to commit EvoDB</source>
+        <translation>Неуспешно фиксиране на EvoDB</translation>
     </message>
     <message>
         <source>Failed to create backup %s!</source>
@@ -4630,44 +4357,28 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Неуспешно изтриване на архив, грешка: %s</translation>
     </message>
     <message>
-        <source>Failed to load InstantSend data cache from</source>
-        <translation>Неуспешно зареждане на  InstantSend кеша за данни от</translation>
-    </message>
-    <message>
         <source>Failed to load sporks cache from</source>
         <translation>Неуспешно зареждане на кеша за sporks от</translation>
     </message>
     <message>
-        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в %s/kB) за добавяне към транзакцията,която изпращате (default: %s)</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file on startup</source>
-        <translation>Внасяне на блокове от външен blk000??.dat  файл при стартиране</translation>
-    </message>
-    <message>
-        <source>InstantSend options:</source>
-        <translation>InstantSend опции:</translation>
+        <source>Failed to rescan the wallet during initialization</source>
+        <translation>Неуспешно сканиране на портфейла по време на инициализация</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>Невалидно количество за -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Дръж мемпула за транзакциите под &lt;n&gt; мегабайта (по подразбиране: %u)</translation>
+        <source>Invalid masternodeblsprivkey. Please see documentation.</source>
+        <translation>Невалиден masternodeblsprivkey. Моля вижте документацията.</translation>
     </message>
     <message>
-        <source>Last PrivateSend was too recent.</source>
-        <translation>Последния PrivateSend беше твърде скоро.</translation>
+        <source>It has been replaced by -disablegovernance.</source>
+        <translation>Заменено е от -disablegovernance.</translation>
     </message>
     <message>
-        <source>Last successful PrivateSend action was too recent.</source>
-        <translation>Последното успешно PrivateSend действие бе твърде скоро.</translation>
-    </message>
-    <message>
-        <source>Loading InstantSend data cache...</source>
-        <translation>Зареждане на InstantSend кеш данни...</translation>
+        <source>Its replacement -disablegovernance has been forced instead.</source>
+        <translation>Подмяната му е причинена  от -disablegovernance .</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4690,28 +4401,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Зареждане на портфейла...</translation>
     </message>
     <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Местоположение на бисквитката за удостоверяване (по подразбиране: data dir)</translation>
-    </message>
-    <message>
-        <source>Make the wallet broadcast transactions</source>
-        <translation>Прави излъчващи транзакции от портфейла</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Masternode опции:</translation>
-    </message>
-    <message>
         <source>Masternode queue is full.</source>
         <translation>Опашката с задачи на Masternode е пълна.</translation>
     </message>
     <message>
         <source>Masternode:</source>
         <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Minimum bytes per sigop in transactions we relay and mine (default: %u)</source>
-        <translation>Минимум байта за sigop в транзакциите, които могат да се предадат и изкопаят (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Missing input transaction information.</source>
@@ -4726,14 +4421,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Няма съвпадащи деноминации за миксирането.</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Сменящи опции на node:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Засечен е нестандартен публичен ключ.</translation>
-    </message>
-    <message>
         <source>Not compatible with existing transactions.</source>
         <translation>Несъвместим със съществуващите транзакции.</translation>
     </message>
@@ -4742,44 +4429,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Няма достатъчно налични файлови описания.</translation>
     </message>
     <message>
-        <source>Not enough funds to anonymize.</source>
-        <translation>Недостатъчно средства за анонимизиране.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: %u)</source>
-        <translation>Брой на автоматичните резервни копия на порфейла (по подразбиране:  %u)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Парола за  JSON-RPC връзките</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>Версия за печат и изход</translation>
-    </message>
-    <message>
-        <source>PrivateSend is idle.</source>
-        <translation>PrivateSend е без работа.</translation>
-    </message>
-    <message>
-        <source>PrivateSend options:</source>
-        <translation>PrivateSend опции:</translation>
-    </message>
-    <message>
-        <source>PrivateSend request complete:</source>
-        <translation>PrivateSend заявката е завършена:</translation>
-    </message>
-    <message>
-        <source>PrivateSend request incomplete:</source>
-        <translation>PrivateSend заявката е незавършена:</translation>
-    </message>
-    <message>
         <source>Prune cannot be configured with a negative value.</source>
         <translation>Изчистване не може да бъде конфигурирано с отрицателна стойност.</translation>
+    </message>
+    <message>
+        <source>Prune mode is incompatible with -disablegovernance=false.</source>
+        <translation>Олекотен режим е несъвместим с -disablegovernance=false.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
@@ -4790,16 +4445,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Изчистване на блоковото пространство...</translation>
     </message>
     <message>
-        <source>Rescan the block chain for missing wallet transactions on startup</source>
-        <translation>Повторно сканиране на регистъра на блокове за липсващи в портфейла транзакции  при стартиране</translation>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>Посоченият -walletdir "%s" не съществува</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u</source>
-        <translation>Изпратени за следните записи към masternode: %u</translation>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>Посоченият -walletdir "%s" е относителен път</translation>
     </message>
     <message>
-        <source>Submitted to masternode, waiting for more entries ( %u ) %s</source>
-        <translation>Изпратени към masternode, изчакване за още записи ( %u ) %s</translation>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>Посоченият -walletdir "%s" не е папка</translation>
     </message>
     <message>
         <source>Synchronizing blockchain...</source>
@@ -4808,6 +4463,10 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>Портфейлът няма да плаща по-малко от миналата такса за препредаване.</translation>
+    </message>
+    <message>
+        <source>This is expected because you are running a pruned node.</source>
+        <translation>Това се очаква, защото сте пуснали олекотен нод.</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
@@ -4842,20 +4501,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Невъзможно да се свърже към %s на този компютър. %s вероятно  вече работи.</translation>
     </message>
     <message>
+        <source>Unable to generate initial keys</source>
+        <translation>Не може да се генерират първоначални ключове</translation>
+    </message>
+    <message>
         <source>Upgrading UTXO database</source>
         <translation>Обновяване на UTXO база данни</translation>
     </message>
     <message>
-        <source>Use devnet chain with provided name</source>
-        <translation>Използвайте devnet веригата с предоставеното име</translation>
-    </message>
-    <message>
-        <source>Wallet debugging/testing options:</source>
-        <translation>Опции за Откриване на грешки/Тестване на портфейла:</translation>
-    </message>
-    <message>
-        <source>Wallet is not initialized</source>
-        <translation>Портфейлът не е инициализиран</translation>
+        <source>Wallet %s resides outside wallet directory %s</source>
+        <translation>Портфейл %s се намира извън директорията на портфейла %s</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
@@ -4870,16 +4525,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Не е в състояние да създаде архивираща папка за портфейла %s!</translation>
     </message>
     <message>
-        <source>Whether to operate in a blocks only mode (default: %u)</source>
-        <translation>Дали да работи само в блоков режим (по подразбиране: %u)</translation>
+        <source>You can not start a masternode with wallet enabled.</source>
+        <translation>Не може да стартирате masternode с включен портфейл.</translation>
     </message>
     <message>
-        <source>You can not start a masternode in lite mode.</source>
-        <translation>Не може да стартирате masternode в олекотен режим.</translation>
+        <source>You need to rebuild the database using -reindex to change -addressindex</source>
+        <translation>Необходимо е повторно изграждане на базата данни използвайки -reindex, за да промените -addressindex</translation>
     </message>
     <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ опции за уведомяване:</translation>
+        <source>You need to rebuild the database using -reindex to change -spentindex</source>
+        <translation>Необходимо е повторно изграждане на базата данни използвайки -reindex, за да промените  -spentindex</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Необходимо е повторно изграждане на базата данни използвайки -reindex, за да промените -txindex</translation>
     </message>
     <message>
         <source>no mixing available.</source>
@@ -4890,10 +4549,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>виж debug.log за подробности.</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Опции на RPC сървъра:</translation>
-    </message>
-    <message>
         <source>HellenicCoin Core</source>
         <translation>HellenicCoin Core</translation>
     </message>
@@ -4902,44 +4557,28 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>%s разработчици</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation>Приемай връзки отвън (по подразбиране: 1, ако няма  -proxy или -connect/-noconnect)</translation>
+        <source>%s uses exact denominated amounts to send funds, you might simply need to mix some more coins.</source>
+        <translation>%s използва точно деноминирани суми за изпращане на средства, може просто да се наложи да смесите още няколко монети.</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
         <translation>Не може да се заключи дата директорията %s.%s вероятно вече работи.</translation>
     </message>
     <message>
-        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation>Свързване само към специфичен нод(ове); -noconnect или -connect=0 за да изключите автоматичните връзки</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Разпространява се под MIT софтуерен лиценз,вижте придружаващият файл  %s или %s</translation>
+    </message>
+    <message>
+        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
+        <translation>Грешка при зареждане %s: Не можете да активирате HD във вече съществуващ не-HD портфейл</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Грешка при четене на  %s! Всички ключове са прочетени коректно, но данните за транзакциите или записите в адресната книга може да липсват или са некоректни.</translation>
     </message>
     <message>
-        <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
-        <translation>Приема препредадените транзакции получени от белия списък на пиърите,  дори когато не са препредадени транзакциите (по подразбиране: %d)</translation>
-    </message>
-    <message>
         <source>Incorrect or no devnet genesis block found. Wrong datadir for devnet specified?</source>
         <translation>Намерен е неправилен или не devnet блок. Грешно зададена data директория за devnet мрежата?</translation>
-    </message>
-    <message>
-        <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
-        <translation>Максимално допустима корекция на средното време за връщане на пиъри. Локалната перспектива на времето може да бъде повлияна от пиери напред или назад от това количество. (по подразбиране:%u секунди)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees (in %s) to use in a single wallet transaction or raw transaction; setting this too low may abort large transactions (default: %s)</source>
-        <translation>Максимална крайна такса (в %s) използвана в единична или сурова транзакция, ако е зададена твърде малка, няма да бъдат възможни големи транзакции (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Заменете spork адреса. Полезен само за regtest и devnet. Използването на това на mainnet или testnet ще прекъсне връзката ви с мрежата.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -4950,20 +4589,8 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Моля помогнете ако намерите %s полезен. Посетете %s за допълнителна информация за софтуера.</translation>
     </message>
     <message>
-        <source>Provide liquidity to PrivateSend by infrequently mixing coins on a continual basis (%u-%u, default: %u, 1=very frequent, high fees, %u=very infrequent, low fees)</source>
-        <translation>Осигуряване на ликвидност на PrivateSend от рядко смесване на монети в съответствие (%u-%u, по подразбиране: %u, 1=много чести, високи такси, %u=много рядко, ниски такси)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation>Заявка за адреси на пиъри чрез DNS справка, ако адресите са недостатъчно (по-подразбиране: 1 освен ако -connect/-noconnect)</translation>
-    </message>
-    <message>
-        <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
-        <translation>Редуциране на изискванията за пространство чрез изчистване (изтриване) стари блокове. Това позволява на RPC  да изтрие конкретни блокове и позволява автоматичното изчистване на стари блокове, ако е предвиден целеви размер в MiB. Този режим е несъвместим с -txindex и -rescan. внимание: Изключването на тази настройка изисква повторно изтегляне на цялата блок-верига. (по подразбиране: 0 = изключено изчистване на блокове, &gt;%u = желан размер в MiB за използване на блок файлове)</translation>
-    </message>
-    <message>
-        <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
-        <translation>Задайте най-ниска такса (в %s / kB) за транзакции, които да бъдат включени в създаването на блок. (по подразбиране:%s)</translation>
+        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
+        <translation>Това е таксата за транзакцията, която можете да отхвърлите, ако промяната е по-малка от незначителната стойност на това ниво</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
@@ -4974,36 +4601,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Този продукт включва софтуер, разработен от проекта OpenSSL за използване в OpenSSL Toolkit %s и криптографски софтуер, написан от Eric Young и UPnP софтуер, написан от Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction.</source>
-        <translation>Невъзможно е да се намерят достатъчно средства, които не са деноминирани от PrivateSend, за тази транзакция.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes for each denominated input to mix funds (%u-%u, default: %u)</source>
-        <translation>Използвайте N отделни Masternode за всеки деноминиран вход за миксиране на средства (%u-%u, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use hierarchical deterministic key generation (HD) after BIP39/BIP44. Only has effect during wallet creation/first start</source>
-        <translation>Използвайте йерархично детерминиращо генериране на ключ (HD) след bip39 / bip44. Има ефект само по време на създаване на портфейла / първия старт</translation>
-    </message>
-    <message>
-        <source>User defined mnemonic passphrase for HD wallet (BIP39). Only has effect during wallet creation/first start (default: empty string)</source>
-        <translation>Потребителски дефиниран мнемонична парола за HD портфейла (bip39). Има ефект само по време на създаване на портфейла / първия старт (по подразбиране:празен низ )</translation>
-    </message>
-    <message>
-        <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
-        <translation>Потребителско име и парола за JSON-RPC връзки. Полето &lt;userpw&gt; е във формата: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;.  Включен е каноничен скрипт на phyton в share/ rpcuser . След това клиентът се свързва нормално с помощта на rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt;двойка аргументи. Тази опция може да се зададе няколко пъти</translation>
-    </message>
-    <message>
-        <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
-        <translation>Портфейла няма да създава транзакции, които нарушават ограниченията на веригата на mempool (по подразбиране:%u)</translation>
+        <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
+        <translation>Блокове не могат да се възпроизведат. Ще трябва да възстановите базата данни с помощта на -reindex-chainstate.</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Внимание: Файла на портфейла  е повреден, данните са спасени! Оригиналния  %s е запазен като %s в %s; ако вашият баланс или транзакции са неверни трябва да възстановите от резервното копие/архив.</translation>
     </message>
     <message>
-        <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
-        <translation>Whitelist пиъри свързани от даден  IP адрес(напр. 1.2.3.4) или дадената мрежова маска (напр. 1.2.3.0/24). Може да бъде определян многократно.</translation>
+        <source>%d of last 100 blocks have unexpected version</source>
+        <translation>%d от последните 100 блока са с неочаквана версия</translation>
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -5018,10 +4625,6 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>%s е зададен твърде високо!</translation>
     </message>
     <message>
-        <source>(press q to shutdown and continue later)</source>
-        <translation>(натиснете q за изключване и продължете по-късно)</translation>
-    </message>
-    <message>
         <source>-devnet can only be specified once</source>
         <translation>-devnet може да се зададе само веднъж</translation>
     </message>
@@ -5034,16 +4637,12 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>-rpcport трябва да се зададе когато -devnet и  -server са зададени</translation>
     </message>
     <message>
-        <source>Allow RFC1918 addresses to be relayed and connected to (default: %u)</source>
-        <translation>Разрешава препредаването и свързването на RFC1918 адреси към  (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet on startup</source>
-        <translation>Опит да се възстановят частни ключове от повреден портфейл при стартиране</translation>
-    </message>
-    <message>
         <source>Cannot resolve -%s address: '%s'</source>
         <translation>Не може да установи -%s адрес: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>Не може да се записва в data папката '%s'; проверете правата.</translation>
     </message>
     <message>
         <source>Change index out of range</source>
@@ -5066,8 +4665,20 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Грешка при зареждане на %s: Портфейлът изисква по-нова версия на %s</translation>
     </message>
     <message>
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>Грешка при зареждане %s: Не можете да деактивирате HD във вече съществуващ HD портфейл</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
+        <translation>Грешка при зареждането на портфейла %s. Посочено е дублирано име на файлa.</translation>
+    </message>
+    <message>
         <source>Error upgrading chainstate database</source>
         <translation>Грешка при надграждане на верижната база данни </translation>
+    </message>
+    <message>
+        <source>Error: failed to add socket to kqueuefd (kevent returned error %s)</source>
+        <translation>Грешка:неуспешно добавяне на socket към kqueuefd (kevent дава грешка %s)</translation>
     </message>
     <message>
         <source>Failed to find mixing queue to join</source>
@@ -5078,8 +4689,16 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Неуспешно стартиране на нова опашка за миксиране</translation>
     </message>
     <message>
+        <source>Incorrect -rescan mode, falling back to default value</source>
+        <translation>Некоректен -rescan режим, връщане към стойност по подразбиране</translation>
+    </message>
+    <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>Инициализирането на проверката за състоянието е неуспешно. %s се изключва.</translation>
+    </message>
+    <message>
+        <source>Inputs vs outputs size mismatch.</source>
+        <translation>Несъответствие на размера на входовете и изходите.</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
@@ -5094,52 +4713,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Невалидно количество за -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid characters in -wallet filename</source>
-        <translation>Невалиден символ в името на файла -wallet </translation>
-    </message>
-    <message>
         <source>Invalid spork address specified with -sporkaddr</source>
         <translation>Невалиден спорк адрес посочен с -sporkaddr</translation>
-    </message>
-    <message>
-        <source>Keep N HNC anonymized (%u-%u, default: %u)</source>
-        <translation>Поддържай N HNC анонимизирани (%u-%u, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>
         <translation>Зареждане на P2P адреси...</translation>
     </message>
     <message>
-        <source>Print this help message and exit</source>
-        <translation>Отпечатай това помощно съобщение и излез</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Получаване и показване на P2P мрежови известия (по подразбиране: %u)</translation>
-    </message>
-    <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation>Намаляване -maxconnections от %d до %d, поради ограниченията на системата.</translation>
     </message>
     <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Смени и изкопай носещите данни транзакции (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Смяна на не-P2SH многоподписани (по подразбиране: %u)</translation>
+        <source>Replaying blocks...</source>
+        <translation>Възпроизвеждането на блокове ...</translation>
     </message>
     <message>
         <source>Rescanning...</source>
         <translation>Повторно сканиране...</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Стартира във фонов режим като демон и приема команди</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Изпрати информацията за грешки към конзолата, вместо файла debug.log</translation>
     </message>
     <message>
         <source>Session not complete!</source>
@@ -5150,44 +4741,24 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Сесията е изтекла.</translation>
     </message>
     <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Определи размера на кеша на базата от данни в мегабайти (%d до %d, по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Определи максималния размер на блока в байтове (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Покажи всички опции за откриване на грешки  (синтаксис: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Свий debug.log файла при стартиране на клиента (по подразбиране: 1, когато няма -debug)</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Подписването на транзакцията се провали</translation>
     </message>
     <message>
-        <source>Specify data directory</source>
-        <translation>Определете директория за данните</translation>
+        <source>Specified blocks directory "%s" does not exist.</source>
+        <translation>Посочената директория за блоковете "%s" не съществува.</translation>
     </message>
     <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Посочете файла с портфейла (в папката с данни)</translation>
+        <source>Last queue was created too recently.</source>
+        <translation>Последната опашка беше твърде скоро.</translation>
     </message>
     <message>
-        <source>Specify your own public address</source>
-        <translation>Въведете Ваш публичен адрес</translation>
+        <source>Last successful action was too recent.</source>
+        <translation>Последното успешно действие беше твърде скоро.</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
         <translation>Стартиране на мрежовите нишки...</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Изчаква синхронизация ...</translation>
     </message>
     <message>
         <source>Synchronizing governance objects...</source>
@@ -5230,6 +4801,14 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Не може да се свърже с %s на този компютър (връща грешка %s)</translation>
     </message>
     <message>
+        <source>Unable to locate enough mixed funds for this transaction.</source>
+        <translation>Не са намерени достатъчно смесени средства за тази транзакция.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough non-denominated funds for this transaction.</source>
+        <translation>Не са намерени достатъчно  неденоминирани средства за тази транзакция.</translation>
+    </message>
+    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Неуспешно подписване на spork-съобщение. Грешен ключ?</translation>
     </message>
@@ -5242,48 +4821,48 @@ https://www.transifex.com/projects/p/helleniccoin/</translation>
         <translation>Неизвестно състояние: id = %u</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Потребителско име за JSON-RPC връзките</translation>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>Неподдържана категория на журналиране %s=%s.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>Проверка на блоковете...</translation>
     </message>
     <message>
-        <source>Verifying wallet...</source>
-        <translation>Проверка на портфейла...</translation>
-    </message>
-    <message>
         <source>Very low number of keys left: %d</source>
         <translation>Много малък останали ключове: %d</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Портфейла %s е разположен извън папката с данни %s</translation>
     </message>
     <message>
         <source>Wallet is locked.</source>
         <translation>Портфейлът е заключен.</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Настройки на портфейла:</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Заглавие на wallet прозореца</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <source>Your entries added successfully.</source>
-        <translation>Вашите записи са добавени успешно.</translation>
+        <source>Warning: %s is deprecated, please use %s instead</source>
+        <translation>Внимение: %s е неизползваемо, моля използвайте %s instead</translation>
     </message>
     <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation> Вашата транзакция е била приета в басейна!</translation>
+        <source>Warning: can't use %s and %s together, will prefer %s</source>
+        <translation>Внимение: не може да се използва %s и %s заедно, за предпочитане %s</translation>
+    </message>
+    <message>
+        <source>Warning: incorrect parameter %s, path must exist! Using default path.</source>
+        <translation>Внимание: некоректен параметър %s, пътят трябва да съществува! Използвайте път по подразбиране.</translation>
+    </message>
+    <message>
+        <source>You are starting with governance validation disabled.</source>
+        <translation>Започвате с деактивирана проверка на управлението.</translation>
+    </message>
+    <message>
+        <source>You can not disable governance validation on a masternode.</source>
+        <translation>Не можете да деактивирате валидирането на управлението на masternode.</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>Вашите записи са добавени успешно.</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
