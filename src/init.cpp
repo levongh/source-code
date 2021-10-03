@@ -462,7 +462,7 @@ void SetupServerArgs()
     Consensus::Params devnetConsensus = CreateChainParams(CBaseChainParams::DEVNET, true)->GetConsensus();
     Consensus::LLMQParams devnetLLMQ = devnetConsensus.llmqs.at(Consensus::LLMQ_DEVNET);
 
-    const auto regtestLLMQ = CreateChainParams(CBaseChainParams::REGTEST)->GetConsensus().llmqs.at(Consensus::LLMQ_TEST);
+//    const auto regtestLLMQ = CreateChainParams(CBaseChainParams::REGTEST)->GetConsensus().llmqs.at(Consensus::LLMQ_TEST);
 
 
     // Set all of the args and their help
@@ -594,7 +594,7 @@ void SetupServerArgs()
     gArgs.AddArg("-llmqchainlocks=<quorum name>", strprintf("Override the default LLMQ type used for ChainLocks on a devnet. Allows using ChainLocks with smaller LLMQs. (default: %s)", devnetConsensus.llmqs.at(devnetConsensus.llmqTypeChainLocks).name), false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-llmqdevnetparams=<size:threshold>", strprintf("Override the default LLMQ size for the LLMQ_DEVNET quorum (default: %u:%u)", devnetLLMQ.size, devnetLLMQ.threshold), false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-llmqinstantsend=<quorum name>", strprintf("Override the default LLMQ type used for InstantSend on a devnet. Allows using InstantSend with smaller LLMQs. (default: %s)", devnetConsensus.llmqs.at(devnetConsensus.llmqTypeInstantSend).name), false, OptionsCategory::DEBUG_TEST);
-    gArgs.AddArg("-llmqtestparams=<size:threshold>", strprintf("Override the default LLMQ size for the LLMQ_TEST quorum (default: %u:%u)", regtestLLMQ.size, regtestLLMQ.threshold), false, OptionsCategory::DEBUG_TEST);
+//    gArgs.AddArg("-llmqtestparams=<size:threshold>", strprintf("Override the default LLMQ size for the LLMQ_TEST quorum (default: %u:%u)", regtestLLMQ.size, regtestLLMQ.threshold), false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-logips", strprintf("Include IP addresses in debug output (default: %u)", DEFAULT_LOGIPS), false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-logthreadnames", strprintf("Add thread names to debug messages (default: %u)", DEFAULT_LOGTHREADNAMES), true, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-logtimemicros", strprintf("Add microsecond precision to debug timestamps (default: %u)", DEFAULT_LOGTIMEMICROS), true, OptionsCategory::DEBUG_TEST);
